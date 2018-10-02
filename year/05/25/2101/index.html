@@ -1,0 +1,1563 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+<meta name="baidu-site-verification" content="XpsoxT0kWM" />
+<meta name="google-site-verification" content="kDX9LJIt0D08YC9gYy9Xnx66ikpunTEjoiAR_VUsPGI" />
+
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?1f9275f266e86ad480c31dd61af561fe";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117679018-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-117679018-1');
+</script>
+
+
+
+
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <script> (adsbygoogle = window.adsbygoogle || []).push({ google_ad_client: "ca-pub-4949823015495880", enable_page_level_ads: true }); </script>
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-bounce.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="hao14293@gmail.com" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="诗意，算法，前端，Python" />
+
+
+
+
+
+
+
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据结构--练习 第7章 查找">
+<meta property="og:url" content="http://shiyi.today/year/05/25/2101/index.html">
+<meta property="og:site_name" content="诗意">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-10-02T10:19:30.838Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="数据结构--练习 第7章 查找">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://shiyi.today/year/05/25/2101/"/>
+
+
+
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "2c19ab28"
+    });
+  daovoice('update');
+  </script>
+
+
+  <title>数据结构--练习 第7章 查找 | 诗意</title>
+  
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-117679018-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?1f9275f266e86ad480c31dd61af561fe";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">诗意</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description"></h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://shiyi.today/year/05/25/2101/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="hao14293">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/cat.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="诗意">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">数据结构--练习 第7章 查找</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-25T20:24:43+08:00">
+                2018-05-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Algorithm-and-Data-Structure/" itemprop="url" rel="index">
+                    <span itemprop="name">Algorithm and Data Structure</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/year/05/25/2101/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/year/05/25/2101/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/year/05/25/2101/" class="leancloud_visitors" data-flag-title="数据结构--练习 第7章 查找">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">热度&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+		<span> °C</span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  3,346
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  14
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+    
+      
+
+      
+        <hr>
+<a id="more"></a>
+<p>1．选择题</p>
+<p>（1）对n个元素的表做顺序查找时，若查找每个元素的概率相同，则平均查找长度为（   ）。</p>
+<p>A．(n-1)/2       B． n/2        C．(n+1)/2        D．n </p>
+<p>答案：C</p>
+<p>解释：总查找次数N=1+2+3+…+n=n(n+1)/2，则平均查找长度为N/n=(n+1)/2。</p>
+<p>（2）适用于折半查找的表的存储方式及元素排列要求为（   ）。</p>
+<p>  A．链接方式存储，元素无序            B．链接方式存储，元素有序</p>
+<p>C．顺序方式存储，元素无序            D．顺序方式存储，元素有序</p>
+<p>答案：D</p>
+<p>解释：折半查找要求线性表必须采用顺序存储结构，而且表中元素按关键字有序排列。</p>
+<p>（3）如果要求一个线性表既能较快的查找，又能适应动态变化的要求，最好采用(    )查找法。</p>
+<p>A．顺序查找 B．折半查找</p>
+<p>C．分块查找 D．哈希查找</p>
+<p>答案：C</p>
+<p>解释：分块查找的优点是：在表中插入和删除数据元素时，只要找到该元素对应的块，就可以在该块内进行插入和删除运算。由于块内是无序的，故插入和删除比较容易，无需进行大量移动。如果线性表既要快速查找又经常动态变化，则可采用分块查找。</p>
+<p>（4）折半查找有序表（4，6，10，12，20，30，50，70，88，100）。若查找表中元素58，则它将依次与表中（   ）比较大小，查找结果是失败。</p>
+<p>A．20，70，30，50                    B．30，88，70，50</p>
+<p>C．20，50                            D．30，88，50</p>
+<p>答案：A</p>
+<p>解释：表中共10个元素，第一次取ë(1+10)/2û=5，与第五个元素20比较，58大于20，再取ë(6+10)/2û=8，与第八个元素70比较，依次类推再与30、50比较，最终查找失败。</p>
+<p>（5）对22个记录的有序表作折半查找，当查找失败时，至少需要比较（   ）次关键字。</p>
+<p>A．3            B．4          C．5           D．6</p>
+<p>答案：B</p>
+<p>解释：22个记录的有序表，其折半查找的判定树深度为 ëlog222û + 1=5，且该判定树不是满二叉树，即查找失败时至多比较5次，至少比较4次。</p>
+<p>（6）折半搜索与二叉排序树的时间性能（   ）。</p>
+<p>  A．相同                              B．完全不同        </p>
+<p>C．有时不相同                        D．数量级都是O(log2n)</p>
+<p>答案：C</p>
+<p>（7）分别以下列序列构造二叉排序树，与用其它三个序列所构造的结果不同的是（   ）。 </p>
+<p>A．（100，80， 90， 60， 120，110，130）</p>
+<p>B．（100，120，110，130，80， 60， 90）</p>
+<p>C．（100，60， 80， 90， 120，110，130）</p>
+<p>D．(100，80， 60， 90， 120，130，110)</p>
+<p>答案：C</p>
+<p>解释：A、B、C、D四个选项构造二叉排序树都以100为根，易知A、B、D三个序列中第一个比100小的关键字为80，即100的左孩子为80，而C选项中100的左孩子为60，故选C。</p>
+<p>（8）在平衡二叉树中插入一个结点后造成了不平衡，设最低的不平衡结点为A，并已知A的左孩子的平衡因子为0右孩子的平衡因子为1，则应作（   ）型调整以使其平衡。</p>
+<p>A．LL           B．LR          C．RL          D．RR</p>
+<p>答案：C</p>
+<p>（9）下列关于m阶B-树的说法错误的是（   ）。</p>
+<p>A．根结点至多有m棵子树     </p>
+<p>B．所有叶子都在同一层次上</p>
+<p>C．非叶结点至少有m/2 (m为偶数)或m/2+1（m为奇数）棵子树  </p>
+<p>D．根结点中的数据是有序的</p>
+<p>答案：D</p>
+<p>（10）下面关于B-和B+树的叙述中，不正确的是（   ）。 </p>
+<p>A．B-树和B+树都是平衡的多叉树       B．B-树和B+树都可用于文件的索引结构</p>
+<p>C．B-树和B+树都能有效地支持顺序检索 D．B-树和B+树都能有效地支持随机检索</p>
+<p>答案：C</p>
+<p>（11）m阶B-树是一棵（   ）。</p>
+<p>A．m叉排序树                        B．m叉平衡排序树  </p>
+<p>C．m-1叉平衡排序树                  D．m+1叉平衡排序树</p>
+<p>答案：B</p>
+<p>（12）下面关于哈希查找的说法，正确的是（   ）。         </p>
+<p>A．哈希函数构造的越复杂越好，因为这样随机性好，冲突小      </p>
+<p>B．除留余数法是所有哈希函数中最好的   </p>
+<p>C．不存在特别好与坏的哈希函数，要视情况而定</p>
+<p>D．哈希表的平均查找长度有时也和记录总数有关</p>
+<p>答案：C</p>
+<p>（13）下面关于哈希查找的说法，不正确的是（   ）。              </p>
+<p>  A．采用链地址法处理冲突时，查找一个元素的时间是相同的</p>
+<p>  B．采用链地址法处理冲突时，若插入规定总是在链首，则插入任一个元素的时间是相同的</p>
+<p>  C．用链地址法处理冲突，不会引起二次聚集现象</p>
+<p>  D．用链地址法处理冲突，适合表长不确定的情况</p>
+<p>答案：A</p>
+<p>解释：在同义词构成的单链表中，查找该单链表表中不同元素，所消耗的时间不同。</p>
+<p>（14）设哈希表长为14，哈希函数是H(key)=key%11，表中已有数据的关键字为15，38，61，84共四个，现要将关键字为49的元素加到表中，用二次探测法解决冲突，则放入的位置是（   ）。</p>
+<p>  A．8              B．3              C．5             D．9</p>
+<p>答案：D</p>
+<p>解释：关键字15放入位置4，关键字38放入位置5，关键字61放入位置6，关键字84放入位置7，再添加关键字49，计算得到地址为5，冲突，用二次探测法解决冲突得到新地址为6，仍冲突，再用用二次探测法解决冲突，得到新地址为4，仍冲突，再用用二次探测法解决冲突，得到新地址为9，不冲突，即将关键字49放入位置9。</p>
+<p>（15）采用线性探测法处理冲突，可能要探测多个位置，在查找成功的情况下，所探测的这些位置上的关键字 (    )。</p>
+<p>A．不一定都是同义词                  B．一定都是同义词       </p>
+<p>C．一定都不是同义词                  D．都相同</p>
+<p>答案：A</p>
+<p>解释：所探测的这些关键字可能是在处理其它关键字冲突过程中放入该位置的。</p>
+<p>2．应用题</p>
+<p><a href="https://blog.csdn.net/m0_37243410/article/details/79008608" target="_blank" rel="noopener">参考这里</a><br>3．算法设计题</p>
+<p>（1）试写出折半查找的递归算法。</p>
+<p> [算法描述]<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">int  BinSrch（rectype r[ ]，int  k，low，high）</span><br><span class="line"></span><br><span class="line">//在长为n的有序表中查找关键字k，若查找成功，返回k所在位置，查找失败返回0。</span><br><span class="line"></span><br><span class="line">&#123;<span class="keyword">if</span>（low≤high）  //low和high分别是有序表的下界和上界</span><br><span class="line"></span><br><span class="line">  &#123;mid=（low+high）/2；</span><br><span class="line"></span><br><span class="line">   <span class="keyword">if</span>（r[mid].key==k）<span class="built_in">return</span>  （mid）；</span><br><span class="line"></span><br><span class="line">   <span class="keyword">else</span> <span class="keyword">if</span>（r[mid].key&gt;k）<span class="built_in">return</span>  （BinSrch（r,k，mid+1，high））;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">else</span> <span class="built_in">return</span>  （BinSrch（r,k，low，mid-1））;</span><br><span class="line"></span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line"> <span class="keyword">else</span>  <span class="built_in">return</span>  （0）；//查找失败。</span><br><span class="line"></span><br><span class="line">&#125;//算法结束</span><br></pre></td></tr></table></figure></p>
+<p>（2）试写一个判别给定二叉树是否为二叉排序树的算法。</p>
+<p>[题目分析] 根据二叉排序树中序遍历所得结点值为增序的性质，在遍历中将当前遍历结点与其前驱结点值比较，即可得出结论，为此设全局指针变量pre（初值为null）和全局变量flag，初值为true。若非二叉排序树，则置flag为false。</p>
+<p>[算法描述]<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#define true 1</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#define false 0</span></span><br><span class="line"></span><br><span class="line">typedef struct node</span><br><span class="line"></span><br><span class="line">&#123;datatype data; struct node *lchild,*rchild;&#125; *BTree;</span><br><span class="line"></span><br><span class="line">void  JudgeBST（BTree T,int  flag）</span><br><span class="line"></span><br><span class="line">// 判断二叉树是否是二叉排序树，本算法结束后，在调用程序中由flag得出结论。</span><br><span class="line"></span><br><span class="line">&#123; <span class="keyword">if</span>（T!=null &amp;&amp; flag）</span><br><span class="line"></span><br><span class="line">     &#123; Judgebst（T-&gt;lchild,flag）；// 中序遍历左子树</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>（pre==null）pre=T；// 中序遍历的第一个结点不必判断</span><br><span class="line"></span><br><span class="line">        <span class="keyword">else</span>  <span class="keyword">if</span>（pre-&gt;data&lt;T-&gt;data）pre=T；//前驱指针指向当前结点</span><br><span class="line"></span><br><span class="line">                <span class="keyword">else</span>&#123;flag=flase；&#125;   //不是完全二叉树</span><br><span class="line"></span><br><span class="line">        Judgebst （T-&gt;rchild,flag）；// 中序遍历右子树</span><br><span class="line"></span><br><span class="line">&#125;//JudgeBST算法结束</span><br><span class="line"></span><br><span class="line">``` </span><br><span class="line"></span><br><span class="line">（3）已知二叉排序树采用二叉链表存储结构，根结点的指针为T，链结点的结构为（lchild,data,rchild），其中lchild，rchild分别指向该结点左、右孩子的指针，data域存放结点的数据信息。请写出递归算法，从小到大输出二叉排序树中所有数据值&gt;=x的结点的数据。要求先找到第一个满足条件的结点后，再依次输出其他满足条件的结点。</span><br><span class="line"></span><br><span class="line">[题目分析]本题算法之一是如上题一样，中序遍历二叉树，在“访问根结点”处判断结点值是否≥x，如是则输出，并记住第一个≥x值结点的指针。这里给出另一个算法，利用二叉排序树的性质，如果根结点的值&gt;=x,则除左分枝中可能有&lt;x的结点外都应输出。所以从根结点开始查找，找到结点值&lt;x的结点后，将其与双亲断开输出整棵二叉排序树。如果根结点的值&lt;x,则沿右子树查找第一个≥x的结点，找到后，与上面同样处理。</span><br><span class="line">```sh</span><br><span class="line">   void  Print（BSTree  t）</span><br><span class="line"></span><br><span class="line">       // 中序输出以t为根的二叉排序树的结点</span><br><span class="line"></span><br><span class="line">    &#123;<span class="keyword">if</span>（t）&#123;Print（t-&gt;lchild）；</span><br><span class="line"></span><br><span class="line">             Cout&lt;&lt;t-data；</span><br><span class="line"></span><br><span class="line">             Print（t-&gt;rchild）；</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">   void  PrintAllx(BSTree bst，datatype x）</span><br><span class="line"></span><br><span class="line">       //在二叉排序树bst中，查找值≥x的结点并输出</span><br><span class="line"></span><br><span class="line">&#123;p=bst；</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>（p）</span><br><span class="line"></span><br><span class="line">      &#123;<span class="keyword">while</span>（p &amp;&amp; p-&gt;data&lt;x）p=p-&gt;rchild；//沿右分枝找第一个值≥x的结点</span><br><span class="line"></span><br><span class="line">       bst=p; //bst所指结点是值≥x的结点的树的根</span><br><span class="line"></span><br><span class="line">       <span class="keyword">if</span>（p）</span><br><span class="line"></span><br><span class="line">         &#123;f=p; p=p-&gt;lchild ；//找第一个值&lt;x的结点</span><br><span class="line"></span><br><span class="line">          <span class="keyword">while</span>（p &amp;&amp; p-&gt;data≥x）//沿左分枝向下，找第一个值&lt;x的结点</span><br><span class="line"></span><br><span class="line">            &#123;f=p；p=p-&gt;lchild ；&#125; //f是p的双亲结点的指针，指向第一个值≥x的结点</span><br><span class="line"></span><br><span class="line">             <span class="keyword">if</span>(p) f-&gt;lchild=null; //双亲与找到的第一个值&lt;x的结点断开</span><br><span class="line"></span><br><span class="line">Print(bst)；//输出以bst为根的子树</span><br><span class="line"></span><br><span class="line">            &#125;//<span class="keyword">while</span></span><br><span class="line"></span><br><span class="line">         &#125;//内层<span class="keyword">if</span>（p）</span><br><span class="line"></span><br><span class="line">       &#125;//第一层<span class="keyword">if</span>（p）</span><br><span class="line"></span><br><span class="line"> &#125;//PrintAllx</span><br></pre></td></tr></table></figure></p>
+<p>（4）已知二叉树T的结点形式为（lling,data,count,rlink），在树中查找值为X的结点，若找到，则记数（count）加1，否则，作为一个新结点插入树中，插入后仍为二叉排序树，写出其非递归算法。</p>
+<p>[算法描述]<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line">void SearchBST(BiTree &amp;T,int target)&#123;</span><br><span class="line"></span><br><span class="line">BiTree s,q,f;  //以数据值target,新建结点s</span><br><span class="line"></span><br><span class="line">s=new BiTNode;</span><br><span class="line"></span><br><span class="line">s-&gt;data.x=target;</span><br><span class="line"></span><br><span class="line">s-&gt;data.count=0;</span><br><span class="line"></span><br><span class="line">s-&gt;lchild=s-&gt;rchild=NULL;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(!T)&#123;</span><br><span class="line"></span><br><span class="line">T=s;</span><br><span class="line"></span><br><span class="line"><span class="built_in">return</span> ;</span><br><span class="line"></span><br><span class="line">&#125;   //如果该树为空则跳出该函数</span><br><span class="line"></span><br><span class="line">f=NULL;</span><br><span class="line"></span><br><span class="line">q=T;</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> (q)&#123;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (q-&gt;data.x==target)&#123;</span><br><span class="line"></span><br><span class="line">q-&gt;data.count++;</span><br><span class="line"></span><br><span class="line"><span class="built_in">return</span> ;</span><br><span class="line"></span><br><span class="line">&#125;  //如果找到该值则计数加一</span><br><span class="line"></span><br><span class="line">f=q;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (q-&gt;data.x&gt;target)   //如果查找值比目标值大，则为该树左孩子</span><br><span class="line"></span><br><span class="line">q=q-&gt;lchild;</span><br><span class="line"></span><br><span class="line"><span class="keyword">else</span> //否则为右孩子</span><br><span class="line"></span><br><span class="line">q=q-&gt;rchild;</span><br><span class="line"></span><br><span class="line">&#125;  //将新结点插入树中</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(f-&gt;data.x&gt;target)</span><br><span class="line"></span><br><span class="line">f-&gt;lchild=s;</span><br><span class="line"></span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"></span><br><span class="line">f-&gt;rchild=s;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>（5）假设一棵平衡二叉树的每个结点都表明了平衡因子b，试设计一个算法，求平衡二叉树的高度。</p>
+<p>[题目分析] 因为二叉树各结点已标明了平衡因子b，故从根结点开始记树的层次。根结点的层次为1，每下一层，层次加1，直到层数最大的叶子结点，这就是平衡二叉树的高度。当结点的平衡因子b为0时，任选左右一分枝向下查找，若b不为0，则沿左（当b=1时）或右（当b=-1时）向下查找。</p>
+<p>[算法描述]<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">    int   Height（BSTree t）</span><br><span class="line"></span><br><span class="line">      // 求平衡二叉树t的高度</span><br><span class="line"></span><br><span class="line">      &#123;level=0；p=t；</span><br><span class="line"></span><br><span class="line">       <span class="keyword">while</span>（p）</span><br><span class="line"></span><br><span class="line">        &#123;level++； // 树的高度增1</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>（p-&gt;bf&lt;0）p=p-&gt;rchild；//bf=-1 沿右分枝向下</span><br><span class="line"></span><br><span class="line">//bf是平衡因子，是二叉树t结点的一个域，因篇幅所限，没有写出其存储定义</span><br><span class="line"></span><br><span class="line">         <span class="keyword">else</span> p=p-&gt;lchild；        //bf&gt;=0 沿左分枝向下</span><br><span class="line"></span><br><span class="line">&#125;//<span class="keyword">while</span></span><br><span class="line"></span><br><span class="line">       <span class="built_in">return</span>  （level）；//平衡二叉树的高度</span><br><span class="line"></span><br><span class="line">&#125; //算法结束</span><br></pre></td></tr></table></figure></p>
+<p>（6）分别写出在散列表中插入和删除关键字为K的一个记录的算法，设散列函数为H，解决冲突的方法为链地址法。</p>
+<p>[算法描述]<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line">bool <span class="function"><span class="title">insert</span></span>()&#123;</span><br><span class="line"></span><br><span class="line">int data;</span><br><span class="line"></span><br><span class="line">cin&gt;&gt;data;</span><br><span class="line"></span><br><span class="line">int ant=<span class="built_in">hash</span>(data);</span><br><span class="line"></span><br><span class="line">LinkList p=HT[ant];   //初始化散列表</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> (p-&gt;next)&#123;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(p-&gt;next-&gt;data==data)</span><br><span class="line"></span><br><span class="line"><span class="built_in">return</span> <span class="literal">false</span>;   </span><br><span class="line"></span><br><span class="line">p=p-&gt;next;</span><br><span class="line"></span><br><span class="line">&#125;   //找到插入位置</span><br><span class="line"></span><br><span class="line">LinkList s;</span><br><span class="line"></span><br><span class="line">s=new LNode;</span><br><span class="line"></span><br><span class="line">s-&gt;data=data;</span><br><span class="line"></span><br><span class="line">s-&gt;next=p-&gt;next;</span><br><span class="line"></span><br><span class="line">p-&gt;next=s;  //插入该结点</span><br><span class="line"></span><br><span class="line"><span class="built_in">return</span> <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">bool <span class="function"><span class="title">deletes</span></span>()&#123;</span><br><span class="line"></span><br><span class="line">int data;</span><br><span class="line"></span><br><span class="line">cin&gt;&gt;data;</span><br><span class="line"></span><br><span class="line">int ant=<span class="built_in">hash</span>(data);</span><br><span class="line"></span><br><span class="line">LinkList p=HT[ant];  //初始化散列表</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> (p-&gt;next)&#123;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(p-&gt;next-&gt;data==data)&#123;</span><br><span class="line"></span><br><span class="line">LinkList s=p-&gt;next;</span><br><span class="line"></span><br><span class="line">p-&gt;next=s-&gt;next;</span><br><span class="line"></span><br><span class="line">delete s;  //删除该结点</span><br><span class="line"></span><br><span class="line"><span class="built_in">return</span> <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line">&#125;  //找到删除位置</span><br><span class="line"></span><br><span class="line">p=p-&gt;next； //遍历下一个结点</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">return</span> <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    
+    
+    
+
+<div>
+  
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+
+  
+</div>
+
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/images/wechat-qcode.jpg" alt="hao14293 wechat" style="width: 200px; max-width: 100%;"/>
+    <div>交流或订阅，请扫描上方微信二维码</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="hao14293 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    hao14293
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://shiyi.today/year/05/25/2101/" title="数据结构--练习 第7章 查找">http://shiyi.today/year/05/25/2101/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/year/05/25/15593/" rel="next" title="数据结构--练习 第6章 图">
+                <i class="fa fa-chevron-left"></i> 数据结构--练习 第6章 图
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/year/05/25/20434/" rel="prev" title="数据结构--练习 第8章 排序">
+                数据结构--练习 第8章 排序 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/cat.jpg"
+                alt="hao14293" />
+            
+              <p class="site-author-name" itemprop="name">hao14293</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">79</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">21</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/hao14293" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:hao14293@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://music.163.com/#/user/home?id=321799989" target="_blank" title="网易云音乐">
+                      
+                        <i class="fa fa-fw fa-globe"></i>网易云音乐</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">hao14293</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://github.com/hao14293">Github</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Hosted by <!--&mdash--> <a class="theme-link" target="_blank" href="https://pages.coding.me/">Coding Pages</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+<span id="busuanzi_container_site_pv">
+    你是本站第 <span id="busuanzi_value_site_pv"></span> 位访问者
+</span>
+
+
+  <span class="post-meta-divider">|</span>
+
+
+ <div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共136.4k字</span>
+</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+	    
+            id: window.location.pathname, 
+            owner: 'hao14293',
+            repo: 'hao14293.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: 'ba73ac0871cac2f56573973a4d54635acb31b9b7',
+            
+                client_id: '38751d2ce76384ae7f94'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("7msrwoOKhaUobO1swwsoE2Bm-gzGzoHsz", "eJmhyYd2bnq8FahSubUEl51l");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+</body>
+</html>

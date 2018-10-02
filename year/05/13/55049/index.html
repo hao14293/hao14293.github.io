@@ -1,0 +1,1569 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+<meta name="baidu-site-verification" content="XpsoxT0kWM" />
+<meta name="google-site-verification" content="kDX9LJIt0D08YC9gYy9Xnx66ikpunTEjoiAR_VUsPGI" />
+
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?1f9275f266e86ad480c31dd61af561fe";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117679018-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-117679018-1');
+</script>
+
+
+
+
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <script> (adsbygoogle = window.adsbygoogle || []).push({ google_ad_client: "ca-pub-4949823015495880", enable_page_level_ads: true }); </script>
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-bounce.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="hao14293@gmail.com" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="诗意，算法，前端，Python" />
+
+
+
+
+
+
+
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="基于Python 分析微信好友数据">
+<meta property="og:url" content="http://shiyi.today/year/05/13/55049/index.html">
+<meta property="og:site_name" content="诗意">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://i.loli.net/2018/05/13/5af829d16b734.jpeg">
+<meta property="og:image" content="https://i.loli.net/2018/05/13/5af829d16b252.jpeg">
+<meta property="og:image" content="https://i.loli.net/2018/05/13/5af829d15ef0c.jpeg">
+<meta property="og:image" content="https://i.loli.net/2018/05/13/5af829d1694ab.png">
+<meta property="og:image" content="https://i.loli.net/2018/05/13/5af829d15f4c7.jpeg">
+<meta property="og:image" content="https://i.loli.net/2018/05/13/5af829d1540cd.jpeg">
+<meta property="og:image" content="https://i.loli.net/2018/05/13/5af829d150834.png">
+<meta property="og:image" content="https://i.loli.net/2018/05/13/5af829d141c3d.jpeg">
+<meta property="og:updated_time" content="2018-10-02T10:19:30.834Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="基于Python 分析微信好友数据">
+<meta name="twitter:image" content="https://i.loli.net/2018/05/13/5af829d16b734.jpeg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://shiyi.today/year/05/13/55049/"/>
+
+
+
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "2c19ab28"
+    });
+  daovoice('update');
+  </script>
+
+
+  <title>基于Python 分析微信好友数据 | 诗意</title>
+  
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-117679018-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?1f9275f266e86ad480c31dd61af561fe";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">诗意</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description"></h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://shiyi.today/year/05/13/55049/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="hao14293">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/cat.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="诗意">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">基于Python 分析微信好友数据</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-13T19:51:01+08:00">
+                2018-05-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python/" itemprop="url" rel="index">
+                    <span itemprop="name">Python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/year/05/13/55049/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/year/05/13/55049/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/year/05/13/55049/" class="leancloud_visitors" data-flag-title="基于Python 分析微信好友数据">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">热度&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+		<span> °C</span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  5,723
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  22
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+    
+      
+
+      
+        <p><img src="https://i.loli.net/2018/05/13/5af829d16b734.jpeg" alt="1.jpeg"><br><a id="more"></a><br>最近微信迎来了一次重要的更新，允许用户对”发现”页面进行定制。不知道从什么时候开始，微信朋友圈变得越来越复杂，当越来越多的人选择”仅展示最近三天的朋友圈”，大概连微信官方都是一脸的无可奈何。逐步泛化的好友关系，让微信从熟人社交逐渐过渡到陌生人社交，而朋友圈里亦真亦幻的状态更新，仿佛在努力证明每一个个体的”有趣”。</p>
+<p>有人选择在朋友圈里记录生活的点滴，有人选择在朋友圈里展示观点的异同，可归根到底，人们无时无刻不在窥探着别人的生活，唯独怕别人过多地了解自己的生活。人性中交织着的光明与黑暗，像一只浑身长满刺的刺猬，离得太远会感觉到寒冷，而靠得太近则害怕被刺扎到。朋友圈就像过年走亲戚，即便你心中有一万个不痛快，总是不愿意撕破脸，或屏蔽对方，或不给对方看，或仅展示最后三天，于是通讯录里的联系人越来越多，朋友圈越来越大，可再不会有能真正触动你内心的”小红点”出现，人类让一个产品变得越来越复杂，然后说它无法满足人类的需求，这大概是一开始就始料不及的吧！</p>
+<p>有人说，人性远比计算机编程更复杂，因为即使是人类迄今为止最伟大的发明——计算机，在面对人类的自然语言时同样会张惶失措 。人类有多少语言存在着模棱两可的含义，我认为语言是人类最大的误解，人类时常喜欢揣测语言背后隐藏的含义，好像在沟通时表达清晰的含义会让人类没有面子，更不用说网络上流行的猜测女朋友真实意图的案例。金庸先生的武侠小说《射雕英雄传》里，在信息闭塞的南宋时期，江湖上裘千丈的一句鬼话，就搅得整个武林天翻地覆。</p>
+<p>其实，一两句话说清楚不好吗？黄药师、全真七子、江南六怪间的种种纠葛，哪一场不是误会？一众儿武功震古烁今的武林高手，怎么没有丝毫的去伪存真的能力，语言造成了多少误会。</p>
+<p>可即便人类的语言复杂得像一本无字天书，可人类还是从这些语言中寻觅到蛛丝马迹。古人有文王”拘而演周易”、东方朔测字卜卦，这种带有”迷信”色彩的原始崇拜，就如同今天人们迷信星座运势一般，都是人类在上千年的演变中不断对经验进行总结和训练的结果。如此说起来，我们的人工智能未尝不是一种更加科学化的”迷信”，因为数据和算法让我们在不断地相信，这一切都是真实地。</p>
+<p>生活在数字时代的我们，无疑是悲哀的，一面努力地在别人面前隐藏真实地自己，一面不无遗憾地感慨自己无处遁逃，每一根数字神经都紧紧地联系着你和我，你不能渴望任何一部数字设备具备真正的智能，可你生命里的每个瞬间，都在悄然间被数据地折射出来。</p>
+<p>今天这篇文章会基于 Python 对微信好友进行数据分析，这里选择的维度主要有：性别、头像、签名、位置，主要采用图表和词云两种形式来呈现结果，其中，对文本类信息会采用词频分析和情感分析两种方法。常言道：工欲善其事，必先利其器也。</p>
+<p>在正式开始这篇文章前，简单介绍下本文中使用到的第三方模块：</p>
+<ul>
+<li><p>itchat：微信网页版接口封装Python版本，在本文中用以获取微信好友信息。</p>
+</li>
+<li><p>jieba：结巴分词的 Python 版本，在本文中用以对文本信息进行分词处理。</p>
+</li>
+<li><p>matplotlib： Python 中图表绘制模块，在本文中用以绘制柱形图和饼图</p>
+</li>
+<li><p>snownlp：一个 Python 中的中文分词模块，在本文中用以对文本信息进行情感判断。</p>
+</li>
+<li><p>PIL： Python 中的图像处理模块，在本文中用以对图片进行处理。</p>
+</li>
+<li><p>numpy： Python中 的数值计算模块，在本文中配合 wordcloud 模块使用。</p>
+</li>
+<li><p>wordcloud： Python 中的词云模块，在本文中用以绘制词云图片。</p>
+</li>
+<li><p>TencentYoutuyun：腾讯优图提供的 Python 版本 SDK ，在本文中用以识别人脸及提取图片标签信息。</p>
+</li>
+</ul>
+<p>以上模块均可通过 pip 安装，关于各个模块使用的详细说明，请自行查阅各自文档。</p>
+<p>分析微信好友数据的前提是获得好友信息，通过使用 itchat 这个模块，这一切会变得非常简单，我们通过下面两行代码就可以实现：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">itchat.auto_login(hotReload = True)</span><br><span class="line"></span><br><span class="line">friends = itchat.get_friends(update = True)</span><br></pre></td></tr></table></figure></p>
+<p>同平时登录网页版微信一样，我们使用手机扫描二维码就可以登录，这里返回的friends对象是一个集合，第一个元素是当前用户。所以，在下面的数据分析流程中，我们始终取friends[1:]作为原始输入数据，集合中的每一个元素都是一个字典结构，以我本人为例，可以注意到这里有Sex、City、Province、HeadImgUrl、Signature这四个字段，我们下面的分析就从这四个字段入手：<br><img src="https://i.loli.net/2018/05/13/5af829d16b252.jpeg" alt="2.jpeg"></p>
+<p></p><h2 style="color:rgb(21,153,87)"> 好友性别</h2><br>分析好友性别，我们首先要获得所有好友的性别信息，这里我们将每一个好友信息的Sex字段提取出来，然后分别统计出Male、Female和Unkonw的数目，我们将这三个数值组装到一个列表中，即可使用matplotlib模块绘制出饼图来，其代码实现如下：<p></p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">def analyseSex(firends):</span><br><span class="line"></span><br><span class="line">    sexs = list(map(lambda x:x[<span class="string">'Sex'</span>],friends[1:]))</span><br><span class="line"></span><br><span class="line">    counts = list(map(lambda x:x[1],Counter(sexs).items()))</span><br><span class="line"></span><br><span class="line">    labels = [<span class="string">'Unknow'</span>,<span class="string">'Male'</span>,<span class="string">'Female'</span>]</span><br><span class="line"></span><br><span class="line">    colors = [<span class="string">'red'</span>,<span class="string">'yellowgreen'</span>,<span class="string">'lightskyblue'</span>]</span><br><span class="line"></span><br><span class="line">    plt.figure(figsize=(8,5), dpi=80)</span><br><span class="line"></span><br><span class="line">    plt.axes(aspect=1) </span><br><span class="line"></span><br><span class="line">    plt.pie(counts, </span><br><span class="line"></span><br><span class="line">            labels=labels, </span><br><span class="line"></span><br><span class="line">            colors=colors, </span><br><span class="line"></span><br><span class="line">            labeldistance = 1.1, </span><br><span class="line"></span><br><span class="line">            autopct = <span class="string">'%3.1f%%'</span>, </span><br><span class="line"></span><br><span class="line">            shadow = False, </span><br><span class="line"></span><br><span class="line">            startangle = 90, </span><br><span class="line"></span><br><span class="line">            pctdistance = 0.6 </span><br><span class="line"></span><br><span class="line">    )</span><br><span class="line"></span><br><span class="line">    plt.legend(loc=<span class="string">'upper right'</span>,)</span><br><span class="line"></span><br><span class="line">    plt.title(u<span class="string">'%s的微信好友性别组成'</span> % friends[0][<span class="string">'NickName'</span>])</span><br><span class="line"></span><br><span class="line">    plt.show()</span><br></pre></td></tr></table></figure>
+<p>这里简单解释下这段代码，微信中性别字段的取值有Unkonw、Male和Female三种，其对应的数值分别为0、1、2。通过Collection模块中的Counter()对这三种不同的取值进行统计，其items()方法返回的是一个元组的集合，该元组的第一维元素表示键，即0、1、2，该元组的第二维元素表示数目，且该元组的集合是排序过的，即其键按照0、1、2 的顺序排列，所以通过map()方法就可以得到这三种不同取值的数目，我们将其传递给matplotlib绘制即可，这三种不同取值各自所占的百分比由matplotlib计算得出。下图是matplotlib绘制的好友性别分布图：</p>
+<p>   <img src="https://i.loli.net/2018/05/13/5af829d15ef0c.jpeg" alt="3.jpeg"></p>
+<p>看到这个结果，我一点都不觉得意外，男女比例严重失衡，这虽然可以解释我单身的原因，可我不觉得通过调整男女比例就能解决问题，好多人认为自己单身是因为社交圈子狭小，那么是不是扩展了社交圈子就能摆脱单身呢？我觉得或许这样会增加脱单的概率，可幸运之神应该不会眷顾我，因为我的好运气早在我24岁以前就消耗完啦。</p>
+<p>在知乎上有一个热门的话题：现在的男性是否普遍不再对女性展开追求了？，其实哪里会有人喜欢孤独呢？无非是怕一次又一次的失望罢了。有的人并不是我的花儿，我只是恰好途径了她的绽放。曾经有人说我是一个多情的人，可她永远不会知道，我做出的每一个决定都炽热而悲壮。所谓”慧极必伤，情深不寿；谦谦君子，温润如玉”，世人苦五毒者大抵如此。</p>
+<p></p><h2 style="color:rgb(21,153,87)">好友头像</h2><br>分析好友头像，从两个方面来分析，第一，在这些好友头像中，使用人脸头像的好友比重有多大；第二，从这些好友头像中，可以提取出哪些有价值的关键字。这里需要根据HeadImgUrl字段下载头像到本地，然后通过腾讯优图提供的人脸识别相关的API接口，检测头像图片中是否存在人脸以及提取图片中的标签。其中，前者是分类汇总，我们使用饼图来呈现结果；后者是对文本进行分析，我们使用词云来呈现结果。<p></p>
+<p>关键代码如下所示：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br></pre></td><td class="code"><pre><span class="line">def analyseHeadImage(frineds):</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    basePath = os.path.abspath(<span class="string">'.'</span>)</span><br><span class="line"></span><br><span class="line">    baseFolder = basePath + <span class="string">'HeadImages'</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(os.path.exists(baseFolder) == False):</span><br><span class="line"></span><br><span class="line">        os.makedirs(baseFolder)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    faceApi = FaceAPI()</span><br><span class="line"></span><br><span class="line">    use_face = 0</span><br><span class="line"></span><br><span class="line">    not_use_face = 0</span><br><span class="line"></span><br><span class="line">    image_tags = <span class="string">''</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> index <span class="keyword">in</span> range(1,len(friends)):</span><br><span class="line"></span><br><span class="line">        friend = friends[index]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        imgFile = baseFolder + <span class="string">'Image%s.jpg'</span> % str(index)</span><br><span class="line"></span><br><span class="line">        imgData = itchat.get_head_img(userName = friend[<span class="string">'UserName'</span>])</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(os.path.exists(imgFile) == False):</span><br><span class="line"></span><br><span class="line">            with open(imgFile,<span class="string">'wb'</span>) as file:</span><br><span class="line"></span><br><span class="line">                file.write(imgData)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        time.sleep(1)</span><br><span class="line"></span><br><span class="line">        result = faceApi.detectFace(imgFile)</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> result == True:</span><br><span class="line"></span><br><span class="line">            use_face += 1</span><br><span class="line"></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line"></span><br><span class="line">            not_use_face += 1 </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        result = faceApi.extractTags(imgFile)</span><br><span class="line"></span><br><span class="line">        image_tags += <span class="string">','</span>.join(list(map(lambda x:x[<span class="string">'tag_name'</span>],result)))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    labels = [u<span class="string">'使用人脸头像'</span>,u<span class="string">'不使用人脸头像'</span>]</span><br><span class="line"></span><br><span class="line">    counts = [use_face,not_use_face]</span><br><span class="line"></span><br><span class="line">    colors = [<span class="string">'red'</span>,<span class="string">'yellowgreen'</span>,<span class="string">'lightskyblue'</span>]</span><br><span class="line"></span><br><span class="line">    plt.figure(figsize=(8,5), dpi=80)</span><br><span class="line"></span><br><span class="line">    plt.axes(aspect=1) </span><br><span class="line"></span><br><span class="line">    plt.pie(counts, </span><br><span class="line"></span><br><span class="line">            labels=labels, </span><br><span class="line"></span><br><span class="line">            colors=colors, </span><br><span class="line"></span><br><span class="line">            labeldistance = 1.1, </span><br><span class="line"></span><br><span class="line">            autopct = <span class="string">'%3.1f%%'</span>, </span><br><span class="line"></span><br><span class="line">            shadow = False, </span><br><span class="line"></span><br><span class="line">            startangle = 90, </span><br><span class="line"></span><br><span class="line">            pctdistance = 0.6 </span><br><span class="line"></span><br><span class="line">    )</span><br><span class="line"></span><br><span class="line">    plt.legend(loc=<span class="string">'upper right'</span>,)</span><br><span class="line"></span><br><span class="line">    plt.title(u<span class="string">'%s的微信好友使用人脸头像情况'</span> % friends[0][<span class="string">'NickName'</span>])</span><br><span class="line"></span><br><span class="line">    plt.show() </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    image_tags = image_tags.encode(<span class="string">'iso8859-1'</span>).decode(<span class="string">'utf-8'</span>)</span><br><span class="line"></span><br><span class="line">    back_coloring = np.array(Image.open(<span class="string">'face.jpg'</span>))</span><br><span class="line"></span><br><span class="line">    wordcloud = WordCloud(</span><br><span class="line"></span><br><span class="line">        font_path=<span class="string">'simfang.ttf'</span>,</span><br><span class="line"></span><br><span class="line">        background_color=<span class="string">"white"</span>,</span><br><span class="line"></span><br><span class="line">        max_words=1200,</span><br><span class="line"></span><br><span class="line">        mask=back_coloring, </span><br><span class="line"></span><br><span class="line">        max_font_size=75,</span><br><span class="line"></span><br><span class="line">        random_state=45,</span><br><span class="line"></span><br><span class="line">        width=800, </span><br><span class="line"></span><br><span class="line">        height=480, </span><br><span class="line"></span><br><span class="line">        margin=15</span><br><span class="line"></span><br><span class="line">    )</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    wordcloud.generate(image_tags)</span><br><span class="line"></span><br><span class="line">    plt.imshow(wordcloud)</span><br><span class="line"></span><br><span class="line">    plt.axis(<span class="string">"off"</span>)</span><br><span class="line"></span><br><span class="line">    plt.show()</span><br></pre></td></tr></table></figure></p>
+<p>这里我们会在当前目录新建一个HeadImages目录，用以存储所有好友的头像，然后我们这里会用到一个名为FaceApi类，这个类由腾讯优图的SDK封装而来，这里分别调用了人脸检测和图像标签识别两个API接口，前者会统计”使用人脸头像”和”不使用人脸头像”的好友各自的数目，后者会累加每个头像中提取出来的标签。其分析结果如下图所示：<br><img src="https://i.loli.net/2018/05/13/5af829d1694ab.png" alt="4.png"></p>
+<p>可以注意到，在所有微信好友中，约有接近1/4的微信好友使用了人脸头像， 而有接近3/4的微信好友没有人脸头像，这说明在所有微信好友中对”颜值 “有自信的人，仅仅占到好友总数的25%，或者说75%的微信好友行事风格偏低调为主，不喜欢用人脸头像做微信头像。这是否说明”好看的皮囊”并非是千篇一律，长得好看的人实在是少数中的少数。</p>
+<p>所以，当女生的妆容越来越向着”韩式半永久粗平眉”、”瓜子脸”和”大红唇”靠拢的时候，当男生的服饰越来越向着”大背头”、”高领毛衣”和”长款大衣”靠拢的时候，我们能不能真正得个性一次。生命中有太多被世俗绑架着的事情，既要和别人不一样 ，同时还要和大多数人一样，这是人生在世的无可奈何。考虑到腾讯优图并不能真正得识别”人脸”，我们这里对好友头像中的标签再次进行提取，来帮助我们了解微信好友的头像中有哪些 关键词，其分析结果如图所示：<br><img src="https://i.loli.net/2018/05/13/5af829d15f4c7.jpeg" alt="5.jpeg"></p>
+<p>通过词云，我们可以发现：在微信好友中的签名词云中，出现频率相对较高的关键字有：女孩、树木、房屋、文本、截图、卡通、合影、天空、大海。这说明在我的微信好友中，好友选择的微信头像主要有日常、旅游、风景、截图四个来源，好友选择的微信头像中风格以卡通为主，好友选择的微信头像中常见的要素有天空、大海、房屋、树木。</p>
+<p>通过观察所有好友头像，我发现在我的微信好友中，使用个人照片作为微信头像的有15人，使用网络图片作为微信头像的有53人，使用动漫图片作为微信头像的有25人，使用合照图片作为微信头像的有3人，使用孩童照片作为微信头像的有5人，使用风景图片作为微信头像的有13人，使用女孩照片作为微信头像的有18人，基本符合图像标签提取的分析结果。</p>
+<p></p><h2 style="color:rgb(21,153,87)">好友签名</h2><br>分析好友签名，签名是好友信息中最为丰富的文本信息，按照人类惯用的”贴标签”的方法论，签名可以分析出某一个人在某一段时间里状态，就像人开心了会笑、哀伤了会哭，哭和笑两种标签，分别表明了人开心和哀伤的状态。<p></p>
+<p>这里我们对签名做两种处理，第一种是使用用结巴分词进行分词后生成词云，目的是了解好友签名中的关键字有哪些，哪一个关键字出现的频率相对较高；第二种是使用SnowNLP分析好友签名中的感情倾向，即好友签名整体上是表现为正面的、负面的还是中立的，各自的比重是多少。这里提取Signature字段即可，其核心代码如下：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br></pre></td><td class="code"><pre><span class="line">def analyseSignature(friends):</span><br><span class="line"></span><br><span class="line">    signatures = <span class="string">''</span></span><br><span class="line"></span><br><span class="line">    emotions = []</span><br><span class="line"></span><br><span class="line">    pattern = re.compile(<span class="string">"1fd.+"</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> friend <span class="keyword">in</span> friends:</span><br><span class="line"></span><br><span class="line">        signature = friend[<span class="string">'Signature'</span>]</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(signature != None):</span><br><span class="line"></span><br><span class="line">            signature = signature.strip().replace(<span class="string">'span'</span>, <span class="string">''</span>).replace(<span class="string">'class'</span>, <span class="string">''</span>).replace(<span class="string">'emoji'</span>, <span class="string">''</span>)</span><br><span class="line"></span><br><span class="line">            signature = re.sub(r<span class="string">'1f(d.+)'</span>,<span class="string">''</span>,signature)</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span>(len(signature)&gt;0):</span><br><span class="line"></span><br><span class="line">                nlp = SnowNLP(signature)</span><br><span class="line"></span><br><span class="line">                emotions.append(nlp.sentiments)</span><br><span class="line"></span><br><span class="line">                signatures += <span class="string">' '</span>.join(jieba.analyse.extract_tags(signature,5))</span><br><span class="line"></span><br><span class="line">    with open(<span class="string">'signatures.txt'</span>,<span class="string">'wt'</span>,encoding=<span class="string">'utf-8'</span>) as file:</span><br><span class="line"></span><br><span class="line">         file.write(signatures)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    back_coloring = np.array(Image.open(<span class="string">'flower.jpg'</span>))</span><br><span class="line"></span><br><span class="line">    wordcloud = WordCloud(</span><br><span class="line"></span><br><span class="line">        font_path=<span class="string">'simfang.ttf'</span>,</span><br><span class="line"></span><br><span class="line">        background_color=<span class="string">"white"</span>,</span><br><span class="line"></span><br><span class="line">        max_words=1200,</span><br><span class="line"></span><br><span class="line">        mask=back_coloring, </span><br><span class="line"></span><br><span class="line">        max_font_size=75,</span><br><span class="line"></span><br><span class="line">        random_state=45,</span><br><span class="line"></span><br><span class="line">        width=960, </span><br><span class="line"></span><br><span class="line">        height=720, </span><br><span class="line"></span><br><span class="line">        margin=15</span><br><span class="line"></span><br><span class="line">    )</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    wordcloud.generate(signatures)</span><br><span class="line"></span><br><span class="line">    plt.imshow(wordcloud)</span><br><span class="line"></span><br><span class="line">    plt.axis(<span class="string">"off"</span>)</span><br><span class="line"></span><br><span class="line">    plt.show()</span><br><span class="line"></span><br><span class="line">    wordcloud.to_file(<span class="string">'signatures.jpg'</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    count_good = len(list(filter(lambda x:x&gt;0.66,emotions)))</span><br><span class="line"></span><br><span class="line">    count_normal = len(list(filter(lambda x:x&gt;=0.33 and x&lt;=0.66,emotions)))</span><br><span class="line"></span><br><span class="line">    count_bad = len(list(filter(lambda x:x&lt;0.33,emotions)))</span><br><span class="line"></span><br><span class="line">    labels = [u<span class="string">'负面消极'</span>,u<span class="string">'中性'</span>,u<span class="string">'正面积极'</span>]</span><br><span class="line"></span><br><span class="line">    values = (count_bad,count_normal,count_good)</span><br><span class="line"></span><br><span class="line">    plt.rcParams[<span class="string">'font.sans-serif'</span>] = [<span class="string">'simHei'</span>] </span><br><span class="line"></span><br><span class="line">    plt.rcParams[<span class="string">'axes.unicode_minus'</span>] = False</span><br><span class="line"></span><br><span class="line">    plt.xlabel(u<span class="string">'情感判断'</span>)</span><br><span class="line"></span><br><span class="line">    plt.ylabel(u<span class="string">'频数'</span>)</span><br><span class="line"></span><br><span class="line">    plt.xticks(range(3),labels)</span><br><span class="line"></span><br><span class="line">    plt.legend(loc=<span class="string">'upper right'</span>,)</span><br><span class="line"></span><br><span class="line">    plt.bar(range(3), values, color = <span class="string">'rgb'</span>)</span><br><span class="line"></span><br><span class="line">    plt.title(u<span class="string">'%s的微信好友签名信息情感分析'</span> % friends[0][<span class="string">'NickName'</span>])</span><br><span class="line"></span><br><span class="line">    plt.show()</span><br></pre></td></tr></table></figure></p>
+<p>通过词云，我们可以发现：</p>
+<p>在微信好友的签名信息中，出现频率相对较高的关键词有：努力、长大、美好、快乐、生活、幸福、人生、远方、时光、散步。果然我的微信好友都是温暖、正直的好青年啊！ :smile:其实，签名这个设定，从某种程度上是在反映人的一种心态，人在年轻时不免”为赋新词强说愁”，等到你真正到了这个精神境界，突然发现年轻时图样图森破，或许这就是我们不愿意让别人了解过去的原因，因为伴随着人的成长，某一种瞬间的状态简直不忍直视，QQ空间陪伴了我们这代人的整个青春，令人印象深刻的”那年今日”功能，有时让我们感到回忆的温暖，有时让我们感到岁月的萧杀，”当时只道是寻常”的物是人非，”回首向来萧瑟处”的淡定从容，”今夕复何夕”的失落惆怅……都在这一行行签名里留下深深浅浅的印记。在知乎上有关于签名的话题讨论，对此感兴趣的朋友不妨找时间看看。:smile:<br><img src="https://i.loli.net/2018/05/13/5af829d1540cd.jpeg" alt="6.jpeg"></p>
+<p>通过柱状图，我们可以发现：</p>
+<p>在微信好友的签名信息中，正面积极的情感判断约占到55.56%，中立的情感判断约占到32.10%，负面消极的情感判断约占到12.35%。</p>
+<p>这个结果和我们通过词云展示的结果基本吻合，这说明在微信好友的签名信息中，约有87.66%的签名信息，传达出来都是一种积极向上的态度。朋友圈中基本上有两类用户，第一类用户使用朋友圈记录自己的生活，第二类用户使用朋友圈输出自己的观点。显然，对于第二类用户，它并不介意别人了解它的过去，它更在乎它从始至终输出的观点是否一致。</p>
+<p>所以，不管朋友圈里别人在或晒美食、或晒旅游、或秀恩爱、或晒宝宝、或煲鸡汤等等，在我看来这都是一种生活方式，精神层次和物质层次比你高的人群，觉得你朋友圈里的内容”无趣”，这是符合人类一贯的认知方式的，在大多数情况下，反而是那些和你层次差不多的人群，对不熟悉的人或者事物妄加判断，如果你不喜欢我朋友圈里的内容，请直接屏蔽我就好，因为这样我们还可以做朋友；如果你因为喜欢A而在我这里和我说B不好，这就真的是三观不合啦。</p>
+<p>我相信没有完全兴趣匹配的两个人，即使是男女朋友或者情侣之间，总之人与人相处嘛，真诚和互相尊重是基本要求。<br><img src="https://i.loli.net/2018/05/13/5af829d150834.png" alt="7.png"></p>
+<p></p><h2 style="color:rgb(21,153,87)">好友位置</h2><br>分析好友位置，主要通过提取Province和City这两个字段。Python中的地图可视化主要通过Basemap模块，这个模块需要从国外网站下载地图信息，使用起来非常的不便。百度的ECharts在前端使用的比较多，虽然社区里提供了pyecharts项目，可我注意到因为政策的改变，目前Echarts不再支持导出地图的功能，所以地图的定制方面目前依然是一个问题，主流的技术方案是配置全国各省市的JSON数据，这里博主使用的是BDP个人版，这是一个零编程的方案，我们通过Python导出一个CSV文件，然后将其上传到BDP中，通过简单拖拽就可以制作可视化地图，简直不能再简单，这里我们仅仅展示生成CSV部分的代码：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">def analyseLocation(friends):</span><br><span class="line"></span><br><span class="line">    headers = [<span class="string">'NickName'</span>,<span class="string">'Province'</span>,<span class="string">'City'</span>]</span><br><span class="line"></span><br><span class="line">    with open(<span class="string">'location.csv'</span>,<span class="string">'w'</span>,encoding=<span class="string">'utf-8'</span>,newline=<span class="string">''</span>,) as csvFile:</span><br><span class="line"></span><br><span class="line">        writer = csv.DictWriter(csvFile, headers)</span><br><span class="line"></span><br><span class="line">        writer.writeheader()</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> friend <span class="keyword">in</span> friends[1:]:</span><br><span class="line"></span><br><span class="line">           row = &#123;&#125;</span><br><span class="line"></span><br><span class="line">           row[<span class="string">'NickName'</span>] = friend[<span class="string">'NickName'</span>]</span><br><span class="line"></span><br><span class="line">           row[<span class="string">'Province'</span>] = friend[<span class="string">'Province'</span>]</span><br><span class="line"></span><br><span class="line">           row[<span class="string">'City'</span>] = friend[<span class="string">'City'</span>]</span><br><span class="line"></span><br><span class="line">           writer.writerow(row)</span><br></pre></td></tr></table></figure><p></p>
+<p>下图是BDP中生成的微信好友地理分布图，可以发现：我的微信好友主要集中在宁夏和陕西两个省份。数字时代的神经牵动着每一个社交关系链的人，我们想要竭力去保护的那点隐私，在这些数据中一点点地折射出来。人类或许可以不断地伪装自己，可这些从数据背后抽离出来的规律和联系不会欺骗人类。</p>
+<p>数学曾经被人称为最没有用的学科，因为生活中并不需要神圣而纯粹的计算，在不同的学科知识里，经验公式永远比理论公式更为常用。可是此时此刻，你看，这世界就像一只滴滴答答转动着的时钟，每一分每一秒都是严丝合缝的。</p>
+<p><img src="https://i.loli.net/2018/05/13/5af829d141c3d.jpeg" alt="8.jpeg"></p>
+<p>写这篇文章的时候，我一直不知道该如何下笔，因为微信是一个神奇的存在，它是一个国民级别的全民APP，所以，微信的产品设计一直都是一个有趣的现象，从最初底部Tab的数目、每个Tab的名称、”发现”页面的定制、小程序入口、朋友圈入口到朋友圈评论等等一系列的设计细节，都是值得我们透过人性和心理去研究的。即使是被人们封神的”张小龙”，在面对结构最为复杂的中国用户群体的时候，他的潇洒中依旧不免充满无奈，从对朋友圈的置之不理就可以看出，这是一个怎么做都不会让人满意的功能，任何一个生态在面对巨大的用户群体的时候，功能的增减就会变成一个难题。</p>
+<p>所谓”林子大了什么鸟都有”，知乎面对的是同样的问题，营销类公众号在不断消费社会话题的同时，引导着一批又一批粉丝的价值取向，人类总渴望着别人了解自己，可人类真的了解自己吗？这篇博客是我对数据分析的又一次尝试，主要从性别、头像、签名、位置四个维度，对微信好友进行了一次简单的数据分析，主要采用图表和词云两种形式来呈现结果。</p>
+<p>总而言之一句话，”数据可视化是手段而并非目的”，重要的不是我们在这里做了这些图出来，而是从这些图里反映出来的现象，我们能够得到什么本质上的启示，我一位朋友问我怎么什么都想抓取，为什么啊，因为我不懂人类啊！</p>
+<ul>
+<li>作者：飞鸿踏雪 PayneQin</li>
+<li>原文：<a href="http://blog.csdn.net/qinyuanpei/article/details/79360703" target="_blank" rel="noopener">http://blog.csdn.net/qinyuanpei/article/details/79360703</a></li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+<div>
+  
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+
+  
+</div>
+
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/images/wechat-qcode.jpg" alt="hao14293 wechat" style="width: 200px; max-width: 100%;"/>
+    <div>交流或订阅，请扫描上方微信二维码</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="hao14293 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    hao14293
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://shiyi.today/year/05/13/55049/" title="基于Python 分析微信好友数据">http://shiyi.today/year/05/13/55049/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/year/05/11/27171/" rel="next" title="解决Linux java和javac版本不一样问题">
+                <i class="fa fa-chevron-left"></i> 解决Linux java和javac版本不一样问题
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/year/05/15/14174/" rel="prev" title="Python爬虫自动下载微信公众号图片">
+                Python爬虫自动下载微信公众号图片 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/cat.jpg"
+                alt="hao14293" />
+            
+              <p class="site-author-name" itemprop="name">hao14293</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">79</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">21</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/hao14293" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:hao14293@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://music.163.com/#/user/home?id=321799989" target="_blank" title="网易云音乐">
+                      
+                        <i class="fa fa-fw fa-globe"></i>网易云音乐</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text"> 好友性别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">好友头像</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">好友签名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">好友位置</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">hao14293</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://github.com/hao14293">Github</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Hosted by <!--&mdash--> <a class="theme-link" target="_blank" href="https://pages.coding.me/">Coding Pages</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+<span id="busuanzi_container_site_pv">
+    你是本站第 <span id="busuanzi_value_site_pv"></span> 位访问者
+</span>
+
+
+  <span class="post-meta-divider">|</span>
+
+
+ <div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共136.4k字</span>
+</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+	    
+            id: window.location.pathname, 
+            owner: 'hao14293',
+            repo: 'hao14293.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: 'ba73ac0871cac2f56573973a4d54635acb31b9b7',
+            
+                client_id: '38751d2ce76384ae7f94'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("7msrwoOKhaUobO1swwsoE2Bm-gzGzoHsz", "eJmhyYd2bnq8FahSubUEl51l");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+</body>
+</html>

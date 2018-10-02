@@ -1,0 +1,1683 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+<meta name="baidu-site-verification" content="XpsoxT0kWM" />
+<meta name="google-site-verification" content="kDX9LJIt0D08YC9gYy9Xnx66ikpunTEjoiAR_VUsPGI" />
+
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?1f9275f266e86ad480c31dd61af561fe";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117679018-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-117679018-1');
+</script>
+
+
+
+
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <script> (adsbygoogle = window.adsbygoogle || []).push({ google_ad_client: "ca-pub-4949823015495880", enable_page_level_ads: true }); </script>
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-bounce.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="hao14293@gmail.com" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="诗意，算法，前端，Python" />
+
+
+
+
+
+
+
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据结构--练习 第8章 排序">
+<meta property="og:url" content="http://shiyi.today/year/05/25/20434/index.html">
+<meta property="og:site_name" content="诗意">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-10-02T10:19:30.838Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="数据结构--练习 第8章 排序">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://shiyi.today/year/05/25/20434/"/>
+
+
+
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "2c19ab28"
+    });
+  daovoice('update');
+  </script>
+
+
+  <title>数据结构--练习 第8章 排序 | 诗意</title>
+  
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-117679018-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?1f9275f266e86ad480c31dd61af561fe";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">诗意</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description"></h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://shiyi.today/year/05/25/20434/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="hao14293">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/cat.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="诗意">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">数据结构--练习 第8章 排序</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-25T20:25:30+08:00">
+                2018-05-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Algorithm-and-Data-Structure/" itemprop="url" rel="index">
+                    <span itemprop="name">Algorithm and Data Structure</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/year/05/25/20434/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/year/05/25/20434/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/year/05/25/20434/" class="leancloud_visitors" data-flag-title="数据结构--练习 第8章 排序">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">热度&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+		<span> °C</span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  4,388
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  19
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+    
+      
+
+      
+        <hr>
+<a id="more"></a>
+<p>1．选择题</p>
+<p>（1）从未排序序列中依次取出元素与已排序序列中的元素进行比较，将其放入已排序序列的正确位置上的方法，这种排序方法称为（   ）。</p>
+<p>A．归并排序       B．冒泡排序        C．插入排序        D．选择排序 </p>
+<p>答案：C</p>
+<p>（2）从未排序序列中挑选元素，并将其依次放入已排序序列（初始时为空）的一端的方法，称为（   ）。</p>
+<p>A．归并排序       B．冒泡排序        C．插入排序        D．选择排序 </p>
+<p>答案：D</p>
+<p>（3）对n个不同的关键字由小到大进行冒泡排序，在下列（   ）情况下比较的次数最多。</p>
+<p>A．从小到大排列好的                 B．从大到小排列好的    </p>
+<p> C．元素无序                          D．元素基本有序</p>
+<p>答案：B</p>
+<p>解释：对关键字进行冒泡排序，关键字逆序时比较次数最多。</p>
+<p>（4）对n个不同的排序码进行冒泡排序，在元素无序的情况下比较的次数最多为（   ）。</p>
+<p>A．n+1            B．n               C．n-1             D．n(n-1)/2</p>
+<p>答案：D</p>
+<p>解释：比较次数最多时，第一次比较n-1次，第二次比较n-2次……最后一次比较1次，即(n-1)+(n-2)+…+1= n(n-1)/2。</p>
+<p>（5）快速排序在下列（   ）情况下最易发挥其长处。</p>
+<p>A．被排序的数据中含有多个相同排序码   </p>
+<p>B．被排序的数据已基本有序   </p>
+<p>C．被排序的数据完全无序         </p>
+<p>D．被排序的数据中的最大值和最小值相差悬殊</p>
+<p>答案：C</p>
+<p>解释：B选项是快速排序的最坏情况。</p>
+<p>（6）对n个关键字作快速排序，在最坏情况下，算法的时间复杂度是（   ）。</p>
+<p>A．O(n)           B．O(n2)           C．O(nlog2n)         D．O(n3) </p>
+<p>答案：B</p>
+<p>解释：快速排序的平均时间复杂度为O(nlog2n)，但在最坏情况下，即关键字基本排好序的情况下，时间复杂度为O(n2)。</p>
+<p>（7）若一组记录的排序码为（46, 79，56，38，40，84），则利用快速排序的方法，以第一个记录为基准得到的一次划分结果为（   ）。</p>
+<p>A．38，40，46，56，79，84              B．40，38，46，79，56，84</p>
+<p>C．40，38，46，56，79，84               D．40，38，46，84，56，79</p>
+<p>答案：C</p>
+<p>（8）下列关键字序列中，（   ）是堆。</p>
+<p>A．16，72，31，23，94，53               B．94，23，31，72，16，53 </p>
+<p>C．16，53，23，94，31，72               D．16，23，53，31，94，72</p>
+<p>答案：D</p>
+<p>解释：D选项为小根堆</p>
+<p>（9）堆是一种（   ）排序。</p>
+<p>A．插入         B．选择         C．交换         D．归并</p>
+<p>答案：B</p>
+<p>（10）堆的形状是一棵（   ）。</p>
+<p>A．二叉排序树   B．满二叉树     C．完全二叉树    D．平衡二叉树</p>
+<p>答案：C</p>
+<p>（11）若一组记录的排序码为（46，79，56，38，40，84），则利用堆排序的方法建立的初始堆为（   ）。</p>
+<p>A．79，46，56，38，40，84               B．84，79，56，38，40，46         </p>
+<p>C．84，79，56，46，40，38              D．84，56，79，40，46，38</p>
+<p>答案：B</p>
+<p>（12）下述几种排序方法中，要求内存最大的是（   ）。</p>
+<p>A．希尔排序        B．快速排序        C．归并排序       D．堆排序</p>
+<p>答案：C</p>
+<p>解释：堆排序、希尔排序的空间复杂度为O(1)，快速排序的空间复杂度为O(log2n)，归并排序的空间复杂度为O(n)。</p>
+<p>（13）下述几种排序方法中，（   ）是稳定的排序方法。</p>
+<p>A．希尔排序        B．快速排序        C．归并排序       D．堆排序</p>
+<p>答案：C</p>
+<p>解释：不稳定排序有希尔排序、简单选择排序、快速排序、堆排序；稳定排序有直接插入排序、折半插入排序、冒泡排序、归并排序、基数排序。</p>
+<p>（14）数据表中有10000个元素，如果仅要求求出其中最大的10个元素，则采用(    )算法最节省时间。</p>
+<p>A．冒泡排序        B．快速排序        C．简单选择排序   D．堆排序</p>
+<p>答案：D</p>
+<p>（15）下列排序算法中，（   ）不能保证每趟排序至少能将一个元素放到其最终的位置上。</p>
+<p>A．希尔排序        B．快速排序        C．冒泡排序       D．堆排序</p>
+<p>答案：A</p>
+<p>解释：快速排序的每趟排序能将作为枢轴的元素放到最终位置；冒泡排序的每趟排序能将最大或最小的元素放到最终位置；堆排序的每趟排序能将最大或最小的元素放到最终位置。</p>
+<p>2．应用题</p>
+<p>（1）设待排序的关键字序列为{12，2，16，30，28，10，16*，20，6，18}，试分别写出使用以下排序方法，每趟排序结束后关键字序列的状态。</p>
+<p>① 直接插入排序</p>
+<p>② 折半插入排序</p>
+<p>③ 希尔排序（增量选取5，3，1）</p>
+<p>④ 冒泡排序</p>
+<p>⑤ 快速排序</p>
+<p>⑥ 简单选择排序</p>
+<p>⑦ 堆排序</p>
+<p>⑧ 二路归并排序</p>
+<p>答案：</p>
+<p>①直接插入排序</p>
+<pre>
+[2    12]   16   30   28   10   16*   20   6    18         
+
+[2    12    16]  30   28   10   16*   20   6    18         
+
+[2    12    16   30]  28   10   16*   20   6    18         
+
+[2    12    16   28   30]  10   16*   20   6    18         
+
+[2    10    12   16   28  30]   16*   20   6    18         
+
+[2    10    12   16   16*  28   30]   20   6    18         
+
+[2    10    12   16   16*  20   28   30]   6    18         
+
+[2    6     10   12   16  16*   20   28   30]   18         
+
+[2    6     10   12   16  16*    18   20   28   30]
+
+ </pre>
+
+<p>② 折半插入排序 排序过程同①</p>
+<p>③ 希尔排序（增量选取5，3，1）</p>
+<pre>
+10   2    16   6    18   12   16*   20  30    28 （增量选取5）
+
+6    2    12   10   18   16   16*   20  30    28 （增量选取3）
+
+2    6    10   12   16   16*  18      20  28    30 （增量选取1）
+
+ </pre>
+
+<p>④ 冒泡排序</p>
+<pre>
+2    12   16    28   10   16*  20   6     18   [30]        
+
+2    12   16    10   16*  20   6    18    [28   30]        
+
+2    12   10    16   16*  6     18   [20   28   30]          
+
+2    10   12    16   6   16*    [18   20   28   30]          
+
+2    10   12    6   16   [16*    18   20   28   30]         
+
+2    10   6    12   [16   16*    18   20   28   30]        
+
+2    6   10    [12   16   16*    18   20   28   30]
+
+2    6   10    12   16   16*    18   20   28   30]       
+
+</pre> 
+
+<p>⑤ 快速排序</p>
+<pre>
+12  [6    2  10]  12  [28  30  16*  20   16  18]          
+
+6   [2]  6  [10] 12 [28  30  16*  20   16  18 ]         
+
+28  2    6   10   12 [18  16  16*  20 ]28  [30 ]       
+
+18  2   6   10  12   [16*  16] 18 [20]  28  30          
+
+16*     2   6   10  12   16* [16]   18  20   28  30
+
+左子序列递归深度为1，右子序列递归深度为3
+</pre>
+
+
+<p>⑥ 简单选择排序</p>
+<pre>
+2    [12   16   30   28   10   16*   20   6    18]          
+
+2    6    [16   30   28   10   16*   20   12   18]          
+
+2    6    10   [30   28   16   16*   20   12   18]          
+
+2    6    10   12   [28   16   16*   20   30   18]          
+
+2    6    10   12   16   [28   16*   20   30   18]          
+
+2    6    10   12   16   16*    [28  20   30   18]          
+
+2    6    10   12   16   16*   18   [20   30   28]         
+
+2    6    10   12   16   16*   18    20   [28  30]         
+
+2    6    10   12   16   16*    18   20   28   [30]
+
+ </pre>
+
+
+
+<p>⑧ 二路归并排序</p>
+<p><pre><br>2 12    16 30    10 28    16 * 20    6 18                                                </pre></p>
+<p>2 12 16 30        10 16* 20 28      6 18                                               </p>
+<p>2 10 12 16 16* 20 28 30   6 18                                               </p>
+<p>2 6 10 12 16 16* 18 20 28 30</p>
+<p><br>（2）给出如下关键字序列｛321，156，57，46，28，7，331，33，34，63｝，试按链式基数排序方法，列出每一趟分配和收集的过程。</p>
+<p>答案：</p>
+<p>按最低位优先法  →321→156→57→46→28→7→331→33→34→63</p>
+<pre><code>分配 [0] [1] [2] [3] [4] [5] [6] [7] [8] [9]
+
+         321     33   34     156  57  28
+
+         331     63           46   7
+</code></pre><p>收集  →321→331→33→63→34→156→46→57→7→28</p>
+<p>（3）对输入文件（101，51，19，61，3，71，31，17，19，100，55，20，9，30，50，6，90）；当k=6时，使用置换-选择算法，写出建立的初始败者树及生成的初始归并段。</p>
+<p>答案：</p>
+<p>初始归并段：R1:3,19,31,51,61,71,100,101</p>
+<pre><code>R2:9,17,19,20,30,50,55,90
+</code></pre><p>  R3:6</p>
+<p>3．算法设计题</p>
+<p>（1）试以单链表为存储结构，实现简单选择排序算法。</p>
+<p> [算法描述]：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br></pre></td><td class="code"><pre><span class="line">voidLinkedListSelectSort(LinkedList head)</span><br><span class="line"></span><br><span class="line">//本算法一趟找出一个关键字最小的结点，其数据和当前结点进行交换;若要交换指针，则须记下</span><br><span class="line"></span><br><span class="line">//当前结点和最小结点的前驱指针</span><br><span class="line"></span><br><span class="line">p=head-&gt;next;</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span>(p!=null)</span><br><span class="line"></span><br><span class="line">    &#123;q=p-&gt;next;  r=p;    //设r是指向关键字最小的结点的指针</span><br><span class="line"></span><br><span class="line">     <span class="keyword">while</span> (q!=null)</span><br><span class="line"></span><br><span class="line">      &#123;<span class="keyword">if</span>(q-&gt;data&lt;r-&gt;data) r=q;</span><br><span class="line"></span><br><span class="line"> q:=q-&gt;next;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">     <span class="keyword">if</span>(r!=p)  r-&gt;data&lt;--&gt;p-&gt;data;</span><br><span class="line"></span><br><span class="line">     p=p-&gt;next;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">``` </span><br><span class="line"></span><br><span class="line">（2）有n个记录存储在带头结点的双向链表中，现用双向冒泡排序法对其按上升序进行排序，请写出这种排序的算法。（注：双向冒泡排序即相邻两趟排序向相反方向冒泡）。   </span><br><span class="line"></span><br><span class="line">[算法描述]：</span><br><span class="line">```sh</span><br><span class="line">typedef struct node</span><br><span class="line"></span><br><span class="line">       &#123; ElemType data;</span><br><span class="line"></span><br><span class="line">         struct node *prior,*next;</span><br><span class="line"></span><br><span class="line">       &#125;node，*DLinkedList;</span><br><span class="line"></span><br><span class="line">void  TwoWayBubbleSort(DLinkedList la)</span><br><span class="line"></span><br><span class="line">//对存储在带头结点的双向链表la中的元素进行双向起泡排序。</span><br><span class="line"></span><br><span class="line">&#123;intexchange=1;  //设标记 </span><br><span class="line"></span><br><span class="line"> DLinkedList p,temp,tail;</span><br><span class="line"></span><br><span class="line"> head=la         //双向链表头，算法过程中是向下起泡的开始结点</span><br><span class="line"></span><br><span class="line"> tail=null;      //双向链表尾，算法过程中是向上起泡的开始结点</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> (exchange)</span><br><span class="line"></span><br><span class="line">&#123;p=head-&gt;next;    //p是工作指针，指向当前结点</span><br><span class="line"></span><br><span class="line">exchange=0;      //假定本趟无交换 </span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> (p-&gt;next!=tail)  // 向下（右）起泡，一趟有一最大元素沉底</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (p-&gt;data&gt;p-&gt;next-&gt;data) //交换两结点指针，涉及6条链</span><br><span class="line"></span><br><span class="line">&#123;temp=p-&gt;next; exchange=1;//有交换</span><br><span class="line"></span><br><span class="line">p-&gt;next=temp-&gt;next;temp-&gt;next-&gt;prior=p //先将结点从链表上摘下</span><br><span class="line"></span><br><span class="line">temp-&gt;next=p; p-&gt;prior-&gt;next=temp;     //将temp插到p结点前</span><br><span class="line"></span><br><span class="line">temp-&gt;prior=p-&gt;prior; p-&gt;prior=temp;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">          <span class="keyword">else</span> p=p-&gt;next; //无交换，指针后移</span><br><span class="line"></span><br><span class="line">          tail=p; //准备向上起泡</span><br><span class="line"></span><br><span class="line">          p=tail-&gt;prior;</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> (exchange &amp;&amp; p-&gt;prior!=head)  </span><br><span class="line"></span><br><span class="line">//向上（左）起泡，一趟有一最小元素冒出</span><br><span class="line"></span><br><span class="line">     <span class="keyword">if</span> (p-&gt;data&lt;p-&gt;prior-&gt;data)       //交换两结点指针，涉及6条链</span><br><span class="line"></span><br><span class="line">&#123;temp=p-&gt;prior; exchange=1;     //有交换</span><br><span class="line"></span><br><span class="line">p-&gt;prior=temp-&gt;prior;temp-&gt;prior-&gt;next=p； </span><br><span class="line"></span><br><span class="line">//先将temp结点从链表上摘下</span><br><span class="line"></span><br><span class="line">temp-&gt;prior=p; p-&gt;next-&gt;prior=temp; //将temp插到p结点后（右）</span><br><span class="line"></span><br><span class="line">temp-&gt;next=p-&gt;next; p-&gt;next=temp;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">else</span> p=p-&gt;prior;  //无交换，指针前移</span><br><span class="line"></span><br><span class="line">          head=p;             //准备向下起泡</span><br><span class="line"></span><br><span class="line"> &#125;//<span class="keyword">while</span> (exchange)</span><br><span class="line"></span><br><span class="line">&#125; //算法结束</span><br></pre></td></tr></table></figure></p>
+<p>（3）设有顺序放置的n个桶，每个桶中装有一粒砾石，每粒砾石的颜色是红，白，蓝之一。要求重新安排这些砾石，使得所有红色砾石在前，所有白色砾石居中，所有蓝色砾石居后，重新安排时对每粒砾石的颜色只能看一次，并且只允许交换操作来调整砾石的位置。</p>
+<p>[题目分析]利用快速排序思想解决。由于要求“对每粒砾石的颜色只能看一次”，设3个指针i，j和k，分别指向红色、白色砾石的后一位置和待处理的当前元素。从k=n开始，从右向左搜索，若该元素是兰色，则元素不动，指针左移（即k-1）；若当前元素是红色砾石，分i&gt;=j（这时尚没有白色砾石）和i&lt;j两种情况。前一情况执行第i个元素和第k个元素交换，之后i+1；后一情况，i所指的元素已处理过（白色），j所指的元素尚未处理，应先将i和j所指元素交换，再将i和k所指元素交换。对当前元素是白色砾石的情况，也可类似处理。</p>
+<p>为方便处理，将三种砾石的颜色用整数1、2和3表示。</p>
+<p>[算法描述]：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">void QkSort(rectype r[],int n) &#123;</span><br><span class="line"></span><br><span class="line">// r为含有n个元素的线性表，元素是具有红、白和兰色的砾石，用顺序存储结构存储，</span><br><span class="line"></span><br><span class="line">//本算法对其排序，使所有红色砾石在前，白色居中，兰色在最后。</span><br><span class="line"></span><br><span class="line">int i=1,j=1,k=n,temp;</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> (k!=j)&#123;</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> (r[k].key==3) k--;//当前元素是兰色砾石，指针左移 </span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (r[k].key==1)        //当前元素是红色砾石</span><br><span class="line"></span><br><span class="line">      <span class="keyword">if</span> (i&gt;=j)&#123;temp=r[k];r[k]=r[i];r[i]=temp; i++;&#125;</span><br><span class="line"></span><br><span class="line">//左侧只有红色砾石，交换r[k]和r[i]</span><br><span class="line"></span><br><span class="line">      <span class="keyword">else</span>     &#123;temp=r[j];r[j]=r[i];r[i]=temp; j++;  </span><br><span class="line"></span><br><span class="line">  //左侧已有红色和白色砾石，先交换白色砾石到位 </span><br><span class="line"></span><br><span class="line">temp=r[k];r[k]=r[i];r[i]=temp; i++;</span><br><span class="line"></span><br><span class="line">//白色砾石（i所指）和待定砾石（j所指）</span><br><span class="line"></span><br><span class="line">&#125;   //再交换r[k]和r[i]，使红色砾石入位。</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (r[k].key==2)</span><br><span class="line"></span><br><span class="line">      <span class="keyword">if</span> (i&lt;=j) &#123; temp=r[k];r[k]=r[j];r[j]=temp; j++;&#125;</span><br><span class="line"></span><br><span class="line">//左侧已有白色砾石，交换r[k]和r[j]</span><br><span class="line"></span><br><span class="line">      <span class="keyword">else</span>      &#123; temp=r[k];r[k]=r[i];r[i]=temp; j=i+1;&#125;</span><br><span class="line"></span><br><span class="line">//i、j分别指向红、白色砾石的后一位置</span><br><span class="line"></span><br><span class="line">  &#125;//<span class="keyword">while</span></span><br><span class="line"></span><br><span class="line"> <span class="keyword">if</span> (r[k]==2) j++;   /*处理最后一粒砾石</span><br><span class="line"></span><br><span class="line"> <span class="keyword">else</span> <span class="keyword">if</span> (r[k]==1) &#123; temp=r[j];r[j]=r[i];r[i]=temp; i++; j++; &#125;</span><br><span class="line"></span><br><span class="line"> //最后红、白、兰色砾石的个数分别为: i-1;j-i;n-j+1</span><br><span class="line"></span><br><span class="line">&#125;//结束QkSor算法</span><br></pre></td></tr></table></figure></p>
+<p>[算法讨论]若将j（上面指向白色）看作工作指针，将r[1..j-1]作为红色，r[j..k-1]为白色，r[k..n]为兰色。从j=1开始查看，若r[j]为白色，则j=j+1；若r[j]为红色，则交换r[j]与r[i]，且j=j+1，i=i+1；若r[j]为兰色，则交换r[j]与r[k];k=k-1。算法进行到j&gt;k为止。</p>
+<p>算法片段如下：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">inti=1,j=1,k=n;</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span>(j&lt;=k)</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (r[j]==1)  //当前元素是红色</span><br><span class="line"></span><br><span class="line">     &#123;temp=r[i]; r[i]=r[j]; r[j]=temp; i++;j++; &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">else</span> <span class="keyword">if</span> (r[j]==2) j++;  //当前元素是白色</span><br><span class="line"></span><br><span class="line"><span class="keyword">else</span>               //(r[j]==3  当前元素是兰色</span><br><span class="line"></span><br><span class="line">         &#123;temp=r[j]; r[j]=r[k]; r[k]=temp; k--; &#125;</span><br></pre></td></tr></table></figure></p>
+<p>对比两种算法，可以看出，正确选择变量（指针）的重要性。</p>
+<p>（4）编写算法，对n个关键字取整数值的记录序列进行整理，以使所有关键字为负值的记录排在关键字为非负值的记录之前，要求：</p>
+<p>① 采用顺序存储结构，至多使用一个记录的辅助存储空间；</p>
+<p>② 算法的时间复杂度为O(n)。</p>
+<p> [算法描述]<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line">void  process (int A[n])&#123;</span><br><span class="line"></span><br><span class="line">low = 0;</span><br><span class="line"></span><br><span class="line">high = n-1;</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> ( low&lt;high )&#123;</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> (low&lt;high &amp;&amp; A[low]&lt;0)</span><br><span class="line"></span><br><span class="line">low++;</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> (low&lt;high &amp;&amp; A[high]&gt;0)</span><br><span class="line"></span><br><span class="line">high++;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (low&lt;high)&#123;   </span><br><span class="line"></span><br><span class="line">x=A[low];</span><br><span class="line"></span><br><span class="line">A[low]=A[high];</span><br><span class="line"></span><br><span class="line">A[high]=x;</span><br><span class="line"></span><br><span class="line">low++;</span><br><span class="line"></span><br><span class="line">high--;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">  <span class="built_in">return</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">``` </span><br><span class="line"></span><br><span class="line">（5）借助于快速排序的算法思想，在一组无序的记录中查找给定关键字值等于key的记录。设此组记录存放于数组r[l..n]中。若查找成功，则输出该记录在r数组中的位置及其值，否则显示“not find”信息。请简要说明算法思想并编写算法。</span><br><span class="line"></span><br><span class="line">[题目分析]把待查记录看作枢轴，先由后向前依次比较，若小于枢轴，则从前向后，直到查找成功返回其位置或失败返回0为止。</span><br><span class="line"></span><br><span class="line">[算法描述]</span><br><span class="line">```sh</span><br><span class="line">int index (RecType R[],int l,h,datatype key)</span><br><span class="line"></span><br><span class="line">&#123;int i=l,j=h;</span><br><span class="line"></span><br><span class="line">     <span class="keyword">while</span> (i&lt;j)</span><br><span class="line"></span><br><span class="line">        &#123; <span class="keyword">while</span> (i&lt;=j &amp;&amp; R[j].key&gt;key) j--;</span><br><span class="line"></span><br><span class="line">          <span class="keyword">if</span> (R[j].key==key) <span class="built_in">return</span>  j;</span><br><span class="line"></span><br><span class="line">          <span class="keyword">while</span> (i&lt;=j &amp;&amp; R[i].key&lt;key) i++;</span><br><span class="line"></span><br><span class="line">          <span class="keyword">if</span> (R[i].key==key) <span class="built_in">return</span>  i;</span><br><span class="line"></span><br><span class="line">         &#125;</span><br><span class="line"></span><br><span class="line">        cout&lt;&lt;“Not find”; <span class="built_in">return</span>  0;</span><br><span class="line"></span><br><span class="line">     &#125;//index</span><br></pre></td></tr></table></figure></p>
+<p>（6）有一种简单的排序算法，叫做计数排序。这种排序算法对一个待排序的表进行排序，并将排序结果存放到另一个新的表中。必须注意的是，表中所有待排序的关键字互不相同，计数排序算法针对表中的每个记录，扫描待排序的表一趟，统计表中有多少个记录的关键字比该记录的关键字小。假设针对某一个记录，统计出的计数值为c，那么，这个记录在新的有序表中的合适的存放位置即为c。</p>
+<p> ① 给出适用于计数排序的顺序表定义；</p>
+<p> ② 编写实现计数排序的算法；</p>
+<p> ③ 对于有n个记录的表，关键字比较次数是多少？</p>
+<p> ④ 与简单选择排序相比较，这种方法是否更好？为什么？</p>
+<p>[算法描述]<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">① typedef struct</span><br><span class="line"></span><br><span class="line">&#123;int key;</span><br><span class="line"></span><br><span class="line">datatype info</span><br><span class="line"></span><br><span class="line">&#125;RecType</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">②void CountSort(RecType a[],b[],int n) </span><br><span class="line"></span><br><span class="line">//计数排序算法，将a中记录排序放入b中</span><br><span class="line"></span><br><span class="line">&#123;<span class="keyword">for</span>(i=0;i&lt;n;i++)//对每一个元素</span><br><span class="line"></span><br><span class="line">&#123;<span class="keyword">for</span>(j=0,cnt=0;j&lt;n;j++)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(a[j].key&lt;a[i].key) cnt++;//统计关键字比它小的元素个数</span><br><span class="line"></span><br><span class="line">b[cnt]=a[i];</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;//Count_Sort</span><br></pre></td></tr></table></figure>
+<p>③ 对于有n个记录的表，关键码比较n2次。</p>
+<p>④ 简单选择排序算法比本算法好。简单选择排序比较次数是n(n-1)/2,且只用一个交换记录的空间；而这种方法比较次数是n2，且需要另一数组空间。</p>
+<p>[算法讨论]因题目要求“针对表中的每个记录，扫描待排序的表一趟”，所以比较次数是n2次。若限制“对任意两个记录之间应该只进行一次比较”，则可把以上算法中的比较语句改为：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(i=0;i&lt;n;i++) a[i].count=0;//各元素再增加一个计数域，初始化为0</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span>(i=0;i&lt;n;i++)</span><br><span class="line"></span><br><span class="line">   <span class="keyword">for</span>(j=i+1;j&lt;n;j++)</span><br><span class="line"></span><br><span class="line"> <span class="keyword">if</span>(a[i].key&lt;a[j].key) a[j].count++; <span class="keyword">else</span> a[i].count++;</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    
+    
+    
+
+<div>
+  
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+
+  
+</div>
+
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/images/wechat-qcode.jpg" alt="hao14293 wechat" style="width: 200px; max-width: 100%;"/>
+    <div>交流或订阅，请扫描上方微信二维码</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="hao14293 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    hao14293
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://shiyi.today/year/05/25/20434/" title="数据结构--练习 第8章 排序">http://shiyi.today/year/05/25/20434/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/year/05/25/2101/" rel="next" title="数据结构--练习 第7章 查找">
+                <i class="fa fa-chevron-left"></i> 数据结构--练习 第7章 查找
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/year/05/26/24846/" rel="prev" title="数据结构--栈">
+                数据结构--栈 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/cat.jpg"
+                alt="hao14293" />
+            
+              <p class="site-author-name" itemprop="name">hao14293</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">79</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">21</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/hao14293" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:hao14293@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://music.163.com/#/user/home?id=321799989" target="_blank" title="网易云音乐">
+                      
+                        <i class="fa fa-fw fa-globe"></i>网易云音乐</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">hao14293</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://github.com/hao14293">Github</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Hosted by <!--&mdash--> <a class="theme-link" target="_blank" href="https://pages.coding.me/">Coding Pages</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+<span id="busuanzi_container_site_pv">
+    你是本站第 <span id="busuanzi_value_site_pv"></span> 位访问者
+</span>
+
+
+  <span class="post-meta-divider">|</span>
+
+
+ <div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共136.4k字</span>
+</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+	    
+            id: window.location.pathname, 
+            owner: 'hao14293',
+            repo: 'hao14293.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: 'ba73ac0871cac2f56573973a4d54635acb31b9b7',
+            
+                client_id: '38751d2ce76384ae7f94'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("7msrwoOKhaUobO1swwsoE2Bm-gzGzoHsz", "eJmhyYd2bnq8FahSubUEl51l");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+</body>
+</html>

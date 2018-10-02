@@ -1,0 +1,1581 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+<meta name="baidu-site-verification" content="XpsoxT0kWM" />
+<meta name="google-site-verification" content="kDX9LJIt0D08YC9gYy9Xnx66ikpunTEjoiAR_VUsPGI" />
+
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?1f9275f266e86ad480c31dd61af561fe";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117679018-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-117679018-1');
+</script>
+
+
+
+
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <script> (adsbygoogle = window.adsbygoogle || []).push({ google_ad_client: "ca-pub-4949823015495880", enable_page_level_ads: true }); </script>
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-bounce.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="hao14293@gmail.com" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Jinja2," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Flask包含强大的Jinja模板语言，学习Flask之前要先学习一下jinja。在Jinja2之前，已经有类似的模板语言，如JSP，Django。这些语言实际上包含了变量以及一些编程逻辑，当它们被呈现为HTML时，它们会被实际值取代。变量和/或逻辑放置在标签或分隔符之间。例如，Jinja模板% … %用于表达式或逻辑（比如for循环），同时 … 用于向用户输出表达式或变量的结果。后者标记在呈现">
+<meta name="keywords" content="Jinja2">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Jinja2 简明教程">
+<meta property="og:url" content="http://shiyi.today/year/03/18/22581/index.html">
+<meta property="og:site_name" content="诗意">
+<meta property="og:description" content="Flask包含强大的Jinja模板语言，学习Flask之前要先学习一下jinja。在Jinja2之前，已经有类似的模板语言，如JSP，Django。这些语言实际上包含了变量以及一些编程逻辑，当它们被呈现为HTML时，它们会被实际值取代。变量和/或逻辑放置在标签或分隔符之间。例如，Jinja模板% … %用于表达式或逻辑（比如for循环），同时 … 用于向用户输出表达式或变量的结果。后者标记在呈现">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://i.loli.net/2018/03/18/5aade859652c8.png">
+<meta property="og:image" content="https://i.loli.net/2018/03/18/5aadf23ebc966.png">
+<meta property="og:image" content="https://i.loli.net/2018/03/18/5aadf70d7c835.png">
+<meta property="og:image" content="https://i.loli.net/2018/03/18/5aadf97e9722a.png">
+<meta property="og:image" content="https://i.loli.net/2018/03/18/5aadfad1e9d8c.png">
+<meta property="og:image" content="https://i.loli.net/2018/03/18/5aadfb8b1f4c0.png">
+<meta property="og:image" content="https://i.loli.net/2018/03/18/5aadfce7ba572.png">
+<meta property="og:image" content="https://i.loli.net/2018/03/18/5aae031f3a2ef.png">
+<meta property="og:image" content="https://i.loli.net/2018/03/18/5aae065fef58e.png">
+<meta property="og:updated_time" content="2018-10-02T10:19:30.834Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Jinja2 简明教程">
+<meta name="twitter:description" content="Flask包含强大的Jinja模板语言，学习Flask之前要先学习一下jinja。在Jinja2之前，已经有类似的模板语言，如JSP，Django。这些语言实际上包含了变量以及一些编程逻辑，当它们被呈现为HTML时，它们会被实际值取代。变量和/或逻辑放置在标签或分隔符之间。例如，Jinja模板% … %用于表达式或逻辑（比如for循环），同时 … 用于向用户输出表达式或变量的结果。后者标记在呈现">
+<meta name="twitter:image" content="https://i.loli.net/2018/03/18/5aade859652c8.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://shiyi.today/year/03/18/22581/"/>
+
+
+
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "2c19ab28"
+    });
+  daovoice('update');
+  </script>
+
+
+  <title>Jinja2 简明教程 | 诗意</title>
+  
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-117679018-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?1f9275f266e86ad480c31dd61af561fe";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">诗意</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description"></h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://shiyi.today/year/03/18/22581/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="hao14293">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/cat.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="诗意">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">Jinja2 简明教程</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-18T11:13:33+08:00">
+                2018-03-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/web/" itemprop="url" rel="index">
+                    <span itemprop="name">web</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/year/03/18/22581/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/year/03/18/22581/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/year/03/18/22581/" class="leancloud_visitors" data-flag-title="Jinja2 简明教程">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">热度&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+		<span> °C</span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  242
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  2
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+    
+      
+
+      
+        <p><img src="https://i.loli.net/2018/03/18/5aade859652c8.png" alt="1.png"></p>
+<p>Flask包含强大的Jinja模板语言，学习Flask之前要先学习一下jinja。<br><br>在Jinja2之前，已经有类似的模板语言，如JSP，Django。这些语言实际上包含了变量以及一些编程逻辑，当它们被呈现为HTML时，它们会被实际值取代。<br><br>变量和/或逻辑放置在标签或分隔符之间。例如，Jinja模板<code>% … %</code>用于表达式或逻辑（比如for循环），同时<code> … </code>用于向用户输出表达式或变量的结果。后者标记在呈现时被替换为一个或多个值，并且最终由用户看到。<br></p>
+<blockquote>
+<p>Jinja模板只是.html文件。按照惯例，它们位于Flask项目的”/templates”目录中。如果你熟悉<a href="https://docs.python.org/2/library/stdtypes.html#string-formatting-operations" target="_blank" rel="noopener">字符串格式化或插值</a>，模板语言遵循相似的逻辑类型-只是整个HTML页面的规模。<a id="more"></a></p>
+</blockquote>
+<h4 id="简单示例"><a href="#简单示例" class="headerlink" title="简单示例"></a>简单示例</h4><p>运行这些示例(<code>pip insatll jinja2</code>)之前，确保安装了Jinja。<br><br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Python</span><br><span class="line">&gt;&gt;&gt; from jinja2 import Template</span><br><span class="line">&gt;&gt;&gt; t = Template(<span class="string">"Hello &#123;&#123; something &#125;&#125;!"</span>)</span><br><span class="line">&gt;&gt;&gt; t.render(something = <span class="string">"world"</span>)</span><br><span class="line">u<span class="string">'Hello world!'</span></span><br><span class="line">&gt;&gt;&gt; t = Template(<span class="string">"My favorite numbers: &#123;% for n in range(1,10) %&#125; &#123;&#123; n &#125;&#125;"</span> <span class="string">"&#123;% endfor %&#125;"</span>)</span><br><span class="line">&gt;&gt;&gt; t.render()</span><br><span class="line">u<span class="string">'My favorite numbers: 1 2 3 4 5 6 7 8 9'</span></span><br></pre></td></tr></table></figure></p>
+<p>注意呈现给用户的实际输出如何落在标签内。<br></p>
+<h4 id="Flask-示例"><a href="#Flask-示例" class="headerlink" title="Flask 示例"></a>Flask 示例</h4><p>创建以下项目结构：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">├── requirements.txt</span><br><span class="line">├── run.py</span><br><span class="line">└── templates</span><br></pre></td></tr></table></figure></p>
+<p>激活 virtualenv 安装 flask<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ pip install flask</span><br></pre></td></tr></table></figure></p>
+<p>添加下列代码到<code>run.py</code><br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">from flask import Flask, render_template</span><br><span class="line">app = Flask(__name__)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">@app.route(<span class="string">"/"</span>)</span><br><span class="line">def template_test():</span><br><span class="line">    <span class="built_in">return</span> render_template(<span class="string">'template.html'</span>, my_string=<span class="string">"Wheeeee!"</span>, my_list=[0,1,2,3,4,5])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    app.run(debug=True)</span><br></pre></td></tr></table></figure></p>
+<p>这里我们建立路由<code>/</code>,通过<code>render_template()</code>函数将 template.html 传递到 <code>/</code>地址下。这个函数必须有一个模板名字，你也可以通过关键字参数将值传到模板中。如本例中的<code>my_string</code>和<code>my_list</code>。<br><br>创建下列模板：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;title&gt;Flask Template Example&lt;/title&gt;</span><br><span class="line">    &lt;meta name=<span class="string">"viewport"</span> content=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span><br><span class="line">    &lt;link href=<span class="string">"http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"</span> rel=<span class="string">"stylesheet"</span> media=<span class="string">"screen"</span>&gt;</span><br><span class="line">    &lt;style <span class="built_in">type</span>=<span class="string">"text/css"</span>&gt;</span><br><span class="line">      .container &#123;</span><br><span class="line">        max-width: 500px;</span><br><span class="line">        padding-top: 100px;</span><br><span class="line">      &#125;</span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;div class=<span class="string">"container"</span>&gt;</span><br><span class="line">      &lt;p&gt;My string: &#123;&#123;my_string&#125;&#125;&lt;/p&gt;</span><br><span class="line">      &lt;p&gt;Value from the list: &#123;&#123;my_list[3]&#125;&#125;&lt;/p&gt;</span><br><span class="line">      &lt;p&gt;Loop through the list:&lt;/p&gt;</span><br><span class="line">      &lt;ul&gt;</span><br><span class="line">        &#123;% <span class="keyword">for</span> n <span class="keyword">in</span> my_list %&#125;</span><br><span class="line">        &lt;li&gt;&#123;&#123;n&#125;&#125;&lt;/li&gt;</span><br><span class="line">        &#123;% endfor %&#125;</span><br><span class="line">      &lt;/ul&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;script src=<span class="string">"http://code.jquery.com/jquery-1.10.2.min.js"</span>&gt;&lt;/script&gt;</span><br><span class="line">    &lt;script src=<span class="string">"http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"</span>&gt;&lt;/script&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure></p>
+<p>在templates文件夹中保存为<code>template.html</code>。注意这些模板标签，你能猜到会输出什么吗？<br><br>运行后浏览器打开<code><a href="http://127.0.0.1:5000/" target="_blank" rel="noopener">http://127.0.0.1:5000/</a> </code>，你会看到：<br><img src="https://i.loli.net/2018/03/18/5aadf23ebc966.png" alt="2.png"></p>
+<blockquote>
+<p>值得注意的是，Jinja只支持一些控制结构 - if语句和for循环是两个主要结构。语法与Python类似，不同之处在于不需要冒号，并且块的终止是使用endifor endfor而不是由空白完成的。您还可以完成控制器或视图中的逻辑，然后使用模板标记将每个值传递给模板。但是，在模板本身内执行这样的逻辑要容易得多。</p>
+</blockquote>
+<h4 id="模板继承"><a href="#模板继承" class="headerlink" title="模板继承"></a>模板继承</h4><p>模板通常利用继承，其中包含一个基模板，用于定义所有后续子模板的基本结构。使用<code>% extends %</code> 和 <code>% block %</code>实现继承。<br><br>这个用例很简单：<em>随着应用程序的增长，并且您继续添加新模板，您需要保持常见代码（如HTML导航栏，Javascript库，CSS样式表等）同步，这是很多工作。</em>使用继承，我们可以将这些常见的部分移动到父/基模板，以便我们可以创建或编辑这样的代码，并且所有子模板都将有该代码。<br></p>
+<blockquote>
+<p>您应该始终在您的基本模板中添加尽可能多的循环代码，以节省您未来的时间，这将远远超过最初的投资时间。</p>
+</blockquote>
+<p>让我们将继承添加到我们的示例中。<br><br>创建基模板：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;title&gt;Flask Template Example&lt;/title&gt;</span><br><span class="line">    &lt;meta name=<span class="string">"viewport"</span> content=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span><br><span class="line">    &lt;link href=<span class="string">"http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"</span> rel=<span class="string">"stylesheet"</span> media=<span class="string">"screen"</span>&gt;</span><br><span class="line">    &lt;style <span class="built_in">type</span>=<span class="string">"text/css"</span>&gt;</span><br><span class="line">      .container &#123;</span><br><span class="line">        max-width: 500px;</span><br><span class="line">        padding-top: 100px;</span><br><span class="line">      &#125;</span><br><span class="line">      h2 &#123;color: red;&#125;</span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;div class=<span class="string">"container"</span>&gt;</span><br><span class="line">      &lt;h2&gt;This is part of my base template&lt;/h2&gt;</span><br><span class="line">      &lt;br&gt;</span><br><span class="line">      &#123;% block content %&#125;&#123;% endblock %&#125;</span><br><span class="line">      &lt;br&gt;</span><br><span class="line">      &lt;h2&gt;This is part of my base template&lt;/h2&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;script src=<span class="string">"http://code.jquery.com/jquery-1.10.2.min.js"</span>&gt;&lt;/script&gt;</span><br><span class="line">    &lt;script src=<span class="string">"http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"</span>&gt;&lt;/script&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure></p>
+<p>保存为<code>layout.html</code>.<br><br>你注意到<code>% block %</code>标签了吗？这定义了子模板可以填充的块（或区域）。此外，这只是通知模板引擎子模板可能会覆盖模板中的这个块。<br></p>
+<blockquote>
+<p>可以将这些视为占位符，由来自子模板的代码填充。</p>
+</blockquote>
+<p>接下来<br><br>更新 <code>template.html</code>:<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&#123;% extends <span class="string">"layout.html"</span> %&#125;</span><br><span class="line">&#123;% block content %&#125;</span><br><span class="line">  &lt;h3&gt; This is the start of my child template&lt;/h3&gt;</span><br><span class="line">  &lt;br&gt;</span><br><span class="line">  &lt;p&gt;My string: &#123;&#123;my_string&#125;&#125;&lt;/p&gt;</span><br><span class="line">  &lt;p&gt;Value from the list: &#123;&#123;my_list[3]&#125;&#125;&lt;/p&gt;</span><br><span class="line">  &lt;p&gt;Loop through the list:&lt;/p&gt;</span><br><span class="line">  &lt;ul&gt;</span><br><span class="line">    &#123;% <span class="keyword">for</span> n <span class="keyword">in</span> my_list %&#125;</span><br><span class="line">    &lt;li&gt;&#123;&#123;n&#125;&#125;&lt;/li&gt;</span><br><span class="line">    &#123;% endfor %&#125;</span><br><span class="line">  &lt;/ul&gt;</span><br><span class="line">  &lt;h3&gt; This is the end of my child template&lt;/h3&gt;</span><br><span class="line">&#123;% endblock %&#125;</span><br></pre></td></tr></table></figure></p>
+<p>so,<code>% extends %</code>告诉模板引擎该模板“扩展”了另一个模板<code>layout.html</code>。换句话说，这建立了模板之间的链接。<br><br>运行。你会看到<br><img src="https://i.loli.net/2018/03/18/5aadf70d7c835.png" alt="1.png"><br>一个常见的用例是添加导航栏。<br><br>添加以下代码到基模板<code>layout.html</code>,紧跟在开始<body>标签后:<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">&lt;nav class=<span class="string">"navbar navbar-inverse"</span> role=<span class="string">"navigation"</span>&gt;</span><br><span class="line">  &lt;div class=<span class="string">"container-fluid"</span>&gt;</span><br><span class="line">    &lt;div class=<span class="string">"navbar-header"</span>&gt;</span><br><span class="line">      &lt;button <span class="built_in">type</span>=<span class="string">"button"</span> class=<span class="string">"navbar-toggle"</span> data-toggle=<span class="string">"collapse"</span> data-target=<span class="string">"#bs-example-navbar-collapse-1"</span>&gt;</span><br><span class="line">        &lt;span class=<span class="string">"sr-only"</span>&gt;Toggle navigation&lt;/span&gt;</span><br><span class="line">        &lt;span class=<span class="string">"icon-bar"</span>&gt;&lt;/span&gt;</span><br><span class="line">        &lt;span class=<span class="string">"icon-bar"</span>&gt;&lt;/span&gt;</span><br><span class="line">        &lt;span class=<span class="string">"icon-bar"</span>&gt;&lt;/span&gt;</span><br><span class="line">      &lt;/button&gt;</span><br><span class="line">      &lt;a class=<span class="string">"navbar-brand"</span> href=<span class="string">"/"</span>&gt;Jinja!&lt;/a&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">    &lt;div class=<span class="string">"collapse navbar-collapse"</span> id=<span class="string">"bs-example-navbar-collapse-1"</span>&gt;</span><br><span class="line">      &lt;ul class=<span class="string">"nav navbar-nav"</span>&gt;</span><br><span class="line">        &lt;li class=<span class="string">"active"</span>&gt;&lt;a href=<span class="string">"#"</span>&gt;Link&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;&lt;a href=<span class="string">"#"</span>&gt;Link&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">      &lt;/ul&gt;</span><br><span class="line">      &lt;form class=<span class="string">"navbar-form navbar-left"</span> role=<span class="string">"search"</span>&gt;</span><br><span class="line">        &lt;div class=<span class="string">"form-group"</span>&gt;</span><br><span class="line">          &lt;input <span class="built_in">type</span>=<span class="string">"text"</span> class=<span class="string">"form-control"</span> placeholder=<span class="string">"Search"</span>&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">        &lt;button <span class="built_in">type</span>=<span class="string">"submit"</span> class=<span class="string">"btn btn-default"</span>&gt;Submit&lt;/button&gt;</span><br><span class="line">      &lt;/form&gt;</span><br><span class="line">      &lt;ul class=<span class="string">"nav navbar-nav navbar-right"</span>&gt;</span><br><span class="line">        &lt;li&gt;&lt;a href=<span class="string">"#"</span>&gt;Link&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">        &lt;li class=<span class="string">"dropdown"</span>&gt;</span><br><span class="line">          &lt;a href=<span class="string">"#"</span> class=<span class="string">"dropdown-toggle"</span> data-toggle=<span class="string">"dropdown"</span>&gt;Dropdown &lt;b class=<span class="string">"caret"</span>&gt;&lt;/b&gt;&lt;/a&gt;</span><br><span class="line">          &lt;ul class=<span class="string">"dropdown-menu"</span>&gt;</span><br><span class="line">            &lt;li&gt;&lt;a href=<span class="string">"#"</span>&gt;Action&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">            &lt;li&gt;&lt;a href=<span class="string">"#"</span>&gt;Another action&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">            &lt;li&gt;&lt;a href=<span class="string">"#"</span>&gt;Something <span class="keyword">else</span> here&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">            &lt;li class=<span class="string">"divider"</span>&gt;&lt;/li&gt;</span><br><span class="line">            &lt;li&gt;&lt;a href=<span class="string">"#"</span>&gt;Separated link&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">          &lt;/ul&gt;</span><br><span class="line">        &lt;/li&gt;</span><br><span class="line">      &lt;/ul&gt;</span><br><span class="line">    &lt;/div&gt;&lt;!-- /.navbar-collapse --&gt;</span><br><span class="line">  &lt;/div&gt;&lt;!-- /.container-fluid --&gt;</span><br><span class="line">&lt;/nav&gt;</span><br></pre></td></tr></table></figure></body></p>
+<p>现在每个子模板都将具有相同的导航栏。从Java哲学中引用一条真理“Write once, use anywhere.”<br><img src="https://i.loli.net/2018/03/18/5aadf97e9722a.png" alt="4.png"></p>
+<h4 id="Super-Blocks"><a href="#Super-Blocks" class="headerlink" title="Super Blocks"></a>Super Blocks</h4><p>如果你需要从基本模板渲染块，使用 <a href="http://jinja.pocoo.org/docs/2.10/templates/#super-blocks" target="_blank" rel="noopener">super block</a>.<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123; super() &#125;&#125;</span><br></pre></td></tr></table></figure></p>
+<p>添加页脚到基模板:<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=<span class="string">"footer"</span>&gt;</span><br><span class="line">  &#123;% block footer %&#125;</span><br><span class="line">    Watch! This will be added to my base and child templates using the super powerful super block!</span><br><span class="line">    &lt;br&gt;</span><br><span class="line">    &lt;br&gt;</span><br><span class="line">  &#123;% endblock %&#125;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>添加后的代码应该是这样:<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;title&gt;Flask Template Example&lt;/title&gt;</span><br><span class="line">    &lt;meta name=<span class="string">"viewport"</span> content=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span><br><span class="line">    &lt;link href=<span class="string">"http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"</span> rel=<span class="string">"stylesheet"</span> media=<span class="string">"screen"</span>&gt;</span><br><span class="line">    &lt;style <span class="built_in">type</span>=<span class="string">"text/css"</span>&gt;</span><br><span class="line">      .container &#123;</span><br><span class="line">        max-width: 500px;</span><br><span class="line">        padding-top: 100px;</span><br><span class="line">      &#125;</span><br><span class="line">      h2 &#123;color: red;&#125;</span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;div class=<span class="string">"container"</span>&gt;</span><br><span class="line">      &lt;h2&gt;This is part of my base template&lt;/h2&gt;</span><br><span class="line">      &lt;br&gt;</span><br><span class="line">      &#123;% block content %&#125;&#123;% endblock %&#125;</span><br><span class="line">      &lt;br&gt;</span><br><span class="line">      &lt;h2&gt;This is part of my base template&lt;/h2&gt;</span><br><span class="line">      &lt;br&gt;</span><br><span class="line">      &lt;div class=<span class="string">"footer"</span>&gt;</span><br><span class="line">        &#123;% block footer %&#125;</span><br><span class="line">          Watch! This will be added to my base and child templates using the super powerful super block!</span><br><span class="line">          &lt;br&gt;</span><br><span class="line">          &lt;br&gt;</span><br><span class="line">          &lt;br&gt;</span><br><span class="line">        &#123;% endblock %&#125;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;script src=<span class="string">"http://code.jquery.com/jquery-1.10.2.min.js"</span>&gt;&lt;/script&gt;</span><br><span class="line">    &lt;script src=<span class="string">"http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"</span>&gt;&lt;/script&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure></p>
+<p>运行<br><img src="https://i.loli.net/2018/03/18/5aadfad1e9d8c.png" alt="5.png"></p>
+<p>添加 <code>super block</code>到 <code>template.html</code><br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&#123;% extends <span class="string">"layout.html"</span> %&#125;</span><br><span class="line">&#123;% block content %&#125;</span><br><span class="line">  &lt;h3&gt; This is the start of my child template&lt;/h3&gt;</span><br><span class="line">  &lt;br&gt;</span><br><span class="line">  &lt;p&gt;My string: &#123;&#123;my_string&#125;&#125;&lt;/p&gt;</span><br><span class="line">  &lt;p&gt;Value from the list: &#123;&#123;my_list[3]&#125;&#125;&lt;/p&gt;</span><br><span class="line">  &lt;p&gt;Loop through the list:&lt;/p&gt;</span><br><span class="line">  &lt;ul&gt;</span><br><span class="line">    &#123;% <span class="keyword">for</span> n <span class="keyword">in</span> my_list %&#125;</span><br><span class="line">    &lt;li&gt;&#123;&#123;n&#125;&#125;&lt;/li&gt;</span><br><span class="line">    &#123;% endfor %&#125;</span><br><span class="line">  &lt;/ul&gt;</span><br><span class="line">  &lt;h3&gt; This is the end of my child template&lt;/h3&gt;</span><br><span class="line">  &#123;% block footer %&#125;</span><br><span class="line">  &#123;&#123;super()&#125;&#125;</span><br><span class="line">  &#123;% endblock %&#125;</span><br><span class="line">&#123;% endblock %&#125;</span><br></pre></td></tr></table></figure></p>
+<p>在浏览器中查看<br><img src="https://i.loli.net/2018/03/18/5aadfb8b1f4c0.png" alt="6.png"></p>
+<p>Suoer block用于父模板和子模板共享的通用代码，例如title两个模板共享标题的一部分，然后你只需要传入另一部分。<br><br>例如<br><br><b>父模板</b><br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% block heading %&#125;</span><br><span class="line">  &lt;h1&gt;&#123;% block page %&#125;&#123;% endblock %&#125; - Flask Super Example&lt;/h1&gt;</span><br><span class="line">&#123;% endblock %&#125;</span><br></pre></td></tr></table></figure></p>
+<p><b>子模板</b><br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;% block page %&#125;Home&#123;% endblock %&#125;</span><br><span class="line">&#123;% block heading %&#125;</span><br><span class="line">  &#123;&#123; super() &#125;&#125;</span><br><span class="line">&#123;% endblock %&#125;</span><br></pre></td></tr></table></figure></p>
+<p>看下效果<br><img src="https://i.loli.net/2018/03/18/5aadfce7ba572.png" alt="7.png"><br>可以试试<code>% block page %Home% endblock %</code>从子模板中移除会发生什么。</p>
+<blockquote>
+<p>尝试一下使用相同的方法更新title</p>
+</blockquote>
+<p>除了硬编码，也可以使用动态方法<br><br>更新template.html中的两个代码片段：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;％block title％&#125; &#123;&#123;title&#125;&#125; &#123;％endblock％&#125;</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;％block page％&#125; &#123;&#123;title&#125;&#125; &#123;％endblock％&#125;</span><br></pre></td></tr></table></figure>
+<p>现在我们需要title从我们的控制器run.py中将一个变量传递给我们的模板：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@app.route(<span class="string">"/"</span>)</span><br><span class="line">def template_test():</span><br><span class="line">    <span class="built_in">return</span> render_template(</span><br><span class="line">        <span class="string">'template.html'</span>, my_string=<span class="string">"Wheeeee!"</span>, </span><br><span class="line">        my_list=[0,1,2,3,4,5], title=<span class="string">"Home"</span>)</span><br></pre></td></tr></table></figure></p>
+<p>测试一下。</p>
+<h4 id="宏"><a href="#宏" class="headerlink" title="宏"></a>宏</h4><p>在Jinja中，我们可以使用宏来抽象反复使用的常用代码片段，以避免重复我们自己。例如，突出显示导航栏上当前页面的链接（活动链接）很常见。否则，我们不得不使用if/ elif/ else语句来确定活动链接。使用宏，我们可以将这些代码抽象为一个单独的文件。<br><br>将 macros.html 添加到 templates目录中：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;% macro nav_link(endpoint, name) %&#125;</span><br><span class="line">&#123;% <span class="keyword">if</span> request.endpoint.endswith(endpoint) %&#125;</span><br><span class="line">  &lt;li class=<span class="string">"active"</span>&gt;&lt;a href=<span class="string">"&#123;&#123; url_for(endpoint) &#125;&#125;"</span>&gt;&#123;&#123;name&#125;&#125;&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">&#123;% <span class="keyword">else</span> %&#125;</span><br><span class="line">  &lt;li&gt;&lt;a href=<span class="string">"&#123;&#123; url_for(endpoint) &#125;&#125;"</span>&gt;&#123;&#123;name&#125;&#125;&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br><span class="line">&#123;% endmacro %&#125;</span><br></pre></td></tr></table></figure></p>
+<p>在这里，我们使用Flask的请求对象，默认情况下它是Jinja的一部分，用于检查请求的端点，然后将该active类分配给该端点。<br><br>使用<code>nav navber-nav</code>基本模板中的类更新无需列表：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul class=<span class="string">"nav navbar-nav"</span>&gt;</span><br><span class="line">  &#123;&#123; nav_link(<span class="string">'home'</span>, <span class="string">'Home'</span>) &#125;&#125;</span><br><span class="line">  &#123;&#123; nav_link(<span class="string">'about'</span>, <span class="string">'About'</span>) &#125;&#125;</span><br><span class="line">  &#123;&#123; nav_link(<span class="string">'contact'</span>, <span class="string">'Contact Us'</span>) &#125;&#125;</span><br><span class="line">&lt;/ul&gt;</span><br></pre></td></tr></table></figure></p>
+<p>另外，请确保在模板顶部添加导入：<code>% from “macros.html” import nav_link with context %</code>。<br><br>注意我们如何调用nav-link宏并传递两个参数，即端点（来自我们的控制器）和我们想要显示的文本。<br></p>
+<p>最后，让我们向控制器添加三个新端点：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">@app.route(<span class="string">"/home"</span>)</span><br><span class="line">def home():</span><br><span class="line">    <span class="built_in">return</span> render_template(</span><br><span class="line">        <span class="string">'template.html'</span>, my_string=<span class="string">"Wheeeee!"</span>, </span><br><span class="line">        my_list=[0,1,2,3,4,5], title=<span class="string">"Home"</span>)</span><br><span class="line"></span><br><span class="line">@app.route(<span class="string">"/about"</span>)</span><br><span class="line">def about():</span><br><span class="line">    <span class="built_in">return</span> render_template(</span><br><span class="line">        <span class="string">'template.html'</span>, my_string=<span class="string">"Wheeeee!"</span>, </span><br><span class="line">        my_list=[0,1,2,3,4,5], title=<span class="string">"About"</span>)</span><br><span class="line"></span><br><span class="line">@app.route(<span class="string">"/contact"</span>)</span><br><span class="line">def contact():</span><br><span class="line">    <span class="built_in">return</span> render_template(</span><br><span class="line">        <span class="string">'template.html'</span>, my_string=<span class="string">"Wheeeee!"</span>, </span><br><span class="line">        my_list=[0,1,2,3,4,5], title=<span class="string">"Contact Us"</span>)</span><br></pre></td></tr></table></figure></p>
+<p>  刷新页面<br>        <img src="https://i.loli.net/2018/03/18/5aae031f3a2ef.png" alt="8.png"></p>
+<h4 id="过滤器"><a href="#过滤器" class="headerlink" title="过滤器"></a>过滤器</h4><p>Jinja使用过滤器来修改变量，主要用于格式化目的。<br><br>例如<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123; num | round &#125;&#125;</span><br></pre></td></tr></table></figure></p>
+<p>这将对num变量近似取值。如果传值 num=46.99, 将输出47.0.<br><br><br>关于过滤器的更多知识，你可以看<a href="http://jinja.pocoo.org/docs/2.10/templates/#builtin-filters" target="_blank" rel="noopener">这里</a>.<br><br>在某些情况下，你可以在括号中指定可选参数。<br><br>例如<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123;list | join（<span class="string">'，'</span>）&#125;&#125;</span><br></pre></td></tr></table></figure></p>
+<p>这将通过逗号分隔符加入列表。<br><br>测试一下，添加下列代码到 template.html.<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Same list with a filter: &#123;&#123; my_list|join(<span class="string">', '</span>) &#125;&#125;&lt;/p&gt;</span><br></pre></td></tr></table></figure></p>
+<p>除了内置的过滤器，我们也可以<a href="http://jinja.pocoo.org/docs/2.10/api/#custom-filters" target="_blank" rel="noopener">自己创建</a>。<br><br>让我们添加一个我们自己的。一个常见的例子是自定义日期时间过滤器。<br></p>
+<p>创建应用程序后，将以下代码添加到我们的控制器 - <code>app = Flask(<strong>name</strong>)</code>：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">@app.template_filter()</span><br><span class="line">def datetimefilter(value, format=<span class="string">'%Y/%m/%d %H:%M'</span>):</span><br><span class="line">    <span class="string">""</span><span class="string">"convert a datetime to a different format."</span><span class="string">""</span></span><br><span class="line">    <span class="built_in">return</span> value.strftime(format)</span><br><span class="line"></span><br><span class="line">app.jinja_env.filters[<span class="string">'datetimefilter'</span>] = datetimefilter</span><br></pre></td></tr></table></figure></p>
+<p>使用<code>@app.template_filter()</code>装饰器，我们将<code>datetimefilter()</code>函数注册为过滤器。</p>
+<blockquote>
+<p>过滤器的默认名称只是该函数的名称; 然而，你可以通过传递一个参数来定制它 - 例如，<code>@app.template_filter(formatdate)</code>。</p>
+</blockquote>
+<p>接下来，我们将过滤器添加到Jinja环境中，使其可访问。现在可以使用了。<br><br>将以下代码添加到我们的子模板中：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;h4&gt;Current date/time: &#123;&#123; current_time | datetimefilter &#125;&#125;&lt;/h4&gt;</span><br></pre></td></tr></table></figure></p>
+<p>最后，只需将日期时间传递给我们的模板：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">current_time=datetime.datetime.now()</span><br></pre></td></tr></table></figure></p>
+<p>测试一下<br><img src="https://i.loli.net/2018/03/18/5aae065fef58e.png" alt="9.png"></p>
+<p>这只是简明教程，详细教程请看<a href="http://jinja.pocoo.org/docs/2.10/" target="_blank" rel="noopener">这里</a>。</p>
+
+      
+    </div>
+    
+    
+    
+
+<div>
+  
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+
+  
+</div>
+
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/images/wechat-qcode.jpg" alt="hao14293 wechat" style="width: 200px; max-width: 100%;"/>
+    <div>交流或订阅，请扫描上方微信二维码</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="hao14293 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    hao14293
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://shiyi.today/year/03/18/22581/" title="Jinja2 简明教程">http://shiyi.today/year/03/18/22581/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Jinja2/" rel="tag"><i class="fa fa-tag"></i>
+
+ Jinja2</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/year/03/18/52829/" rel="next" title="线性表的基本概念">
+                <i class="fa fa-chevron-left"></i> 线性表的基本概念
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/year/03/19/49666/" rel="prev" title="L2TP/IPSec配置教程">
+                L2TP/IPSec配置教程 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/cat.jpg"
+                alt="hao14293" />
+            
+              <p class="site-author-name" itemprop="name">hao14293</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">79</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">21</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/hao14293" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:hao14293@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://music.163.com/#/user/home?id=321799989" target="_blank" title="网易云音乐">
+                      
+                        <i class="fa fa-fw fa-globe"></i>网易云音乐</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#简单示例"><span class="nav-number">1.</span> <span class="nav-text">简单示例</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Flask-示例"><span class="nav-number">2.</span> <span class="nav-text">Flask 示例</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#模板继承"><span class="nav-number">3.</span> <span class="nav-text">模板继承</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Super-Blocks"><span class="nav-number">4.</span> <span class="nav-text">Super Blocks</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#宏"><span class="nav-number">5.</span> <span class="nav-text">宏</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#过滤器"><span class="nav-number">6.</span> <span class="nav-text">过滤器</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">hao14293</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://github.com/hao14293">Github</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Hosted by <!--&mdash--> <a class="theme-link" target="_blank" href="https://pages.coding.me/">Coding Pages</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+<span id="busuanzi_container_site_pv">
+    你是本站第 <span id="busuanzi_value_site_pv"></span> 位访问者
+</span>
+
+
+  <span class="post-meta-divider">|</span>
+
+
+ <div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共136.4k字</span>
+</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+	    
+            id: window.location.pathname, 
+            owner: 'hao14293',
+            repo: 'hao14293.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: 'ba73ac0871cac2f56573973a4d54635acb31b9b7',
+            
+                client_id: '38751d2ce76384ae7f94'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("7msrwoOKhaUobO1swwsoE2Bm-gzGzoHsz", "eJmhyYd2bnq8FahSubUEl51l");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+</body>
+</html>

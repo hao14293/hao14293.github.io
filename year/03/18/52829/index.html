@@ -1,0 +1,1696 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+<meta name="baidu-site-verification" content="XpsoxT0kWM" />
+<meta name="google-site-verification" content="kDX9LJIt0D08YC9gYy9Xnx66ikpunTEjoiAR_VUsPGI" />
+
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?1f9275f266e86ad480c31dd61af561fe";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117679018-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-117679018-1');
+</script>
+
+
+
+
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <script> (adsbygoogle = window.adsbygoogle || []).push({ google_ad_client: "ca-pub-4949823015495880", enable_page_level_ads: true }); </script>
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-bounce.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="hao14293@gmail.com" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="线性表," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="一、线性表的定义线性表：零个或多个数据元素的有限序列。几个关键的地方。 首先它是一个序列。也就是说，元素之间是有顺序的，若元素存在多个，则第一个元素无前驱，最后一个元素无后继，其他每个元素都只有一个前驱和后继。 然后，线性表强调是有限的。事实上，在计算机中处理的对象都是有限的，那种无限的数列，只存在于数学的概念中。 如果用数学语言来定义。可如下： 若将线性表记为(a1，…，ai-1，ai，ai+1">
+<meta name="keywords" content="线性表">
+<meta property="og:type" content="article">
+<meta property="og:title" content="线性表的基本概念">
+<meta property="og:url" content="http://shiyi.today/year/03/18/52829/index.html">
+<meta property="og:site_name" content="诗意">
+<meta property="og:description" content="一、线性表的定义线性表：零个或多个数据元素的有限序列。几个关键的地方。 首先它是一个序列。也就是说，元素之间是有顺序的，若元素存在多个，则第一个元素无前驱，最后一个元素无后继，其他每个元素都只有一个前驱和后继。 然后，线性表强调是有限的。事实上，在计算机中处理的对象都是有限的，那种无限的数列，只存在于数学的概念中。 如果用数学语言来定义。可如下： 若将线性表记为(a1，…，ai-1，ai，ai+1">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-10-02T10:19:30.838Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="线性表的基本概念">
+<meta name="twitter:description" content="一、线性表的定义线性表：零个或多个数据元素的有限序列。几个关键的地方。 首先它是一个序列。也就是说，元素之间是有顺序的，若元素存在多个，则第一个元素无前驱，最后一个元素无后继，其他每个元素都只有一个前驱和后继。 然后，线性表强调是有限的。事实上，在计算机中处理的对象都是有限的，那种无限的数列，只存在于数学的概念中。 如果用数学语言来定义。可如下： 若将线性表记为(a1，…，ai-1，ai，ai+1">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://shiyi.today/year/03/18/52829/"/>
+
+
+
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "2c19ab28"
+    });
+  daovoice('update');
+  </script>
+
+
+  <title>线性表的基本概念 | 诗意</title>
+  
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-117679018-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?1f9275f266e86ad480c31dd61af561fe";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">诗意</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description"></h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://shiyi.today/year/03/18/52829/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="hao14293">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/cat.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="诗意">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">线性表的基本概念</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-18T00:13:08+08:00">
+                2018-03-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Algorithm-and-Data-Structure/" itemprop="url" rel="index">
+                    <span itemprop="name">Algorithm and Data Structure</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/year/03/18/52829/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/year/03/18/52829/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/year/03/18/52829/" class="leancloud_visitors" data-flag-title="线性表的基本概念">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">热度&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+		<span> °C</span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  10,155
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  38
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+    
+      
+
+      
+        <h3 id="一、线性表的定义"><a href="#一、线性表的定义" class="headerlink" title="一、线性表的定义"></a>一、线性表的定义</h3><h4 id="线性表：零个或多个数据元素的有限序列。"><a href="#线性表：零个或多个数据元素的有限序列。" class="headerlink" title="线性表：零个或多个数据元素的有限序列。"></a>线性表：零个或多个数据元素的有限序列。</h4><p>几个关键的地方。 <br><br>首先它是一个序列。也就是说，元素之间是有顺序的，若元素存在多个，则第一个元素无前驱，最后一个元素无后继，其他每个元素都只有一个前驱和后继。<br></p>
+<p>然后，线性表强调是有限的。事实上，在计算机中处理的对象都是有限的，那种无限的数列，只存在于数学的概念中。<br></p>
+<p>如果用数学语言来定义。可如下： <br><br><b>若将线性表记为(a1，…，ai-1，ai，ai+1，…，an)，则表中ai-1领先于ai，ai领先于ai+1，称ai-1是ai的直接前驱元素，ai+1是ai的直接后继元素。当i = 1，2，…，n-1时，ai有且仅有一个直接后继，当i = 2 , 3 , … , n时，ai有且仅有一个直接前驱。</b><br></p>
+<p>所以<b>线性表元素的个数n(n ≥ 0)定义为线性表长度，当n=0时，称为空表。</b><br><a id="more"></a></p>
+<p>在非空表中的每个数据元素都有一个确定的位置，如a1是第一个数据元素，an是最后一个数据元素，ai是第i个数据元素，称i为数据元素ai在线性表中的位序。<br></p>
+<p>举几个例子，来判断是否是线性表。 <br><br>第一个：一年的星座列表，是不是线性表呢？<br></p>
+<p>答：当然是，星座通常都是白羊座开头，双鱼座收尾，当中的星座都有前驱后继，而且一共才12个，所以完全符合线性表的定义。<br></p>
+<p>第二个：公司的组织交媾，总经理管理几个总监，每个总监管理几个经理，每个经理管理各自的下述和员工。这样的组织架构是不是线性关系呢？<br></p>
+<p>答：不是，为什么不是呢？因为每一个元素，都有不止一个后继，所以它不是线性表。<br></p>
+<p>第三个：班级同学的友谊关系，是不是线性表呢？<br></p>
+<p>答：不是，因为每个人都可以和多个同学建立友谊，不满足线性的定义。<br></p>
+<p>第四个：班级同学的点名册，是不是线性表？是不是点名册？<br></p>
+<p>答：是，这和刚才的友谊关系是完全不同的，因为它是有限序列，也满足类型相同特点，这个点名册中，每个元素除学生的学号外，还可以有同学的姓名、性别、出生年月什么的，这其实就是我们之前将的数据项。在较复杂的线性表中，一个数据元素可以由若干个数据项组成。<br></p>
+<h3 id="二、线性表的抽象数据类型"><a href="#二、线性表的抽象数据类型" class="headerlink" title="二、线性表的抽象数据类型"></a>二、线性表的抽象数据类型</h3><p>线性表的抽象数据类型定义如下：<br><br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">ADT 线性表(List)</span><br><span class="line">Data</span><br><span class="line">    线性表的数据对象集合为&#123;a1,a2,....,an&#125;,每个元素的类型均为DataType。其中除了，第一个元素a1外，每一个元素有且只有一个直接前驱元素，除最后一个元素an外，每一个元素有且只有一个直接后继元素。数据元素之间的关系是一对一的关系。</span><br><span class="line"></span><br><span class="line">Operation</span><br><span class="line">    InitList(*L):初始化操作，建立一个空的线性表。</span><br><span class="line">    ListEmpty(L):若线性表为空，返回<span class="literal">true</span>，否则返回<span class="literal">false</span>。</span><br><span class="line">    ClearList(*L):线性表清空。</span><br><span class="line">    GetElem(L,i,*e):将线性表L中第i个位置元素返回给e。</span><br><span class="line">    LocateElem(L,e):在线性表L中查找与给定值e相等的元素，如果</span><br><span class="line">        查找成功,返回该元素在表中的序列号；否则，返回0表示失败。</span><br><span class="line">    ListInsert(*L,i,e):在线性表的第i个位置插入元素e。</span><br><span class="line">    ListDelete(*L,i,*e):删除线性表L中的第i个元素，并用e返回其值</span><br><span class="line">    ListLength(L):返回线性表L的元素个数。</span><br><span class="line"></span><br><span class="line">对于不同的应用，线性表的操作时不同的，上述操作时最基本的，问题中设计的关于线性表的更复杂操作，完全可以用这些基本操作的组合来实现。</span><br></pre></td></tr></table></figure></p>
+<p>比如，要实现两个线性表集合A和B的并集操作。即要使得集合A = A ∪ B，说白了，就是把存在集合B中但并不存在中的数据元素插到A中即可。<br></p>
+<p>仔细分析一下这个操作，发现我们只要循环集合B中的元素，判断是否存在A中，若不存在，则插到A中即可。思路应该是很容易想到的。<br></p>
+<p>假设我们La表示集合A，Lb表示集合B，则实现代码如下：<br><br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">//将所有的在线性表Lb中但不在La中的元素插入到La中</span><br><span class="line">void unionL(List *La , List Lb)</span><br><span class="line">&#123;</span><br><span class="line">    int La_len,Lb_len,i;</span><br><span class="line">    ElemType e;</span><br><span class="line">    La_len = ListLength(*La);</span><br><span class="line">    Lb_len = ListLength(*Lb);</span><br><span class="line">    <span class="keyword">for</span>(i = 0 ;i ≤ Lb;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        GetElem(Lb,i,*e);//取出Lb中第i个数据元素赋给e</span><br><span class="line">        <span class="keyword">if</span>(!LocateElem(*La,e))//La中不存在和e元素相同的数据元素</span><br><span class="line">        &#123;</span><br><span class="line">            ListInsert(La,++La_len,e);//插入</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>这里我们对于union操作，用到了前面线性表基本操作ListLength、GetElem、LocateElem，ListLength等，可见，对于复杂的个性化的操作，其实就是把基本操作组合起来实现的。<br></p>
+<h3 id="三、线性表的顺序存储结构"><a href="#三、线性表的顺序存储结构" class="headerlink" title="三、线性表的顺序存储结构"></a>三、线性表的顺序存储结构</h3><h4 id="1-顺序存储定义"><a href="#1-顺序存储定义" class="headerlink" title="1.顺序存储定义"></a>1.顺序存储定义</h4><p>说了这么多的线性表，我们来看线性表的物理结构第一种——顺序存储结构。<br></p>
+<p><b>线性表的顺序存储结构，指定的是用一段地址连续的存储单元一次存储线性表的数据元素。</b></p>
+<h4 id="2-顺序存储方式"><a href="#2-顺序存储方式" class="headerlink" title="2.顺序存储方式"></a>2.顺序存储方式</h4><p>线性表的顺序存储方式，说白了，就是在内存中找了一块地方，把一定内存空间占了，然后把相同数据类型的数据元素一次存在在里面。既然线性表的数据元素的类型都相同，<b>所以用C语言的一维数组来实现顺序存储结构</b>，即把第一个数据元素存储到数组下表为0的位置中，接着把线性表相邻的元素存储在数组中相邻的位置。<br></p>
+<p>为了建立一个线性表，要在内存中找一块地，于是这块地的第一个位置就非常关键，它是存储空间的起始位置。<br></p>
+<p>线性表中，我们估算这个线性表的最大存储容量，建立一个数组，数组的长度就是最大存储容量。<br></p>
+<p>我们已经有了起始位置，也有了最大的容量，于是我们可以在里面增加数据了。随着数据的插入，我们线性表的长度开始变大，不过线性表的当前长度不能超过存储容量，即数组的长度。<br></p>
+<p>来看线性表的顺序存储的结构代码。<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#define MAXSIZE 20 //存储空间初始分配量</span></span><br><span class="line">typedef int ElemType;//ElemType根据实际情况而定，这里假设为int</span><br><span class="line">typedef struct</span><br><span class="line">&#123;</span><br><span class="line">    ElemType data[MAXSIZE];//数组存储数据元素,最大值为MAXSIZE</span><br><span class="line">    int length;//线性表当前长度</span><br><span class="line">&#125;SqList;</span><br></pre></td></tr></table></figure></p>
+<p>这里我们发现<b>描述顺序存储结构需要三个属性： </b><br><br><b>①存储空间的起始位置</b>：数组data，它的存储位置就是存储空间的存储位置。<br></p>
+<p><b>②线性表的最大存储容量：</b>数组长度MaxSize。<br></p>
+<p><b>③线性表的当前长度：</b>length。<br></p>
+<h4 id="3-数组长度与线性表长度区别"><a href="#3-数组长度与线性表长度区别" class="headerlink" title="3.数组长度与线性表长度区别"></a>3.数组长度与线性表长度区别</h4><p><b>数组长度是存放线性表的存储空间的长度，存储空间分配完一般是不变的。</b><br></p>
+<p><b>线性表长度是线性表中元素数据的个数，随着线性表插入和删除操作的进行，这个量是变化的。</b><br></p>
+<p>在任意时刻，线性表的长度应该<b>小于等于</b>数组的长度。<br></p>
+<h4 id="4-地址计算方法"><a href="#4-地址计算方法" class="headerlink" title="4.地址计算方法"></a>4.地址计算方法</h4><p>线性表的起始是从1开始的，可数组却是从0开始第一个下标的，于是线性表中第i个元素，存储在数组下标为i - 1的位置。<br></p>
+<p>用数组存储顺序表意味着要分配固定长度的数组空间，由于线性表中可以进行插入和删除操作，因此分配的数组空间要大于等于当前线性表的长度。<br></p>
+<p>由于每个数据元素，不管他是整型、实型还是字符型，它都是需要占用一定的存储空间的。假设占用的是c个存储单元，那么线性表中第i + 1个元素的存储位置和第i个数据元素的存储位置满足下列关系（LOC表示获得存储位置的函数）。<br><br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LOC(ai+1) = LOC(ai) + c</span><br></pre></td></tr></table></figure></p>
+<p>所以对于第i个数据元素ai的存储位置可以由a1推算得出：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LOC(ai) = LOC(ai) + (i - 1) * c</span><br></pre></td></tr></table></figure></p>
+<p><b>通过这个公式，随时可以算出线性表中任意位置的地址，不管他是第一个还是最后一个，都是相同的事件。那么我们对每个线性表位置的存入或者取出数据，对于计算机来说都是相等的时间，也就是一个常数，因此我们算法中学到的时间复杂度的概念来说，它的存取时间的性能为O(1)。我们通常把具有这一特点的存储结构称为随机存取结构。</b><br></p>
+<h3 id="四、顺序存储结构的插入与删除"><a href="#四、顺序存储结构的插入与删除" class="headerlink" title="四、顺序存储结构的插入与删除"></a>四、顺序存储结构的插入与删除</h3><h4 id="1-获得元素操作"><a href="#1-获得元素操作" class="headerlink" title="1.获得元素操作"></a>1.获得元素操作</h4><p>对于线性表的顺序存储结构来说，我们要实现GetElem操作，即将线性表L中的第i个位置元素返回，其实是非常简单的。就程序而言，只要第i个元素在下标范围内，就是把数组第i - 1下表值返回即可。 <br><br>来看代码：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#define OK 1</span></span><br><span class="line"><span class="comment">#define ERROR 0</span></span><br><span class="line"><span class="comment">#define TRUE 1</span></span><br><span class="line"><span class="comment">#define FALSE 0</span></span><br><span class="line">typedef int Status;</span><br><span class="line">//Status是函数的类型，其值是函数结果状态代码，如OK等</span><br><span class="line">//初始条件：顺序线性表L已经存在，1 ≤ i ≤ ListLength(L)</span><br><span class="line">//操作结果：用e返回L中第i个元素的值</span><br><span class="line">Status GetElem(SqList L,int i,ElemType *e)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(L.length == 0 || i &lt; 1 || i &gt; L.length)</span><br><span class="line">        <span class="built_in">return</span> ERROR;</span><br><span class="line">    *e = L.data[i - 1];</span><br><span class="line">    <span class="built_in">return</span> OK;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>注意这里返回值类型Status是一个整型，返回OK代表1，ERROR代表0。</p>
+<h4 id="2-插入操作"><a href="#2-插入操作" class="headerlink" title="2.插入操作"></a>2.插入操作</h4><p>刚才我们也谈到，这里的时间复杂度为O(1)。我们现在来考虑，如果我们要实现ListInsert(*L，i，e)，即在线性表L中第i个位置插入新元素e，应该如何操作？<br></p>
+<p><b>插入算法的思路：<br></b></p>
+<p>①如果插入位置不合理，抛出异常；<br></p>
+<p>②如果线性表长度大于等于数组长度，则抛出异常或动态增加容量；<br></p>
+<p>③从最后一个元素开始向前遍历到第i个元素，分别将它们都向后移一位；<br></p>
+<p>④将要插入元素填入位置i处；<br></p>
+<p>⑤表长加1。 <br><br>实现代码如下：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">//初始条件:顺序线性表L已存在,1 ≤ i ≤ ListLength(L)</span><br><span class="line">//操作结果:在L的第i个位置插入新的数据元素e,L的长度加1</span><br><span class="line">Status ListInsert(SqList *L,int i,ElemType e)</span><br><span class="line">&#123;</span><br><span class="line">    int k;</span><br><span class="line">    <span class="keyword">if</span>(L-&gt;length == MAXSIZE)//当线性表已满</span><br><span class="line">        <span class="built_in">return</span> ERROR;</span><br><span class="line">    <span class="keyword">if</span>(i &lt; 1 || i &gt;L-&gt;length + 1)//当i不在范围内时</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">return</span> ERROR;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(i &lt;= L-&gt;length)//若插入数据位置不在表尾</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(k = L-&gt;length-1;k &gt; i-1;k--)</span><br><span class="line">        &#123;</span><br><span class="line">            L-&gt;data[k + 1] = L-&gt;data[k];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    L-&gt;data[i - 1] = e;//将新元素插入</span><br><span class="line">    L-&gt;length++;</span><br><span class="line">    <span class="built_in">return</span> OK;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h4 id="3-删除操作"><a href="#3-删除操作" class="headerlink" title="3.删除操作"></a>3.删除操作</h4><p>删除算法的思路： <br><br><b>①如果删除位置不合理，抛出异常；</b><br></p>
+<p><b>②取出删除元素；</b><br></p>
+<p><b>③从删除元素位置开始遍历到最后一个元素位置，分别将它们向前移动一个位置；</b><br></p>
+<p><b>④表长减1。</b><br></p>
+<p>实现代码如下：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">//初始条件:顺序线性表L已经存在，1 &lt;= i &lt;= ListLength(L)</span><br><span class="line">//操作结果:删除L的第i个元素,并用e返回其值,L的长度减1</span><br><span class="line">Status ListDelete(SqList *L ,int i , ElemType *e)</span><br><span class="line">&#123;</span><br><span class="line">    int k;</span><br><span class="line">    <span class="keyword">if</span>(L-&gt;length == 0)//线性表为空</span><br><span class="line">        <span class="built_in">return</span> ERROR;</span><br><span class="line">    <span class="keyword">if</span>(i &lt; 1 || i &gt; L-&gt;length)//删除位置不正确</span><br><span class="line">        <span class="built_in">return</span> ERROR;</span><br><span class="line">    *e = L-&gt;data[i];</span><br><span class="line">    <span class="keyword">if</span>(i &lt; L-&gt;length)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(k = i;k &lt; L-&gt;length;k++)</span><br><span class="line">            L-&gt;data[k - 1] = L-&gt;data[k];</span><br><span class="line">    &#125;</span><br><span class="line">    L-&gt;length--;</span><br><span class="line">    <span class="built_in">return</span> OK;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>现在，我们来分析一下，插入和删除的事件复杂度。 <br><br>现在我们来看最好的情况，如果一个元素要插入到最后一个位置，或者删除最后一个位置，<b>此时时间复杂度为O(1)</b>，因为不需要移动元素的。<br></p>
+<p><b>最坏的情况</b>呢，如果元素要插入到第一个位置或者删除第一个元素，此时时间复杂度是多少呢？那就意味着所有元素向后或者向前，所以<b>这个时间复杂度为O(n)。</b><br></p>
+<p>至于平均的情况，由于元素插入到第i个位置，或者删除第i个元素，需要移动n - i个元素，每个位置插入或删除元素的可能性是相同的，也就是位置靠前，移动元素多，位置靠后，移动元素少。最终平均移动次数和最中间那个元素的移动次数相等，为(n - 1)/ 2。<br></p>
+<p>根据时间复杂度的推导，平均时间复杂度还是O(n)。<br></p>
+<p>这说明说明？线性表的顺序存储结构，在存、读数据时，不管是哪个位置，时间复杂度都是O(1)；而插入或删除时，时间复杂度都是O(n)。这就说明，<b>它比较适合元素个数不太变化，而更多是存取数据的应用。</b><br></p>
+<h4 id="4-线性表顺序存储结构的优缺点"><a href="#4-线性表顺序存储结构的优缺点" class="headerlink" title="4.线性表顺序存储结构的优缺点"></a>4.线性表顺序存储结构的优缺点</h4><p><b>优点<br><br>①无须为表中元素之间的逻辑关系而增加额外的存储空间<br></b></p>
+<p>②可以快速地存取表中任一位置的元素<br></p>
+<p><b>缺点 <br><br>①插入和删除需要移动大量元素<br></b></p>
+<p>②当线性表长度变化较大时，难以确定存储空间的容量<br></p>
+<p>③造成存储空间的“碎片”<br></p>
+<h3 id="五、线性表的链式存储结构"><a href="#五、线性表的链式存储结构" class="headerlink" title="五、线性表的链式存储结构"></a>五、线性表的链式存储结构</h3><h4 id="1-线性表链式存储结构定义"><a href="#1-线性表链式存储结构定义" class="headerlink" title="1.线性表链式存储结构定义"></a>1.线性表链式存储结构定义</h4><p>线性表的链式存储结构的特点是用一组任意的存储单元存储线性表的数据元素，这组存储单元可以是连续的，也可以是不连续的。这就意味着，这些元素可以存在内存未被占用的任意位置。<br></p>
+<p>以前在顺序结构中，每个元素数据只需要存储数据元素信息就可以了。现在在链式结构中，除了要存数据元素信息外，还要存储它的后继元素的存储地址。<br></p>
+<p>因此，<b>为了表示每个数据元素ai与其直接后级元素ai+1之间的逻辑关系，对数据元素ai来说，除了存储其本身的信息之外，还需存储一个指示其直接后继的信息（即直接后继的存储位置）。我们把存储数据元素信息的域称为数据域，把存储直接后继位置的域称为指针域。指针域中存储的信息称作指针或链。这两部分信息组成数据元素ai的存储映像，称为结点(Node)。<br></b></p>
+<p>n个结点(ai的存储映像)链结成一个链表，即为线性表(a1,a2,….,an)的链式存储结构，因为此链表的每个结点中只包含一个指针域，所以叫做单链表。单链表正是通过每个结点的指针域将线性表的数据元素按其逻辑次序链接在一起。<br></p>
+<p>对于线性表来说，总得有个头有个尾，链表也不例外。我们把链表中第一个结点的存储位置叫做头指针，那么整个链表的存取就必须是从头指针开始进行了。之后的每一个结点，其实就是上一个的后继指针指向的位置。<br></p>
+<p>最后一个，当然意味着直接后继不存在了，所以我们规定，线性链表的最后一个结点指针为“空”（通常用NULL或“^”符号表示）。<br></p>
+<p>有时，我们为了更加方便地对链表进行操作，<b>会在单链表的第一个结点前附设一个结点，称为头结点。</b>头结点的数据域可以不存储任何信息，也可以存储如线性表的长度等附加信息，头结点的指针域存储指向第一个结点的指针。<br></p>
+<h4 id="2-头指针与头结点的异同"><a href="#2-头指针与头结点的异同" class="headerlink" title="2.头指针与头结点的异同"></a>2.头指针与头结点的异同</h4><p>头指针与头结点的异同点。 <br><br><b>头指针 <br><br>① 头指针是指链表指向第一个结点的指针，若链表有头结点，则是指向头结点的指针<br></b></p>
+<p>②头指针具有标识作用，所以常用头指针冠以链表的名字<br></p>
+<p>③无论链表是否为空，头指针均不为空。头指针是链表的必要元素。<br></p>
+<p>头结点 <br><br>①头结点是为了操作的统一和方便而设立的，放在第一元素的结点之间，其数据域一般无意义。<br></p>
+<p>②有了头结点，对在第一元素结点前插入结点，其操作与其它结点的操作就统一了。<br></p>
+<p>③头结点不一定是链表必须要素。<br></p>
+<h4 id="3-线性链表式存储结构代码描述"><a href="#3-线性链表式存储结构代码描述" class="headerlink" title="3.线性链表式存储结构代码描述"></a>3.线性链表式存储结构代码描述</h4><p>若线性链表为空表，则头结点的指针域为“空”。<br></p>
+<p>单链表中，我们在C语言中可用结构指针来描述。<br><br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">//线性表的单链表存储结构</span><br><span class="line">typedef struct Node</span><br><span class="line">&#123;</span><br><span class="line">    ElemType data;</span><br><span class="line">    struct Node *next;</span><br><span class="line">&#125;Node;</span><br><span class="line">typedef struct Node *LinkList;//定义LinkList</span><br></pre></td></tr></table></figure></p>
+<p>在这个结构定义中，我们也就知道，<b>结点由存放数据元素的数据域和存放后继结点地址的指针域组成。</b> 假设p是指向线性表第i个元素的指针，则该结点ai的数据域我们可以用p-&gt;data来表示，p-&gt;data的值是一个数据元素，结点ai的指针可以用p-&gt;next来表示，p-&gt;next的值是一个指针。p-&gt;next指向谁呢？当然是指向第i + 1个元素，即指向ai+1。也就是说p-&gt;data = ai，那么p-&gt;next-&gt;data=ai+1<br></p>
+<h3 id="六、单链表的读取"><a href="#六、单链表的读取" class="headerlink" title="六、单链表的读取"></a>六、单链表的读取</h3><p>在线性表的顺序存储结构中，我们要计算任意一个元素的存储位置使很容易的。但在单链表中，由于第i个元素到底在哪？没办法一开始就知道，必须从头开始找。因此，对于单链表实现获取第i个元素的操作GetElem，在算法上，相对麻烦一些。<br></p>
+<p>获得链表第i个数据的算法思路： <br></p>
+<ol>
+<li>声明一个指针p指向链表第一个结点，初始化j从1开始。<br> </li>
+<li>当j &lt; i 时，就遍历链表，让p的指针向后移动，不断指向下一结点，j累加1; <br></li>
+<li>若链表末尾p为空，则说明第i个结点不存在； <br></li>
+<li>否则查找成功，返回结点p的数据。 <br><br>实现代码如下：<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">//初始条件:顺序线性表L已存在,1 ≤ i ≤ ListLength(L)</span><br><span class="line">//操作结果:用e返回L中第i个数据元素的值</span><br><span class="line">Status GetElem(LinkList L,int i,ElemType *e)</span><br><span class="line">&#123;</span><br><span class="line">    int j;</span><br><span class="line">    LinkList p;//声明一指针</span><br><span class="line">    p = L-&gt;next;//让p指向链表L的第一个结点</span><br><span class="line">    j = 1;//j为计数器</span><br><span class="line">    <span class="keyword">while</span>(p &amp;&amp; j &lt; i)//p不为空且计数器j还没有等于i时，循环继续</span><br><span class="line">    &#123;</span><br><span class="line">        p = p-&gt;next;//让p指向下也结点</span><br><span class="line">        ++j;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(p || j &gt; i)</span><br><span class="line">        <span class="built_in">return</span> ERROR;//第i个结点不存在</span><br><span class="line">    *e = p-&gt;data;//取第i个结点的数据</span><br><span class="line">    <span class="built_in">return</span> OK;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>说白了，就是从头开始找，直到第i个结点为止。由于这个算法复杂度取决于i的位置，当i = 1时，不需要变量，而当i = n时则遍历n - 1次才可以。因此最坏情况的时间复杂度是O(n)。<br></p>
+<p>由于单链表的结构没有定义表长，所以不知道事先循环多少次，因此也就不方便使用for来控制循环。其主要核心思想是“工作指针后移”，这其实也是很多算法常用技术。<br></p>
+<h3 id="八、单链表的插入与删除"><a href="#八、单链表的插入与删除" class="headerlink" title="八、单链表的插入与删除"></a>八、单链表的插入与删除</h3><h4 id="1-单链表的插入"><a href="#1-单链表的插入" class="headerlink" title="1.单链表的插入"></a>1.单链表的插入</h4><p>假设存储元素e的结点为s，要实现结点p、p-&gt;next和s之间的逻辑关系的变化，只需要将s插到结点p和p-&gt;next之间即可。 <br><br>根本不需要惊动其他结点，只需要让s-&gt;next和p-&gt;next的指针做一点改变。<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">//下面两句不可交换顺序</span><br><span class="line">s-&gt;next = p-&gt;next;</span><br><span class="line">p-&gt;next = s;</span><br></pre></td></tr></table></figure></p>
+<p>单链表第i个数据插入结点的算法思路：<br> </p>
+<ol>
+<li>声明一指针p指向链表头结点，初始化j从1开始; <br></li>
+<li>当j &lt; i时，就遍历链表，让p的指针向后移动，不断指向下一结点,j累加1 <br></li>
+<li>若到链表末尾p为空，则说明第i个结点不存在;<br> </li>
+<li>若查找成功，在系统中生成一个空节点s； <br></li>
+<li>将数据元素e赋给s-&gt;data； <br></li>
+<li>单链表的插入标准语句s-&gt;next = p-&gt;next; p-&gt;next = s; <br></li>
+<li>返回成功<br></li>
+</ol>
+<p>实现代码算法如下：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">//初始条件:顺序线性表L已存在,1≤i≤ListLength(L)</span><br><span class="line">//操作结果:在L中第i个结点位置之前插入新的数据元素,L的长度加1</span><br><span class="line">Status ListInsert(LinkList *L , int i , ElemType e)</span><br><span class="line">&#123;</span><br><span class="line">    int j = 1;</span><br><span class="line">    LinkList p,s;</span><br><span class="line">    p = *L;</span><br><span class="line">    <span class="keyword">while</span>( p &amp;&amp; j &lt; i) //寻找第i个结点</span><br><span class="line">    &#123;</span><br><span class="line">        p = p-&gt;next;</span><br><span class="line">        ++j;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>( !p || j &gt; 1)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">return</span> ERROR;//第i个结点不存在</span><br><span class="line">    &#125;</span><br><span class="line">    s = (LinkList)malloc(sizeof(Node));//生成新结点</span><br><span class="line">    s-&gt;data = e;</span><br><span class="line">    s-&gt;next = p-&gt;next;//将p的后继结点赋值给s的后继</span><br><span class="line">    p-&gt;next = s;//将s赋给p的后继</span><br><span class="line">    <span class="built_in">return</span> OK;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>在这段算法代码中，我们用到了C语言的malloc标准函数，它的作用就是生成一个新的结点，其类型与Node是一样的，其实质就是在内存中开辟了一段空间，用了存放数据e的s结点。<br></p>
+<h4 id="2-单链表的删除"><a href="#2-单链表的删除" class="headerlink" title="2.单链表的删除"></a>2.单链表的删除</h4><p>现在我们再来看单链表的删除。设存储元素ai的结点为q，要实现将结点q删除单链表的操作，其实就是将它的前继结点的指针绕过，指向他的后继结点即可。<br></p>
+<p>我们所要做的，实际上就是一步，p-&gt;next = p-&gt;next-&gt;next;，用q来取代p-&gt;next即是：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">q = p-&gt;next;</span><br><span class="line">p-&gt;next = q-&gt;next;</span><br></pre></td></tr></table></figure></p>
+<p>也就是说把p的后继结点改成p的后继的后继结点。<br></p>
+<p>单链表第i个数据删除结点的算法思路： <br></p>
+<ol>
+<li>声明一指针p指向链表头指针，初始化j从1开始； <br></li>
+<li>当j &lt; i时，就遍历链表，让p的指针向后移动，不断指向下一个结点，i累加1； <br></li>
+<li>若到链表末尾p为空，则说明第i个结点不存在； <br></li>
+<li>否则查找成功，将欲删除的结点p-&gt;next 赋给q； <br></li>
+<li>单链表的删除标准与p-&gt;next = q-&gt;next； <br></li>
+<li>将q结点中的数据赋给e，作为返回; <br></li>
+<li>释放q结点 <br></li>
+<li>返回成功<br></li>
+</ol>
+<p>实现代码算法如下：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">//初始条件:顺序线性表L已存在,1≤ i ≤ListLength(L)</span><br><span class="line">//操作结果:删除L的i个结点,并用e返回其值,L的长度减1</span><br><span class="line">Status ListDelete(LinkList *L,int i,ElemType *e)</span><br><span class="line">&#123;</span><br><span class="line">    int j;</span><br><span class="line">    Link p,q;</span><br><span class="line">    p = *L;</span><br><span class="line">    j = 1;</span><br><span class="line">    <span class="keyword">while</span>(p-&gt;next &amp;&amp; j &lt; i)//遍历寻找第i - 1个结点</span><br><span class="line">    &#123;</span><br><span class="line">        p = p-&gt;next;</span><br><span class="line">        ++j;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>( !(p-&gt;next) || j &gt; i)</span><br><span class="line">        <span class="built_in">return</span> ERROR;//第i个结点不存在</span><br><span class="line">    q = p-&gt;next;</span><br><span class="line">    p-&gt;next = q-&gt;next;//将q的后继赋给p的后继</span><br><span class="line">    *e = q-&gt;data;//将q结点中的数据给e</span><br><span class="line">    free(q);//让系统回收此结点，释放内存</span><br><span class="line">    <span class="built_in">return</span> OK;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>分析一下刚才我们讲解的单链表插入和删除算法，我们发现，它们其实都是由两部分组成：第一部分就是遍历查找第i个结点；第二部分就是插入和删除结点。<br></p>
+<p>从整个算法来说，我们很容易推导出：它们的时间复杂度都是O(n)。 <br><br>如果我们不知道第i个结点的指针位置，单链表数据结构在插入和删除操作上，与线下顺序存储结构是没有太大优势的。但如果，我们希望从第i个位置，插入10个结点，对于顺序结构意味着，每次都要移动n - i个结点，每次都是O(n)。而单链表，我们只需在第一次时，找到第i个位置的指针，此时为O(n)，接下来只是简单地通过赋值移动指针而已，事件复杂度为O(1)。 <br><br>显然，对于插入和删除数据越频繁的操作，单链表的优势就越明显。<br></p>
+<h3 id="八、单链表的整表创建"><a href="#八、单链表的整表创建" class="headerlink" title="八、单链表的整表创建"></a>八、单链表的整表创建</h3><p>顺序存储结构的创建，其实就是一个数组的初始化，即声明一个类型和大小的数组并赋值的过程。而单链表和顺序存储结构就不一样，它不像顺序存储结构这么几种，它可以很散，是一种动态结构。对于每个链表来说，它所占用空间的大小和位置使不需要预先分配划定的，可以根据系统的情况和实际的需求即可生成。<br></p>
+<p>所以创建单链表的过程就是一个动态生成链表的过程。即从“空表”的初始状态起，一次建立各元素结点，并逐个插入链表。<br>单链表整表创建的思路算法：<br></p>
+<p>声明一指针p和计数器变量1；<br><br>初始化一空链表；<br><br>让L的头结点的指针指向NULL，即建立一个带头结点的单链表；<br>循环：<br></p>
+<p>生成一新结点赋值给p; <br><br>随机生成一数字赋给p的数据域p-&gt;data; <br><br>将p插到头结点与前一个新节点之间的位置。<br></p>
+<p>实现代码如下：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">//随机产生n个元素的值，建立带表头结点的单链表线性表L(头插法)</span><br><span class="line">void CreateListHead(LinkList *L,int n)</span><br><span class="line">&#123;</span><br><span class="line">    LinkList p;</span><br><span class="line">    int i;</span><br><span class="line">    srand(time(0));//初始化随机数种子</span><br><span class="line">    *L = (LinkList)malloc(sizeof(Node));</span><br><span class="line">    (*L)-&gt;next = NULL;//先建立一个带头结点的单链表</span><br><span class="line">    <span class="keyword">for</span>(i = 0;i &lt; n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        p = (LinkList)malloc(sizoef(Node));//生成新的结点</span><br><span class="line">        p-&gt;data = rand() % 100 + 1;//随机生成100以内的数字</span><br><span class="line">        p-&gt;next = (*L)-&gt;next;</span><br><span class="line">        (*L)-&gt;next = p; //插入到表头</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>这段代码里，我们始终让新结点在第一的位置上，我们把这种算法简称为头插法。<br></p>
+<p>可事实上，我们还可以把新结点放在最后。这才是排队时的正常思维。我们每次新结点都插在终端结点的后面，这种算法称之为尾插。<br></p>
+<p>实现代码算法如下：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">//随机产生n个元素的值,建立带表头结点的单链线性表L(尾插法)</span><br><span class="line">void CreateListTail(LinkList *L,int n)</span><br><span class="line">&#123;</span><br><span class="line">    LinkList p,r;</span><br><span class="line">    int i;</span><br><span class="line">    srand(time(0));//初始化随机数种子</span><br><span class="line">    *L = (LinkList)malloc(sizeof(Node));//为整个线性表</span><br><span class="line">    r = *L;//r为指向尾部的结点</span><br><span class="line">    <span class="keyword">for</span>(i = 0;i &lt; n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        p = (Node *)malloc(sizeof(Node));//生成新结点</span><br><span class="line">        p-&gt;data = rand() % 100 + 1;//随机生成100以内的数字</span><br><span class="line">        r-&gt;next = p;//将表尾终端结点的指针指向新结点</span><br><span class="line">        r = p; //就那个当前新结点定义为表尾终端结点</span><br><span class="line">    &#125;</span><br><span class="line">    r-&gt;next = NULL;//表示当前链表结束</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>注意L与r的关系，L指整个单链表，而r指向尾节点的变量，r会随着循环不断地变化结点，而L则是随着循环增长为一个多结点的链表。<br></p>
+<p>这里需要解释一下，r-&gt;next = p的意思，其实就是将刚才的表尾终端结点r的指针指向新结点p。<br></p>
+<h3 id="九、单链表的整表删除"><a href="#九、单链表的整表删除" class="headerlink" title="九、单链表的整表删除"></a>九、单链表的整表删除</h3><p>当我们不打算使用这个单链表时，我们需要把它销毁，其实也就是在内存中将它释放掉，以便于留出空间给其他程序或软件使用。<br></p>
+<p>单链表整表删除的算法思路如下： <br></p>
+<ol>
+<li>声明一结点p和q； <br></li>
+<li>将第一个结点赋值给p； <br></li>
+<li>循环 <br></li>
+<li>将下一结点赋值给q; <br></li>
+<li>释放p; <br></li>
+<li>将q赋值给p。<br></li>
+</ol>
+<p>实现代码算法如下:<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">//初始条件:顺序线性表L已经存在，操作结果：将L重置为空表</span><br><span class="line">Status ClearList(LinkList *L)</span><br><span class="line">&#123;</span><br><span class="line">    LinkList p,q;</span><br><span class="line">    p = (*L)-&gt;next;//p指向第一个结点</span><br><span class="line">    <span class="keyword">while</span>(p)//没到表尾</span><br><span class="line">    &#123;</span><br><span class="line">        q = p-&gt;next;</span><br><span class="line">        free(p);</span><br><span class="line">        p = q;</span><br><span class="line">    &#125;</span><br><span class="line">    (*L)-&gt;next = NULL;//头结点指针域为空</span><br><span class="line">    <span class="built_in">return</span> OK;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="十、单链表结构与顺序存储结构优缺点"><a href="#十、单链表结构与顺序存储结构优缺点" class="headerlink" title="十、单链表结构与顺序存储结构优缺点"></a>十、单链表结构与顺序存储结构优缺点</h3><p>简单地对单链表结构和顺序存储结构作对比。 <br><br><b>1、存储分配方式：</b> <br><br>顺序存储结构有一段连续的存储单元依然存储线性表的数据元素。 <br><br>单链表采用链式存储结构，用一组任意的存储单元存放线性表的玩意。<br></p>
+<p><b>2、时间性能：</b><br><br>查找：<br> </p>
+<ul>
+<li>顺序存储结构O(1) </li>
+<li>单链表O(n)</li>
+</ul>
+<p><b>插入与删除</b> </p>
+<ul>
+<li>顺序存储结构需要平均移动表长一半的元素，时间为O(n) </li>
+<li>单链表在线出某位置的指针后，插入和删除时间仅为O(1)</li>
+</ul>
+<p><b>3、空间性能</b> </p>
+<ul>
+<li>顺序存储结构需要预分配存储空间，分大了，浪费，分小了易发生上溢。 </li>
+<li>单链表不需要分配存储空间，只要有就可以分配，元素个数也不受限制。</li>
+</ul>
+<p>通过上面的对比，我们可以得出一些经验性的结论：<br></p>
+<p>① 若线性表<b>需要频繁查找，很少进入插入和删除操作时，宜采用顺序存储结构。 <br><br>若需要频繁插入和删除时，宜采用单链表结构。 </b><br><br>比如游戏开发中，对于用户注册的个人信息，除了注册时插入数据外，绝大多数情况下都是读取，所以应该考虑用顺序存储结构。而游戏中的玩家的武器或者装备列表，随着玩家游戏过程中，可能随时增加或删除，此时应该用单链表比较合适。当然，这只是简单地类比。现实生活中的软件开发，要考虑的问题会复杂得多。<br></p>
+<p><b>②当线性表中的元素个数变化较大或者根本不知道有多大时，最好用单链表结构，这样可以不用考虑存储空间大小问题。</b><br><br>而<b>如果事先知道线性表的大致长度</b>，比如一年12个月，这种用顺序存储结构效率会高很多。<br></p>
+<p>总之，线性表的顺序存储结构和单链表结构各有其优点，不是简单地说哪个不好，需要根据实际情况，来综合平衡采用哪种数据更能满足和达到需求和性能。<br></p>
+<h3 id="十一、静态链表"><a href="#十一、静态链表" class="headerlink" title="十一、静态链表"></a>十一、静态链表</h3><p>C语言具有指针能力，使得它可以非常容易地操作内存中的地址和数据，这比其他高级语言更加方便灵活。 <br><br>后来的面向对象语言，如Java、C#等，虽不使用指针，但因为启用了对象引用机制，从某种角度上也间接实现了指针的某些作用。但对于一些语言，如Basic、Fortran等早期的编程高级语言，由于没有指针，链表结构就没办法实现。<br></p>
+<p>有人想出用数组来代替指针，来描述链表。<br></p>
+<p>首先我们用数组的元素都是由两个数据域组成，data和cur。也就是说，数组的每个下表都对应一个data和一个cur。数据域data，用来存放数据元素，也就是通常我们要处理的数据；而cur相当于单链表中的next指针，存放该元素后继在数组中的下表，我们把cur叫做游标。<br></p>
+<p>我们把这种<b>用数组描述的链表叫静态链表，这种描述方法还有起名叫做游标实现法。</b><br></p>
+<p>为了我们方便插入数据，我们通常会把数组建立得大一些，以便有一些空闲空间可以方便插入不至于溢出。<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">//线性表的静态链表存储结构</span><br><span class="line"><span class="comment">#define MAXSIZE 1000//假设链表的最大长度1000</span></span><br><span class="line">typedef struct</span><br><span class="line">&#123;</span><br><span class="line">    ElemType data;</span><br><span class="line">    int cur;//游标(Cursor),为0时表示无指向</span><br><span class="line">&#125;Component,StaticLinkList[MAXSIZE];</span><br></pre></td></tr></table></figure></p>
+<p>另外我们对数组的第一个和最后一个元素作为特殊元素处理，不存数据。我们通常把未被使用的数组元素称为备用链表。而数组第一个元素，即下标为0的元素的cur就存放备用链表的第一个结点的下表;而数组的最后一个元素的cur则存放第一个有数值的元素的下表，相当于单链表中的头结点作用，当整个链表为空时，则为0²。<br><br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">//将一维数组space中个分量链成一备用链表</span><br><span class="line">//space[0].cur为头指针，<span class="string">"0"</span>表示空指针</span><br><span class="line">Status InitList(StaticLinkList space)</span><br><span class="line">&#123;</span><br><span class="line">    int i;</span><br><span class="line">    <span class="keyword">for</span>(i = 0;i &lt; MAXSIZE - 1;i++)</span><br><span class="line">        space[i].cur = i + 1;</span><br><span class="line">    space[MAXSIZE - 1].cur = 0;//目前静态链表为空</span><br><span class="line">    <span class="built_in">return</span> OK;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h5 id="1-静态链表的插入操作"><a href="#1-静态链表的插入操作" class="headerlink" title="1.静态链表的插入操作"></a>1.静态链表的插入操作</h5><p>静态链表中要解决的是：如何用静态模拟动态链表结构的存储空间的分配，需要时申请，不需要时释放。<br></p>
+<p>我们前面说过，在动态链表中，结点的申请和释放分别借用malloc()和free()两个函数来实现。在静态链表中，操作的是数组，不存在像动态链表一样的申请和释放问题，所以我们需要自己实现这两个函数。<br></p>
+<p>为了辨明数组中哪些分量未被使用，解决的办法是将所有未被使用过的以及已被删除的分量用游标链成一个备用的链表，每当进行插入时，便可从备用链表上取得第一个结点作为待插入的新结点。<br><br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">//若备用空间链表为空，则返回分配的结点下表，否则返回0</span><br><span class="line">int Malloc_SLL(StaticLinkList space)</span><br><span class="line">&#123;</span><br><span class="line">    int i = space[0].cur;//当前数组的第一个元素的Cur存的值</span><br><span class="line">    <span class="keyword">if</span>(space[0].cur)</span><br><span class="line">    &#123;</span><br><span class="line">        space[0].cur = space[i].cur;//由于要拿出一个分量来使用</span><br><span class="line">                        //所以我们,就得把它的下一个分量用作备用</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">return</span> i;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>插入元素<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">//在L中第i个元素之前插入新的数据元素e</span><br><span class="line">Status ListInsert(StaticLinkList L, int i,ElemType e)</span><br><span class="line">&#123;</span><br><span class="line">    int j,k,l;</span><br><span class="line">    k = MAX_SIZE - 1;//注意k首先是最后一个元素的下表</span><br><span class="line">    <span class="keyword">if</span>(i &lt; 1 || i &gt; ListLength(L) + 1)</span><br><span class="line">        <span class="built_in">return</span> ERROR;</span><br><span class="line">    j = Malloc_SSL(L);//获得空闲分量的下标</span><br><span class="line">    <span class="keyword">if</span>(j)</span><br><span class="line">    &#123;</span><br><span class="line">        L(j).data = e;//将数据赋值给此分量的下表</span><br><span class="line">        <span class="keyword">for</span>(l = 1;l &lt;= i - 1;l++)//相当于循环链表，找到第i-1位</span><br><span class="line">        &#123;</span><br><span class="line">            k = L[k].cur;</span><br><span class="line">        &#125;</span><br><span class="line">        L[j].cur = L[k].cur;//新的第i个元素元素指向原本第i个元素</span><br><span class="line">        L[k].cur = j;//第i - 1个元素指向新的第i个元素</span><br><span class="line">        <span class="built_in">return</span> OK;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">return</span> ERROR;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>就这样，我们实现了在数组中，实现不移动元素，却插入了数据的操作。<br></p>
+<h5 id="2-静态链表的删除操作"><a href="#2-静态链表的删除操作" class="headerlink" title="2.静态链表的删除操作"></a>2.静态链表的删除操作</h5><p>和前面一样，删除元素时，原来是需要释放结点的函数free()。我们也要自己实现它。<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">//删除在L中第i个数据元素e</span><br><span class="line">Status ListDelete(StaticLinkList L,int i)</span><br><span class="line">&#123;</span><br><span class="line">    int j , k;</span><br><span class="line">    <span class="keyword">if</span>(i &lt; 1 || i &gt; ListLength(L))</span><br><span class="line">        <span class="built_in">return</span> ERROR;</span><br><span class="line">    k = MAX_SIZE - 1;</span><br><span class="line">    <span class="keyword">for</span>(j = 1;j &lt; = i - 1;j++)//相当于遍历链表</span><br><span class="line">    &#123;</span><br><span class="line">        k = L[k].cur;</span><br><span class="line">    &#125;</span><br><span class="line">    j = L[k].cur;//把要删除的数组下标赋值给j</span><br><span class="line">    Free_SLL(L,j);//调用删除函数</span><br><span class="line">    <span class="built_in">return</span> OK;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//将下表为k的空闲结点回收到备用链表</span><br><span class="line">void Free_SSL(StaticLinkList space,int k)</span><br><span class="line">&#123;</span><br><span class="line">   space[k] = space[0].cur;//把原来第一位指向的下标赋给新第一位</span><br><span class="line">   space[0].cur = k;//要删除的分量赋给第一个元素cur</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>静态链表也就是相应其他操作的相关实现。比如ListLength<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">//初始条件:静态链表L已存在。操作结果:返回L中数据元素个数</span><br><span class="line">int ListLength(StaticLinkList L)</span><br><span class="line">&#123;</span><br><span class="line">    int j = 0;</span><br><span class="line">    int i = L[MAXSIZE - 1].cur;</span><br><span class="line">    <span class="keyword">while</span>(i)</span><br><span class="line">    &#123;</span><br><span class="line">        i = L[i].cur;</span><br><span class="line">        j++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">return</span> j;</span><br><span class="line">&#125;</span><br><span class="line">1</span><br></pre></td></tr></table></figure></p>
+<h5 id="3-静态链表优缺点"><a href="#3-静态链表优缺点" class="headerlink" title="3.静态链表优缺点"></a>3.静态链表优缺点</h5><p>优点：在插入和删除操作时，只要修改游标，不需要移动元素，从而改进了在顺序存储结构中的插入和删除操作需要移动大量元素的缺点。<br></p>
+<p>缺点：<br>①没有解决连续存储分配带来表长难以确定的问题 <br><br>②失去了顺序存储结构随机存储的特性<br></p>
+<h3 id="十二、循环链表"><a href="#十二、循环链表" class="headerlink" title="十二、循环链表"></a>十二、循环链表</h3><p>对于单个链表，由于每个结点只存储了向后的指针，到了尾标志就停止了向后链的操作，这样当中某一结点就无法找到它的前驱结点了。<br></p>
+<p><b>将单链表中终端结点的指针由空指针改为指向头结点，就使整个单链表形成一个环， 这种头尾相接的单链表称为单循环链表，简称循环链表。</b><br></p>
+<p>循环链表解决了一个很麻烦的问题，<b>如何从当中一个结点出发，访问到链表的全部结点。</b><br></p>
+<p><b>循环链表和单链表的主要差异就是在于循环的判断条件上，</b>原来是判断p-&gt;next是否为空，现在则是p-&gt;next不等于头结点，则循环未结束。<br></p>
+<h3 id="十三、双向链表"><a href="#十三、双向链表" class="headerlink" title="十三、双向链表"></a>十三、双向链表</h3><p>在单链表中，有了next指针，这就使得我们要查找下一结点的事件复杂度为O(1)。可是如果我们要查找的是上一节点的话，那最坏的时间复杂度就是O(n)了，因为我们每次都要从头开始遍历寻找。</p>
+<p>为了<b>克服单向性这一缺点，设计出了双向链表。双向链表(double linked list)是在单链表的每个结点中，再设置一个指向其前驱结点的指针域。</b>所以在双向链表中的结点都有两个指针域，一个指向直接后继，一个指向直接前驱。<br><br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">//线性表的双向链表存储结构</span><br><span class="line">typedef struct DulNode</span><br><span class="line">&#123;</span><br><span class="line">    ElemType data;</span><br><span class="line">    struct DuLNode *prior;//直接前驱指针</span><br><span class="line">    struct DuLNode *next;//直接后继指针</span><br><span class="line">&#125;DulNode,*DuLinkList;</span><br></pre></td></tr></table></figure></p>
+<p>既然单链表可以有循环，那么双向链表当然可以是循环表。<br></p>
+<p>由于是双向链表，对于链表中某一结点p，它的后继的前驱是它自己。它的前驱的后继自然也是它自己。即：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">p-&gt;next-&gt;prior = p = p-&gt;prior-&gt;next</span><br></pre></td></tr></table></figure></p>
+<p>插入操作时，其实并不复杂，但是顺序很重要。 <br><br>假设存储元素e的结点为s，要实现将结点s插入到p和p-&gt;next之间需要下面几部。<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">s-&gt;prior = p;//把p赋给s的前驱</span><br><span class="line">s-&gt;next = p-&gt;next;//把p-&gt;next赋给s的后继</span><br><span class="line">p-&gt;next-&gt;prior = s;//把s赋给p-&gt;next的前驱</span><br><span class="line">p-&gt;next = s;//把s赋给p的后继</span><br></pre></td></tr></table></figure></p>
+<p>如要删除结点p，只要下面两步骤。<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">p-&gt;prior-&gt;next = p-&gt;next;//把p-&gt;next赋给p-&gt;prior的后继</span><br><span class="line">p-&gt;next-&gt;prior = p-&gt;prior;//把p-&gt;proir赋给p-&gt;next的前驱</span><br><span class="line">free(p);//释放p的空间</span><br></pre></td></tr></table></figure></p>
+<p>双向链表对于单链表来说，要更复杂一些，对于插入和删除时，需要小心。 <br><br><b>另外由于它每个结点需要几轮两份指针，所以在空间上是要占用略多一些的。不过由于良好的对称性，使得对某个结点的前后结点的操作，带来了方便，可以有效提高算法的时间性能。</b><br></p>
+<p>说白了，也就是<b>空间换时间。</b></p>
+
+      
+    </div>
+    
+    
+    
+
+<div>
+  
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+
+  
+</div>
+
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/images/wechat-qcode.jpg" alt="hao14293 wechat" style="width: 200px; max-width: 100%;"/>
+    <div>交流或订阅，请扫描上方微信二维码</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="hao14293 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    hao14293
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://shiyi.today/year/03/18/52829/" title="线性表的基本概念">http://shiyi.today/year/03/18/52829/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/线性表/" rel="tag"><i class="fa fa-tag"></i>
+
+ 线性表</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/year/03/18/11332/" rel="next" title="算法时间复杂度和空间复杂度计算">
+                <i class="fa fa-chevron-left"></i> 算法时间复杂度和空间复杂度计算
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/year/03/18/22581/" rel="prev" title="Jinja2 简明教程">
+                Jinja2 简明教程 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/cat.jpg"
+                alt="hao14293" />
+            
+              <p class="site-author-name" itemprop="name">hao14293</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">79</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">21</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/hao14293" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:hao14293@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://music.163.com/#/user/home?id=321799989" target="_blank" title="网易云音乐">
+                      
+                        <i class="fa fa-fw fa-globe"></i>网易云音乐</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、线性表的定义"><span class="nav-number">1.</span> <span class="nav-text">一、线性表的定义</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#线性表：零个或多个数据元素的有限序列。"><span class="nav-number">1.1.</span> <span class="nav-text">线性表：零个或多个数据元素的有限序列。</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、线性表的抽象数据类型"><span class="nav-number">2.</span> <span class="nav-text">二、线性表的抽象数据类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、线性表的顺序存储结构"><span class="nav-number">3.</span> <span class="nav-text">三、线性表的顺序存储结构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-顺序存储定义"><span class="nav-number">3.1.</span> <span class="nav-text">1.顺序存储定义</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-顺序存储方式"><span class="nav-number">3.2.</span> <span class="nav-text">2.顺序存储方式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-数组长度与线性表长度区别"><span class="nav-number">3.3.</span> <span class="nav-text">3.数组长度与线性表长度区别</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-地址计算方法"><span class="nav-number">3.4.</span> <span class="nav-text">4.地址计算方法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四、顺序存储结构的插入与删除"><span class="nav-number">4.</span> <span class="nav-text">四、顺序存储结构的插入与删除</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-获得元素操作"><span class="nav-number">4.1.</span> <span class="nav-text">1.获得元素操作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-插入操作"><span class="nav-number">4.2.</span> <span class="nav-text">2.插入操作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-删除操作"><span class="nav-number">4.3.</span> <span class="nav-text">3.删除操作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-线性表顺序存储结构的优缺点"><span class="nav-number">4.4.</span> <span class="nav-text">4.线性表顺序存储结构的优缺点</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#五、线性表的链式存储结构"><span class="nav-number">5.</span> <span class="nav-text">五、线性表的链式存储结构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-线性表链式存储结构定义"><span class="nav-number">5.1.</span> <span class="nav-text">1.线性表链式存储结构定义</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-头指针与头结点的异同"><span class="nav-number">5.2.</span> <span class="nav-text">2.头指针与头结点的异同</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-线性链表式存储结构代码描述"><span class="nav-number">5.3.</span> <span class="nav-text">3.线性链表式存储结构代码描述</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#六、单链表的读取"><span class="nav-number">6.</span> <span class="nav-text">六、单链表的读取</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#八、单链表的插入与删除"><span class="nav-number">7.</span> <span class="nav-text">八、单链表的插入与删除</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-单链表的插入"><span class="nav-number">7.1.</span> <span class="nav-text">1.单链表的插入</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-单链表的删除"><span class="nav-number">7.2.</span> <span class="nav-text">2.单链表的删除</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#八、单链表的整表创建"><span class="nav-number">8.</span> <span class="nav-text">八、单链表的整表创建</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#九、单链表的整表删除"><span class="nav-number">9.</span> <span class="nav-text">九、单链表的整表删除</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#十、单链表结构与顺序存储结构优缺点"><span class="nav-number">10.</span> <span class="nav-text">十、单链表结构与顺序存储结构优缺点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#十一、静态链表"><span class="nav-number">11.</span> <span class="nav-text">十一、静态链表</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-静态链表的插入操作"><span class="nav-number">11.0.1.</span> <span class="nav-text">1.静态链表的插入操作</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-静态链表的删除操作"><span class="nav-number">11.0.2.</span> <span class="nav-text">2.静态链表的删除操作</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-静态链表优缺点"><span class="nav-number">11.0.3.</span> <span class="nav-text">3.静态链表优缺点</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#十二、循环链表"><span class="nav-number">12.</span> <span class="nav-text">十二、循环链表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#十三、双向链表"><span class="nav-number">13.</span> <span class="nav-text">十三、双向链表</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">hao14293</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://github.com/hao14293">Github</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Hosted by <!--&mdash--> <a class="theme-link" target="_blank" href="https://pages.coding.me/">Coding Pages</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+<span id="busuanzi_container_site_pv">
+    你是本站第 <span id="busuanzi_value_site_pv"></span> 位访问者
+</span>
+
+
+  <span class="post-meta-divider">|</span>
+
+
+ <div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共136.4k字</span>
+</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+	    
+            id: window.location.pathname, 
+            owner: 'hao14293',
+            repo: 'hao14293.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: 'ba73ac0871cac2f56573973a4d54635acb31b9b7',
+            
+                client_id: '38751d2ce76384ae7f94'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("7msrwoOKhaUobO1swwsoE2Bm-gzGzoHsz", "eJmhyYd2bnq8FahSubUEl51l");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+</body>
+</html>
