@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://shiyi.today/year/10/05/17089/</loc>
-    <lastmod>2018-10-05T04:21:16.686Z</lastmod>
+    <lastmod>2018-10-05T04:24:11.764Z</lastmod>
     <data>
         <display>
         <title>Python 中的 if __name__ == __main__ 该如何理解</title>
@@ -38,23 +38,6 @@
     </url>
 
     
-  <url>
-    <loc>http://shiyi.today/year/07/24/54492/</loc>
-    <lastmod>2018-10-02T10:19:30.838Z</lastmod>
-    <data>
-        <display>
-        <title>深入理解不起眼的 &lt;head&gt; 标签</title>
-        <pubTime>2018-07-24T09:03:04.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="web" url="http://shiyi.today/categories/web/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
   <url>
     <loc>http://shiyi.today/year/03/18/52829/</loc>
@@ -77,12 +60,12 @@
 
     
   <url>
-    <loc>http://shiyi.today/year/05/23/30850/</loc>
+    <loc>http://shiyi.today/year/05/23/59462/</loc>
     <lastmod>2018-10-02T10:19:30.838Z</lastmod>
     <data>
         <display>
-        <title>数据结构--练习第3章 栈和队列</title>
-        <pubTime>2018-05-23T04:39:59.000Z</pubTime>
+        <title>数据结构--练习第2章 线性表</title>
+        <pubTime>2018-05-23T04:35:35.000Z</pubTime>
         
          
            
@@ -95,12 +78,12 @@
 
     
   <url>
-    <loc>http://shiyi.today/year/05/23/59462/</loc>
+    <loc>http://shiyi.today/year/05/23/30850/</loc>
     <lastmod>2018-10-02T10:19:30.838Z</lastmod>
     <data>
         <display>
-        <title>数据结构--练习第2章 线性表</title>
-        <pubTime>2018-05-23T04:35:35.000Z</pubTime>
+        <title>数据结构--练习第3章 栈和队列</title>
+        <pubTime>2018-05-23T04:39:59.000Z</pubTime>
         
          
            
@@ -225,24 +208,6 @@
 
     
   <url>
-    <loc>http://shiyi.today/year/07/25/46266/</loc>
-    <lastmod>2018-10-02T10:19:30.838Z</lastmod>
-    <data>
-        <display>
-        <title>深入理解 float 属性</title>
-        <pubTime>2018-07-25T07:29:47.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="web" url="http://shiyi.today/categories/web/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://shiyi.today/year/05/11/27171/</loc>
     <lastmod>2018-10-02T10:19:30.838Z</lastmod>
     <data>
@@ -259,7 +224,6 @@
     </data>
     </url>
 
-    
     
   <url>
     <loc>http://shiyi.today/year/06/05/23125/</loc>
@@ -298,24 +262,6 @@
 
     
   <url>
-    <loc>http://shiyi.today/year/03/10/29072/</loc>
-    <lastmod>2018-10-02T10:19:30.838Z</lastmod>
-    <data>
-        <display>
-        <title>玩转运动世界校园</title>
-        <pubTime>2018-03-10T02:46:22.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="Geeker" url="http://shiyi.today/categories/Geeker/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://shiyi.today/year/06/02/36587/</loc>
     <lastmod>2018-10-02T10:19:30.838Z</lastmod>
     <data>
@@ -327,6 +273,24 @@
            
              
               <breadCrumb title="web" url="http://shiyi.today/categories/web/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://shiyi.today/year/03/10/29072/</loc>
+    <lastmod>2018-10-02T10:19:30.838Z</lastmod>
+    <data>
+        <display>
+        <title>玩转运动世界校园</title>
+        <pubTime>2018-03-10T02:46:22.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Geeker" url="http://shiyi.today/categories/Geeker/"/>
           
         </display>
     </data>
@@ -353,18 +317,19 @@
     </url>
 
     
+    
   <url>
-    <loc>http://shiyi.today/year/06/03/19137/</loc>
+    <loc>http://shiyi.today/year/07/24/54492/</loc>
     <lastmod>2018-10-02T10:19:30.838Z</lastmod>
     <data>
         <display>
-        <title>每个Linux 新手都应该知道的10个命令</title>
-        <pubTime>2018-06-03T01:36:41.000Z</pubTime>
+        <title>深入理解不起眼的 &lt;head&gt; 标签</title>
+        <pubTime>2018-07-24T09:03:04.000Z</pubTime>
         
          
            
              
-              <breadCrumb title="Linux" url="http://shiyi.today/categories/Linux/"/>
+              <breadCrumb title="web" url="http://shiyi.today/categories/web/"/>
           
         </display>
     </data>
@@ -409,6 +374,59 @@
     </url>
 
     
+  <url>
+    <loc>http://shiyi.today/year/07/25/46266/</loc>
+    <lastmod>2018-10-02T10:19:30.838Z</lastmod>
+    <data>
+        <display>
+        <title>深入理解 float 属性</title>
+        <pubTime>2018-07-25T07:29:47.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="web" url="http://shiyi.today/categories/web/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://shiyi.today/year/06/03/19137/</loc>
+    <lastmod>2018-10-02T10:19:30.838Z</lastmod>
+    <data>
+        <display>
+        <title>每个Linux 新手都应该知道的10个命令</title>
+        <pubTime>2018-06-03T01:36:41.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Linux" url="http://shiyi.today/categories/Linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://shiyi.today/year/08/01/25720/</loc>
+    <lastmod>2018-10-02T10:19:30.838Z</lastmod>
+    <data>
+        <display>
+        <title>文本等细节类样式处理</title>
+        <pubTime>2018-08-01T06:45:33.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="web" url="http://shiyi.today/categories/web/"/>
+          
+        </display>
+    </data>
+    </url>
+
     
   <url>
     <loc>http://shiyi.today/year/03/17/28074/</loc>
@@ -449,13 +467,53 @@
 
     
   <url>
-    <loc>http://shiyi.today/year/08/01/25720/</loc>
-    <lastmod>2018-10-02T10:19:30.838Z</lastmod>
+    <loc>http://shiyi.today/year/03/19/49666/</loc>
+    <lastmod>2018-10-02T10:19:30.834Z</lastmod>
     <data>
         <display>
-        <title>文本等细节类样式处理</title>
-        <pubTime>2018-08-01T06:45:33.000Z</pubTime>
+        <title>L2TP/IPSec配置教程</title>
+        <pubTime>2018-03-19T11:45:59.000Z</pubTime>
         
+        <tag>vpn</tag>
+         
+         
+           
+             
+              <breadCrumb title="Geeker" url="http://shiyi.today/categories/Geeker/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://shiyi.today/year/03/13/12935/</loc>
+    <lastmod>2018-10-02T10:19:30.834Z</lastmod>
+    <data>
+        <display>
+        <title>vim精简版教程</title>
+        <pubTime>2018-03-13T00:40:08.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Linux" url="http://shiyi.today/categories/Linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://shiyi.today/year/04/15/31791/</loc>
+    <lastmod>2018-10-02T10:19:30.834Z</lastmod>
+    <data>
+        <display>
+        <title>关于CSS里的line-height详解</title>
+        <pubTime>2018-04-15T14:44:47.000Z</pubTime>
+        
+        <tag>css</tag>
+         
          
            
              
@@ -467,15 +525,13 @@
 
     
   <url>
-    <loc>http://shiyi.today/year/03/18/22581/</loc>
+    <loc>http://shiyi.today/year/06/04/20894/</loc>
     <lastmod>2018-10-02T10:19:30.834Z</lastmod>
     <data>
         <display>
-        <title>Jinja2 简明教程</title>
-        <pubTime>2018-03-18T03:13:33.000Z</pubTime>
+        <title>内容的超出处理————overflow</title>
+        <pubTime>2018-06-04T15:37:46.000Z</pubTime>
         
-        <tag>Jinja2</tag>
-         
          
            
              
@@ -544,6 +600,26 @@
 
     
   <url>
+    <loc>http://shiyi.today/year/03/17/33888/</loc>
+    <lastmod>2018-10-02T10:19:30.834Z</lastmod>
+    <data>
+        <display>
+        <title>安装TomCat学习JSP</title>
+        <pubTime>2018-03-17T03:35:30.000Z</pubTime>
+        
+        <tag>TomCat</tag>
+         
+         
+           
+             
+              <breadCrumb title="Geeker" url="http://shiyi.today/categories/Geeker/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://shiyi.today/year/04/16/3879/</loc>
     <lastmod>2018-10-02T10:19:30.834Z</lastmod>
     <data>
@@ -559,26 +635,6 @@
            
              
               <breadCrumb title="web" url="http://shiyi.today/categories/web/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://shiyi.today/year/03/17/33888/</loc>
-    <lastmod>2018-10-02T10:19:30.834Z</lastmod>
-    <data>
-        <display>
-        <title>安装TomCat学习JSP</title>
-        <pubTime>2018-03-17T03:35:30.000Z</pubTime>
-        
-        <tag>TomCat</tag>
-         
-         
-           
-             
-              <breadCrumb title="Geeker" url="http://shiyi.today/categories/Geeker/"/>
           
         </display>
     </data>
@@ -622,37 +678,17 @@
 
     
   <url>
-    <loc>http://shiyi.today/year/04/15/31791/</loc>
+    <loc>http://shiyi.today/year/04/06/22604/</loc>
     <lastmod>2018-10-02T10:19:30.834Z</lastmod>
     <data>
         <display>
-        <title>关于CSS里的line-height详解</title>
-        <pubTime>2018-04-15T14:44:47.000Z</pubTime>
-        
-        <tag>css</tag>
-         
-         
-           
-             
-              <breadCrumb title="web" url="http://shiyi.today/categories/web/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://shiyi.today/year/06/08/4047/</loc>
-    <lastmod>2018-10-02T10:19:30.834Z</lastmod>
-    <data>
-        <display>
-        <title>伪元素</title>
-        <pubTime>2018-06-08T00:50:56.000Z</pubTime>
+        <title>人生需要诗意</title>
+        <pubTime>2018-04-06T04:43:56.000Z</pubTime>
         
          
            
              
-              <breadCrumb title="web" url="http://shiyi.today/categories/web/"/>
+              <breadCrumb title="Zen and Reading" url="http://shiyi.today/categories/Zen-and-Reading/"/>
           
         </display>
     </data>
@@ -678,49 +714,17 @@
 
     
   <url>
-    <loc>http://shiyi.today/year/04/06/22604/</loc>
+    <loc>http://shiyi.today/year/04/17/53322/</loc>
     <lastmod>2018-10-02T10:19:30.834Z</lastmod>
     <data>
         <display>
-        <title>人生需要诗意</title>
-        <pubTime>2018-04-06T04:43:56.000Z</pubTime>
+        <title>canvas-nest.js</title>
+        <pubTime>2018-04-17T00:57:48.000Z</pubTime>
         
+        <tag>js</tag>
          
-           
-             
-              <breadCrumb title="Zen and Reading" url="http://shiyi.today/categories/Zen-and-Reading/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://shiyi.today/year/03/13/12935/</loc>
-    <lastmod>2018-10-02T10:19:30.834Z</lastmod>
-    <data>
-        <display>
-        <title>vim精简版教程</title>
-        <pubTime>2018-03-13T00:40:08.000Z</pubTime>
-        
+        <tag>css</tag>
          
-           
-             
-              <breadCrumb title="Linux" url="http://shiyi.today/categories/Linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://shiyi.today/year/08/04/59283/</loc>
-    <lastmod>2018-10-02T10:19:30.834Z</lastmod>
-    <data>
-        <display>
-        <title>setTimeout和setInterval</title>
-        <pubTime>2018-08-03T16:54:10.000Z</pubTime>
-        
          
            
              
@@ -772,12 +776,66 @@
 
     
   <url>
+    <loc>http://shiyi.today/year/08/04/59283/</loc>
+    <lastmod>2018-10-02T10:19:30.834Z</lastmod>
+    <data>
+        <display>
+        <title>setTimeout和setInterval</title>
+        <pubTime>2018-08-03T16:54:10.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="web" url="http://shiyi.today/categories/web/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://shiyi.today/year/05/21/3185/</loc>
+    <lastmod>2018-10-02T10:19:30.834Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu 16.04 开机输入密码后一直退回到输入密码界面</title>
+        <pubTime>2018-05-21T14:39:07.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Linux" url="http://shiyi.today/categories/Linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://shiyi.today/year/03/10/47249/</loc>
     <lastmod>2018-10-02T10:19:30.834Z</lastmod>
     <data>
         <display>
         <title>Ubuntu 16.04 安装Eclipse</title>
         <pubTime>2018-03-09T17:13:10.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Linux" url="http://shiyi.today/categories/Linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://shiyi.today/year/03/09/43744/</loc>
+    <lastmod>2018-10-02T10:19:30.834Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu 16.04 程序快捷方式创建方法</title>
+        <pubTime>2018-03-09T03:15:03.000Z</pubTime>
         
          
            
@@ -803,24 +861,6 @@
            
              
               <breadCrumb title="Python" url="http://shiyi.today/categories/Python/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://shiyi.today/year/03/09/43744/</loc>
-    <lastmod>2018-10-02T10:19:30.834Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu 16.04 程序快捷方式创建方法</title>
-        <pubTime>2018-03-09T03:15:03.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="Linux" url="http://shiyi.today/categories/Linux/"/>
           
         </display>
     </data>
@@ -868,19 +908,17 @@
 
     
   <url>
-    <loc>http://shiyi.today/year/08/04/54393/</loc>
+    <loc>http://shiyi.today/year/03/14/29068/</loc>
     <lastmod>2018-10-02T10:19:30.834Z</lastmod>
     <data>
         <display>
-        <title>LeetCode 746. 使用最小花费爬楼梯(Python)</title>
-        <pubTime>2018-08-04T02:39:13.000Z</pubTime>
+        <title>Looking up at the stars</title>
+        <pubTime>2018-03-14T08:30:15.000Z</pubTime>
         
-        <tag>LeetCode</tag>
-         
          
            
              
-              <breadCrumb title="Algorithm and Data Structur" url="http://shiyi.today/categories/Algorithm-and-Data-Structur/"/>
+              <breadCrumb title="Zen and Reading" url="http://shiyi.today/categories/Zen-and-Reading/"/>
           
         </display>
     </data>
@@ -906,57 +944,19 @@
 
     
   <url>
-    <loc>http://shiyi.today/year/05/26/52173/</loc>
+    <loc>http://shiyi.today/year/08/04/54393/</loc>
     <lastmod>2018-10-02T10:19:30.834Z</lastmod>
     <data>
         <display>
-        <title>Linux 通过VNC连接 Raspberry pi</title>
-        <pubTime>2018-05-26T14:31:05.000Z</pubTime>
+        <title>LeetCode 746. 使用最小花费爬楼梯(Python)</title>
+        <pubTime>2018-08-04T02:39:13.000Z</pubTime>
         
-         
-           
-             
-              <breadCrumb title="Raspberry pi" url="http://shiyi.today/categories/Raspberry-pi/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://shiyi.today/year/05/21/3185/</loc>
-    <lastmod>2018-10-02T10:19:30.834Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu 16.04 开机输入密码后一直退回到输入密码界面</title>
-        <pubTime>2018-05-21T14:39:07.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="Linux" url="http://shiyi.today/categories/Linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://shiyi.today/year/04/17/53322/</loc>
-    <lastmod>2018-10-02T10:19:30.834Z</lastmod>
-    <data>
-        <display>
-        <title>canvas-nest.js</title>
-        <pubTime>2018-04-17T00:57:48.000Z</pubTime>
-        
-        <tag>css</tag>
-         
-        <tag>js</tag>
+        <tag>LeetCode</tag>
          
          
            
              
-              <breadCrumb title="web" url="http://shiyi.today/categories/web/"/>
+              <breadCrumb title="Algorithm and Data Structur" url="http://shiyi.today/categories/Algorithm-and-Data-Structur/"/>
           
         </display>
     </data>
@@ -982,12 +982,12 @@
 
     
   <url>
-    <loc>http://shiyi.today/year/06/04/20894/</loc>
+    <loc>http://shiyi.today/year/06/08/4047/</loc>
     <lastmod>2018-10-02T10:19:30.834Z</lastmod>
     <data>
         <display>
-        <title>内容的超出处理————overflow</title>
-        <pubTime>2018-06-04T15:37:46.000Z</pubTime>
+        <title>伪元素</title>
+        <pubTime>2018-06-08T00:50:56.000Z</pubTime>
         
          
            
@@ -1000,19 +1000,19 @@
 
     
   <url>
-    <loc>http://shiyi.today/year/03/19/49666/</loc>
+    <loc>http://shiyi.today/year/03/18/22581/</loc>
     <lastmod>2018-10-02T10:19:30.834Z</lastmod>
     <data>
         <display>
-        <title>L2TP/IPSec配置教程</title>
-        <pubTime>2018-03-19T11:45:59.000Z</pubTime>
+        <title>Jinja2 简明教程</title>
+        <pubTime>2018-03-18T03:13:33.000Z</pubTime>
         
-        <tag>vpn</tag>
+        <tag>Jinja2</tag>
          
          
            
              
-              <breadCrumb title="Geeker" url="http://shiyi.today/categories/Geeker/"/>
+              <breadCrumb title="web" url="http://shiyi.today/categories/web/"/>
           
         </display>
     </data>
@@ -1096,24 +1096,6 @@
 
     
   <url>
-    <loc>http://shiyi.today/year/03/11/43793/</loc>
-    <lastmod>2018-10-02T10:19:30.834Z</lastmod>
-    <data>
-        <display>
-        <title>数据库原理笔记</title>
-        <pubTime>2018-03-11T05:16:48.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="DataBase" url="http://shiyi.today/categories/DataBase/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://shiyi.today/year/04/10/64598/</loc>
     <lastmod>2018-10-02T10:19:30.834Z</lastmod>
     <data>
@@ -1127,6 +1109,24 @@
            
              
               <breadCrumb title="web" url="http://shiyi.today/categories/web/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://shiyi.today/year/03/11/43793/</loc>
+    <lastmod>2018-10-02T10:19:30.834Z</lastmod>
+    <data>
+        <display>
+        <title>数据库原理笔记</title>
+        <pubTime>2018-03-11T05:16:48.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="DataBase" url="http://shiyi.today/categories/DataBase/"/>
           
         </display>
     </data>
@@ -1170,17 +1170,17 @@
 
     
   <url>
-    <loc>http://shiyi.today/year/03/14/29068/</loc>
+    <loc>http://shiyi.today/year/05/26/52173/</loc>
     <lastmod>2018-10-02T10:19:30.834Z</lastmod>
     <data>
         <display>
-        <title>Looking up at the stars</title>
-        <pubTime>2018-03-14T08:30:15.000Z</pubTime>
+        <title>Linux 通过VNC连接 Raspberry pi</title>
+        <pubTime>2018-05-26T14:31:05.000Z</pubTime>
         
          
            
              
-              <breadCrumb title="Zen and Reading" url="http://shiyi.today/categories/Zen-and-Reading/"/>
+              <breadCrumb title="Raspberry pi" url="http://shiyi.today/categories/Raspberry-pi/"/>
           
         </display>
     </data>
@@ -1304,12 +1304,12 @@
 
     
   <url>
-    <loc>http://shiyi.today/year/08/08/28779/</loc>
+    <loc>http://shiyi.today/year/06/10/58581/</loc>
     <lastmod>2018-10-02T10:19:30.830Z</lastmod>
     <data>
         <display>
-        <title>JS元素大小</title>
-        <pubTime>2018-08-08T14:01:04.000Z</pubTime>
+        <title>HTML/CSS 问答题</title>
+        <pubTime>2018-06-10T13:39:14.000Z</pubTime>
         
          
            
@@ -1375,12 +1375,12 @@
 
     
   <url>
-    <loc>http://shiyi.today/year/06/10/58581/</loc>
+    <loc>http://shiyi.today/year/08/03/25026/</loc>
     <lastmod>2018-10-02T10:19:30.830Z</lastmod>
     <data>
         <display>
-        <title>HTML/CSS 问答题</title>
-        <pubTime>2018-06-10T13:39:14.000Z</pubTime>
+        <title>JS中各种width/height</title>
+        <pubTime>2018-08-03T08:35:51.000Z</pubTime>
         
          
            
@@ -1393,12 +1393,12 @@
 
     
   <url>
-    <loc>http://shiyi.today/year/08/03/25026/</loc>
+    <loc>http://shiyi.today/year/08/08/28779/</loc>
     <lastmod>2018-10-02T10:19:30.830Z</lastmod>
     <data>
         <display>
-        <title>JS中各种width/height</title>
-        <pubTime>2018-08-03T08:35:51.000Z</pubTime>
+        <title>JS元素大小</title>
+        <pubTime>2018-08-08T14:01:04.000Z</pubTime>
         
          
            

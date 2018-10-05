@@ -129,7 +129,7 @@ var _hmt = _hmt || [];
 <meta property="og:site_name" content="诗意">
 <meta property="og:description" content="这个问题来自于知乎用户的提问，当时看到这个问题，我只是做了下简单的回答。后来我发现，对于很多人来说，更准确的说应该是大部分的 Python 初学者，对这个问题理解的不是很深刻。所以这里我来做下总结，并试图把这个问题说明白。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-05T04:21:16.686Z">
+<meta property="og:updated_time" content="2018-10-05T04:24:11.764Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python 中的 if __name__ == __main__ 该如何理解">
 <meta name="twitter:description" content="这个问题来自于知乎用户的提问，当时看到这个问题，我只是做了下简单的回答。后来我发现，对于很多人来说，更准确的说应该是大部分的 Python 初学者，对这个问题理解的不是很深刻。所以这里我来做下总结，并试图把这个问题说明白。">
@@ -548,8 +548,9 @@ var _hmt = _hmt || [];
 <ul>
 <li>1、 加上 -m 参数时会把当前工作目录添加到 sys.path 中，而不加时则会把脚本所在目录添加到 sys.path 中。</li>
 <li>2、 加上 -m 参数时 Python 会先将模块或者包导入，然后再执行</li>
-<li>3、 _<em>main__.py 文件是一个包或者目录的入口程序。不管是用 python package 还是用 python -m package 运行时， <code></code></em>__main__.py 文件总是被执行。<h2 id="后序"><a href="#后序" class="headerlink" title="后序"></a>后序</h2>我试图使用长篇大论来阐述，在 Python 中如何理解 <code>if _<em>name__ == ‘</em>__main__’</code> 这个问题，不知道我有没有描述得足够的明白。Python 的确是简单的，优雅的，但也有很多问题是不太容易理解的，例如很多高级的特性，像元类、生成器表达式、描述符、协程等。Python 并没有在太多的地方规定要如何如何，很多的用法只是惯用法，例如 self 和本文讨论的内容。这些用法或是为了让代码看起来更优雅，或是前人的经验。使用 Python 是有无限可能的，你可以写出很多简洁优雅的代码。</li>
+<li>3、 _<em>main__.py 文件是一个包或者目录的入口程序。不管是用 python package 还是用 python -m package 运行时， <code></code></em>__main__.py 文件总是被执行。</li>
 </ul>
+<h2 id="后序"><a href="#后序" class="headerlink" title="后序"></a>后序</h2><p>我试图使用长篇大论来阐述，在 Python 中如何理解 <code>if _<em>name__ == ‘</em>__main__’</code> 这个问题，不知道我有没有描述得足够的明白。Python 的确是简单的，优雅的，但也有很多问题是不太容易理解的，例如很多高级的特性，像元类、生成器表达式、描述符、协程等。Python 并没有在太多的地方规定要如何如何，很多的用法只是惯用法，例如 self 和本文讨论的内容。这些用法或是为了让代码看起来更优雅，或是前人的经验。使用 Python 是有无限可能的，你可以写出很多简洁优雅的代码。</p>
 <blockquote>
 <p>转自 <a href="http://blog.konghy.cn/2017/04/24/python-entry-program/" target="_blank" rel="noopener">http://blog.konghy.cn/2017/04/24/python-entry-program/</a></p>
 </blockquote>
