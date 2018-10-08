@@ -131,7 +131,7 @@ var _hmt = _hmt || [];
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://i.loli.net/2018/10/07/5bba101f8ce95.jpg">
 <meta property="og:image" content="https://i.loli.net/2018/10/07/5bba101f8ce95.jpg">
-<meta property="og:updated_time" content="2018-10-07T14:20:51.607Z">
+<meta property="og:updated_time" content="2018-10-08T06:00:06.320Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Flask flash消息分类与美化">
 <meta name="twitter:description" content="Flask提供了一个很方便的flash函数，在视图函数里只需要一行就可以在网页上闪现一个消息(alert)，像这样:1flash(&apos;Hello Flask&apos;) 我们今天来为它添加样式。">
@@ -467,7 +467,7 @@ var _hmt = _hmt || [];
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  462
+                  463
                 </span>
               
 
@@ -514,7 +514,7 @@ var _hmt = _hmt || [];
 <h4 id="使用Bootstrap的消息-alert-样式"><a href="#使用Bootstrap的消息-alert-样式" class="headerlink" title="使用Bootstrap的消息(alert) 样式"></a>使用Bootstrap的消息(alert) 样式</h4><p>如果想要开启消息的分类，需要在调用<code> get_flashed_messages() </code>时传入参数 <code> with_categories=True </code>.这时，在基模板里使用这个函数获取消息时，得到的是一个由<code> (category, message) </code>形式的元组组成的一个列表。</p>
 <p>之后，就可以在使用flash函数时加入消息类别:<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flash(<span class="string">'登录成功，欢迎回来'</span>, <span class="string">'info'</span>)</span><br></pre></td></tr></table></figure></p>
 <p>你可以使用<code> success、info、warning、danger </code>这四个值中的任一个。具体样式见下面图片<br><img src="https://i.loli.net/2018/10/07/5bba101f8ce95.jpg" alt="flash.jpg"></p>
-<p>这时基模板里渲染消息的部分要改成这样:<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;% <span class="keyword">for</span> message <span class="keyword">in</span> get_flashed_messages(with_categories=True) %&#125;</span><br><span class="line">&lt;div class=<span class="string">"alert clert-&#123;&#123; message[0] &#125;&#125;"</span>&gt;</span><br><span class="line">	&lt;button <span class="built_in">type</span>=<span class="string">"button"</span> class=<span class="string">"close"</span> data-dismiss=<span class="string">"alert"</span>&gt;&amp;<span class="built_in">times</span>;&lt;/button&gt;</span><br><span class="line">    &#123;&#123; message &#125;&#125;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&#123;% endfor %&#125;</span><br></pre></td></tr></table></figure></p>
+<p>这时基模板里渲染消息的部分要改成这样:<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;% <span class="keyword">for</span> message <span class="keyword">in</span> get_flashed_messages(with_categories=True) %&#125;</span><br><span class="line">&lt;div class=<span class="string">"alert clert-&#123;&#123; message[0] &#125;&#125;"</span>&gt;</span><br><span class="line">	&lt;button <span class="built_in">type</span>=<span class="string">"button"</span> class=<span class="string">"close"</span> data-dismiss=<span class="string">"alert"</span>&gt;&amp;<span class="built_in">times</span>;&lt;/button&gt;</span><br><span class="line">    &#123;&#123; message[1] &#125;&#125;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&#123;% endfor %&#125;</span><br></pre></td></tr></table></figure></p>
 <p>这样一来，每个消息就会按照我们提供的分类样式来渲染。</p>
 <h4 id="多看源码"><a href="#多看源码" class="headerlink" title="多看源码"></a>多看源码</h4><p>源码里面由很多有趣和有价值的东西，要养成看源码的习惯。<b>很多问题靠看源码里的注释基本上就能解决。</b>所以，问题的正确解决方式应该是：看源码——查文档——Google——提问。</p>
 <ul>
